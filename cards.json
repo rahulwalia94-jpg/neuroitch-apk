@@ -1599,6 +1599,93 @@
       ],
       "difficulty": 3,
       "readMinutes": 6
+    },
+    {
+      "id": "slime-mold-network-design",
+      "fieldA": "Slime Mold Foraging",
+      "fieldB": "Network Design Algorithms",
+      "title": "A brainless amoeba redesigned Tokyo's rail network from scratch",
+      "hook": "A single-celled blob with no nervous system built a transit map that rivals what human engineers spent decades optimizing.",
+      "connection": "A foraging slime mold and a transportation network are both solving the same constrained optimization problem — connect scattered points cheaply while staying efficient and fault-tolerant — using nothing but local feedback between flow and capacity, no central planner and no global blueprint required in either case.",
+      "mechanism": "Physarum polycephalum reinforces its tubes by a simple physiological rule: <cite index=\"9-2\">a tube thickens as the flux through it increases</cite>, while unused tubes shrink and vanish. Tero, Kobayashi and Nakagaki formalized this as a system of differential equations coupling tube conductivity to Poiseuille flow, and when the organism was grown over a map of Greater Tokyo with food at each satellite city, <cite index=\"1-6\">Physarum filled the space with plasmodia, then thinned the network to focus on efficiently connected branches</cite>, converging on a network with the efficiency, low cost, and fault tolerance of the actual Tokyo rail system.",
+      "mentalModel": "Global optimization doesn't require a global optimizer — a rule as simple as 'strengthen what's already carrying load, let the rest atrophy' is enough to converge a whole network toward efficient structure, whether the nodes are cities or ideas.",
+      "realWorld": "Researchers have since run the same Physarum-inspired model against real infrastructure in Mexico, Spain, the Netherlands and the Balkans, and formal proofs later showed the underlying dynamics reliably compute shortest paths and can be adapted for traffic assignment and supply-chain network design.",
+      "historical": "Nakagaki's 2000 Nature paper first showed Physarum solving a maze via shortest path, and a decade later Tero's 2010 Science paper scaled the same mechanism up to reproduce an entire metropolitan rail network, prompting engineers to ask whether the organism's tube-reinforcement rule could be formalized as a general-purpose network design algorithm.",
+      "business": "Bio-inspired network design is now applied directly to traffic flow assignment, wireless sensor network routing and supply-chain design, because the flux-reinforcement rule converges to good solutions faster and more robustly than some classical optimization heuristics on the same graphs.",
+      "personal": "The same principle applies to how you build a professional network or a set of habits: connections and routines that get regular 'flow' through them strengthen automatically, while the ones you stop using quietly wither, without you ever having to consciously decide to prune them.",
+      "openQuestion": "Physarum's rule is purely local and reactive — it has no memory of past states beyond current tube thickness. How much of what looks like 'intelligent' network design in biological or organizational systems is actually just this kind of memoryless reinforcement, and how much genuinely requires foresight?",
+      "reading": [
+        "Rules for Biologically Inspired Adaptive Network Design - Atsushi Tero et al. (Science, 2010)",
+        "A mathematical model for adaptive transport network in path finding by true slime mold - Tero, Kobayashi, Nakagaki (Journal of Theoretical Biology, 2007)",
+        "Physarum can compute shortest paths - Vincenzo Bonifaci, Kurt Mehlhorn, Girish Varma (Journal of Theoretical Biology, 2012)"
+      ],
+      "tags": [
+        "networks",
+        "biology",
+        "optimization",
+        "algorithms",
+        "emergence"
+      ],
+      "difficulty": 2,
+      "readMinutes": 5
+    },
+    {
+      "id": "costly-signals-honesty",
+      "fieldA": "Animal Sexual Selection",
+      "fieldB": "Labor Market Signaling",
+      "title": "Peacock tails and college degrees are honest for the same equation",
+      "hook": "A biologist studying birds and an economist studying job applicants independently proved that wasting resources is sometimes the only way to be believed.",
+      "connection": "A peahen judging a suitor and an employer judging a job applicant face an identical structural problem: neither can directly observe the quality they care about, only a costly signal correlated with it. Evolutionary biology and labor economics converged on the same solution because it's the only stable one — a signal that costs less, at the margin, for a genuinely high-quality sender to produce than for a low-quality impostor.",
+      "mechanism": "Spence's 1973 job-market model shows education can honestly signal ability if the marginal cost of extra schooling falls faster with ability than its wage benefit rises, producing a separating equilibrium where only truly able workers find it worthwhile to over-invest. Zahavi's handicap principle proposed the same logic for ornaments like the peacock's tail, and Grafen's 1990 game-theoretic model proved it rigorously: <cite index=\"12-8\">the signal is reliable if the marginal cost to the signaller is proportionately lower for higher-quality signallers than for lower-quality ones</cite>, a condition mathematically indistinguishable from Spence's.",
+      "mentalModel": "When you can't verify a claim directly, look for whether it was costly in a way that would specifically bankrupt a liar — cheap talk that anyone could produce, regardless of quality, carries no information, however sincere it sounds.",
+      "realWorld": "Firms that require expensive, impractical signals — elite unpaid internships, credentials unrelated to the actual job — aren't necessarily testing for skill; they're often exploiting the same differential-cost logic as a peacock's tail, filtering for whoever can afford the signal rather than whoever is best at the job.",
+      "historical": "Thorstein Veblen's 1899 theory of conspicuous consumption anticipated both fields; economist Michael Spence formalized job-market signaling in 1973, biologist Amotz Zahavi proposed the handicap principle for animal ornaments in 1975, and it took Alan Grafen's 1990 paper explicitly borrowing Spence's economic framework to make the biological version mathematically rigorous and widely accepted.",
+      "business": "Recruiters, universities and luxury brands all price their signals — tuition, membership fees, price tags — not primarily for the resources they extract but to keep the signal expensive enough that low-quality applicants or customers can't cheaply fake belonging.",
+      "personal": "In dating and friendship, grand costly gestures function the same way — not because the gesture itself matters, but because only someone genuinely invested would find it worth the cost, which is exactly why cheap flattery fails to reassure anyone.",
+      "openQuestion": "Both models assume costs and benefits trade off additively in a single currency — money for Spence, fitness for Grafen — a simplifying assumption biologist Thomas Getty has directly challenged. If real costs and benefits aren't fungible this way, how much of the 'proof' of honest signaling survives?",
+      "reading": [
+        "Job Market Signaling - Michael Spence (Quarterly Journal of Economics, 1973)",
+        "Biological Signals as Handicaps - Alan Grafen (Journal of Theoretical Biology, 1990)",
+        "Mate Selection - A Selection for a Handicap - Amotz Zahavi (Journal of Theoretical Biology, 1975)"
+      ],
+      "tags": [
+        "signaling",
+        "game-theory",
+        "evolution",
+        "economics",
+        "information"
+      ],
+      "difficulty": 2,
+      "readMinutes": 5
+    },
+    {
+      "id": "free-energy-brain-physics",
+      "fieldA": "Predictive Coding",
+      "fieldB": "Statistical Mechanics",
+      "title": "Your brain stays alive by solving the same equation as a cooling gas",
+      "hook": "The single number Karl Friston says your brain is always minimizing was invented by physicists trying to dodge an impossible integral.",
+      "connection": "A physicist calculating a system's true partition function and a brain estimating the true probability of its sensory causes both face the same wall: the exact calculation requires summing over intractably many possibilities. Both fields solve it identically — by minimizing a tractable stand-in quantity, 'free energy,' that provably bounds the true value from above, turning impossible integration into ordinary optimization.",
+      "mechanism": "In statistical mechanics, variational free energy uses a simplified trial distribution to bound the true free energy from above, a trick tracing to Feynman and Bogoliubov. Friston's free energy principle imports this exact structure: the brain maintains a 'recognition density' over hidden causes and minimizes its variational free energy — the KL divergence between that density and the true posterior, minus log model evidence — as <cite index=\"22-4\">a notion of free energy derived from statistical physics and used widely in machine learning to convert difficult integration problems into easier optimisation problems</cite>. Formal treatments note these equations <cite index=\"19-8\">correspond to the detailed derivations presented in Beal (2003), which were originally presented in Feynman and in Hinton and van Camp</cite>.",
+      "mentalModel": "Whenever exact inference is computationally impossible, look for a variational shortcut nearby — a simpler, adjustable stand-in whose gap to the truth you can measure and shrink, rather than trying to compute the truth directly.",
+      "realWorld": "The identical objective function, the evidence lower bound, is what trains variational autoencoders and Bayesian deep learning models today — meaning the same optimization trick underlies both Friston's theory of cortical inference and much of modern generative AI.",
+      "historical": "Helmholtz proposed unconscious inference by the brain in the 19th century; Hinton and van Camp applied variational free energy to neural network learning in 1993; and Friston's 2005–2010 papers explicitly carried the statistical-mechanics free energy concept into a unified theory of perception, action and homeostasis.",
+      "business": "Companies building AI systems on variational inference and computational psychiatry labs modeling hallucination and delusion as failures of predictive precision are, whether they acknowledge it or not, running descendants of the same free-energy-minimizing math developed for physical systems a century earlier.",
+      "personal": "The discomfort of encountering something that contradicts your expectations is plausibly your own nervous system's free-energy gradient pushing you to act — either update your model of the world, or change the world to match your model — which is one reason avoidance and honest reflection can feel like equally valid relief.",
+      "openQuestion": "Critics point out that <cite index=\"20-1\">Friston frequently conflates variational free energy and thermodynamic free energy, the energy in a system which is available to perform physical work</cite>. Is the resemblance a genuine mathematical isomorphism doing real explanatory work, or a metaphor that has been taken too literally?",
+      "reading": [
+        "The free-energy principle: a unified brain theory? - Karl Friston (Nature Reviews Neuroscience, 2010)",
+        "A free energy principle for the brain - Karl Friston, James Kilner, Lee Harrison (Journal of Physiology-Paris, 2006)",
+        "Variational Algorithms for Approximate Bayesian Inference - Matthew Beal (PhD thesis, 2003)"
+      ],
+      "tags": [
+        "neuroscience",
+        "thermodynamics",
+        "bayesian-inference",
+        "physics",
+        "cognition"
+      ],
+      "difficulty": 3,
+      "readMinutes": 6
     }
   ]
 }
