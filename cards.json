@@ -1754,6 +1754,108 @@
       ],
       "difficulty": 3,
       "readMinutes": 7
+    },
+    {
+      "id": "crease-parity-dna-scaffold-route",
+      "fieldA": "Origami Mathematics",
+      "fieldB": "DNA Nanotechnology",
+      "fields": [
+        "Origami Mathematics",
+        "DNA Nanotechnology"
+      ],
+      "title": "Paper creases and DNA scaffolds fold under the same parity law",
+      "hook": "The rule that tells you whether a crease pattern can lie flat is the exact rule nanoengineers use to route a single strand of DNA into a smiley face.",
+      "connection": "A flat-folded paper vertex and a DNA-origami wireframe vertex are both graphs where one continuous path — the crease sequence, or the scaffold strand — must thread every vertex without tearing or getting stuck, and whether that path can close smoothly depends only on the parity of how many edges meet at each point.",
+      "mechanism": "Maekawa's theorem states that <cite index=\"30-1,30-2\">at any vertex the number of valley and mountain folds always differ by two, so every vertex has an even number of creases, and the regions between creases can be colored with two colors</cite> — an even-degree, Eulerian-compatible constraint. DNA-origami wireframe design hits the identical requirement when routing a single scaffold through a mesh: <cite index=\"16-1\">an Eulerian circuit is guaranteed if the degrees of the vertices are even, which is why two duplexes are used per edge</cite>, and the actual path is then found because <cite index=\"11-2\">the problem of DNA strand routing reduces to the known problem of shortest-path finding in a weighted graph</cite>.",
+      "mentalModel": "Before you ask whether a complicated folding or routing problem can be solved elegantly, count degrees at each junction first — parity, not cleverness, decides whether a single unbroken path can ever close the loop.",
+      "realWorld": "Origami designers reject a crease pattern the instant a vertex fails Maekawa's even-degree test, exactly as DNA-origami software rejects a scaffold route the instant a wireframe vertex has odd degree — both throw away geometrically appealing designs long before checking whether the material can physically bend or hybridize.",
+      "historical": "Maekawa's and Kawasaki's flat-foldability theorems were formalized in the 1980s out of Japanese paper-folding tradition; two decades later Paul Rothemund's 2006 DNA origami technique needed an almost identical graph-routing insight to fold a single long DNA strand into arbitrary nanoscale shapes, and by the 2010s wireframe DNA-origami tools explicitly borrowed Eulerian-circuit reasoning to generalize the method to open meshes.",
+      "business": "Companies designing deployable space structures and companies designing DNA nanostructures for drug delivery are both, underneath, running degree-parity checks on a graph before they ever touch materials science — the same 15 minutes of graph theory saves a fabrication run in either industry.",
+      "personal": "When a plan involves visiting every stop on a list exactly once and returning to where you started, check the connections first: an odd number of links at any single stop means no route will ever close cleanly, no matter how you reorder the rest.",
+      "openQuestion": "Maekawa's parity condition is necessary but not sufficient for paper (Kawasaki's angle condition is also required), and DNA strand routing algorithms similarly treat Eulerian-degree as necessary but layer thermodynamic scoring on top — it remains unclear how much of DNA origami's yield problem is really a graph-parity issue versus a physical hybridization issue the graph theory can't see.",
+      "reading": [
+        "Folding DNA to create nanoscale shapes and patterns - Paul W. K. Rothemund (Nature, 2006)",
+        "A Computational Algorithm for Origami Design - Robert J. Lang (Symposium on Computational Geometry, 1996)",
+        "Geometric Folding Algorithms: Linkages, Origami, Polyhedra - Erik D. Demaine, Joseph O'Rourke"
+      ],
+      "tags": [
+        "origami mathematics",
+        "dna nanotechnology",
+        "graph-theory",
+        "flat-foldability"
+      ],
+      "difficulty": 1,
+      "readMinutes": 3
+    },
+    {
+      "id": "hexagon-law-grain-froth-cornea",
+      "fieldA": "Metallurgy",
+      "fieldB": "Foam Physics",
+      "fields": [
+        "Metallurgy",
+        "Foam Physics",
+        "Epithelial Biology"
+      ],
+      "title": "Metal grains, soap froths and cornea cells share one hexagon law",
+      "hook": "The equation that predicts which soap bubble in a beer's head will pop next also predicts which grain in a jet-engine turbine blade will grow, and which cell in your eye's lining will die first.",
+      "connection": "A polycrystalline metal, a two-dimensional soap froth, and the monolayer of cells lining the human cornea are all space-filling mosaics of irregular cells meeting at three-way junctions, where each cell's growth is driven purely by the geometry of its neighbors rather than by what the cell is made of.",
+      "mechanism": "<cite index=\"2-11\">Metals and ceramics commonly consist of space-filling arrays of single-crystal grains separated by a network of grain boundaries, and foams are networks of gas-filled bubbles separated by liquid walls</cite>, and both obey the von Neumann–Mullins law, dA/dt = (π/3)mγ(n−6), so that <cite index=\"9-4\">grains with more than six sides grow, while those with less than six sides will shrink</cite>. Corneal endothelial researchers found the same signature in living tissue: <cite index=\"42-4\">the results are consistent with the hypothesis that this phenomenon is analogous with cell behavior in other structures such as dry foams and grains in polycrystalline materials, so its driving force may be controlled by the surface tension and mobility of the boundaries</cite>.",
+      "mentalModel": "In any packed mosaic of cells competing for the same finite area — bubbles, grains, or biological tissue — don't ask what each cell is made of to predict who grows and who shrinks; count its neighbors. Six is the threshold, and topology, not material, sets the direction of change.",
+      "realWorld": "Metallurgists control furnace time and temperature to steer grain size toward the strength a turbine blade needs, foam scientists use the same relation to predict how long a beer's head or a fire-suppression foam will stay stable, and ophthalmologists use the identical topological signature to distinguish a cornea that is aging normally from one where cell loss has crossed a functional threshold.",
+      "historical": "John von Neumann first derived the two-dimensional growth law for soap froths around 1952, W. W. Mullins generalized it to grain boundaries in his 1956 paper, and by the 2000s ophthalmology researchers were explicitly re-deriving the same topological argument to explain why the corneal endothelium's cell mosaic drifts toward hexagonal dominance with age, decades after the original metallurgical and foam-physics work.",
+      "business": "A jet-engine alloy supplier optimizing grain size for creep resistance and a contact-lens manufacturer modeling long-term endothelial cell loss are, mathematically, tuning the same single parameter — boundary mobility times surface tension — even though one sells turbine blades and the other sells corrective lenses.",
+      "personal": "If you've ever watched foam in a glass slowly self-organize into fewer, larger bubbles, you were watching the same topological rule that is currently deciding, cell by cell, how your own cornea's lining will look in twenty years — no chemistry required, just geometry doing its slow, patient work.",
+      "openQuestion": "The classical law assumes all boundaries share equal mobility and surface tension and that triple junctions stay in frictionless 120° equilibrium; real alloys, real foams near their Plateau borders, and real biological tissue all violate these assumptions to different degrees, so it remains open how much of the corneal 'law' is genuine shared physics versus a topological coincidence that happens to fit the same equation.",
+      "reading": [
+        "Two-dimensional motion of idealized grain boundaries - W. W. Mullins (Journal of Applied Physics, 1956)",
+        "Grain Shapes and Other Metallurgical Applications of Topology - Cyril Stanley Smith (in Metal Interfaces, American Society for Metals, 1952)",
+        "Cell Pattern in Adult Human Corneal Endothelium - Carlos H. Wörner, Alicia Olguín, José L. Ruíz-García, Nuria Garzón-Jiménez (PLoS ONE, 2011)"
+      ],
+      "tags": [
+        "metallurgy",
+        "foam physics",
+        "epithelial biology",
+        "topology",
+        "grain-growth"
+      ],
+      "difficulty": 2,
+      "readMinutes": 5
+    },
+    {
+      "id": "phase-problem-crystal-star-voice-lens",
+      "fieldA": "Crystallography",
+      "fieldB": "Audio Engineering",
+      "fields": [
+        "Crystallography",
+        "Audio Engineering",
+        "Astronomy",
+        "Electron Microscopy",
+        "Optics"
+      ],
+      "title": "Crystals, stars, voices, electrons and lenses all lose the same variable",
+      "hook": "Every detector in these five fields records the same missing half of a wave, and every field independently reinvented the same trick for guessing it back.",
+      "connection": "An X-ray hitting a crystal, a telescope catching starlight through turbulent air, a microphone recording a voice, an electron beam striking a specimen, and a lens capturing a diffraction pattern all record only the magnitude of a wave's Fourier transform — the phase, which carries most of the structural information, is destroyed at the moment of detection in every single case.",
+      "mechanism": "The phase problem is genuinely the same mathematical object across domains: <cite index=\"19-1\">it arises in X-ray crystallography, diffraction imaging, optics, quantum mechanics and astronomy</cite>, and more specifically <cite index=\"19-12\">in optics, fibre optic communications, astronomical imaging, microscopy, and speckle interferometry</cite>. In coherent diffractive imaging, <cite index=\"20-10\">measured wave intensities correspond to diffraction patterns which can be Fourier-transformed into object images, given the missing phase component</cite>, and audio engineers face the identical gap: <cite index=\"22-2,22-4\">the classic alternating projection algorithm for phase retrieval has been adapted to spectrogram reconstruction by Griffin and Lim, alternately imposing time-domain and magnitude constraints through projections</cite>.",
+      "mentalModel": "When a measurement only ever gives you the amplitude of something and never its phase, don't try to solve for the missing phase directly — impose whatever independent constraints you do know (support, positivity, redundancy) and alternate projections between what you measured and what you know must be true, letting the two constraints iteratively triangulate the answer.",
+      "realWorld": "A protein crystallographer solving a molecule's structure, a radio astronomer building an image from an interferometer array, a speech engineer reconstructing audio from a magnitude-only spectrogram, a cryo-electron microscopist reconstructing a virus particle, and an optics lab doing lensless coherent diffractive imaging are all running descendants of the same alternating-projection algorithm, tuned to their own detector's noise.",
+      "historical": "The phase problem was named and attacked separately in each field for most of the twentieth century — crystallographers developed Patterson methods and later direct methods through the 1950s-80s, Fienup published his influential phase-retrieval algorithm comparison for optics and astronomy in 1982, and Griffin and Lim published their spectrogram-inversion algorithm for speech processing in 1984 — with cross-field recognition that these were the same underlying problem only consolidating clearly in the 2000s-2010s coherent-imaging literature.",
+      "business": "Synchrotron facilities selling beamtime to structural biologists, telescope arrays selling observing time to astronomers, and audio-tech companies building text-to-speech vocoders are all, at the algorithmic core, monetizing the same iterative-projection solver — better phase-retrieval convergence in one field's open-source code has repeatedly leaked into the others' toolchains within a few years.",
+      "personal": "When you're trying to reconstruct what actually happened from incomplete secondhand accounts — you know the 'loudness' of people's reactions but not the precise sequence or framing — you're facing your own phase problem: the magnitude of the signal survived, the phase that would tell you the true shape did not, and you have to iterate between partial constraints to guess it back.",
+      "openQuestion": "Fourier phase retrieval has rigorous uniqueness proofs only under specific oversampling or redundancy conditions (as in ptychography's overlapping segments); it remains an open question, actively studied across all five fields simultaneously, exactly how little redundant measurement is needed before the reconstruction stops being unique — and whether that minimum is truly the same number in crystallography, astronomy, audio, electron microscopy, and optics or merely superficially similar.",
+      "reading": [
+        "Phase retrieval algorithms: a comparison - J. R. Fienup (Applied Optics, 1982)",
+        "Signal Estimation from Modified Short-Time Fourier Transform - Daniel W. Griffin, Jae S. Lim (IEEE Transactions on Acoustics, Speech, and Signal Processing, 1984)",
+        "Phase Retrieval with Application to Optical Imaging: A Contemporary Overview - Yoav Shechtman, Yonina C. Eldar, Oren Cohen, Henry N. Chapman, Jianwei Miao, Mordechai Segev (IEEE Signal Processing Magazine, 2015)"
+      ],
+      "tags": [
+        "crystallography",
+        "audio engineering",
+        "astronomy",
+        "electron microscopy",
+        "optics"
+      ],
+      "difficulty": 3,
+      "readMinutes": 7
     }
   ]
 }
