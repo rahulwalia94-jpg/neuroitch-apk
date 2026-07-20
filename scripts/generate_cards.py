@@ -62,6 +62,13 @@ def validate(cards):
             errs.append(f"{c.get('id')}: readMinutes")
         if c.get("fieldA") == c.get("fieldB"):
             errs.append(f"{c.get('id')}: fieldA == fieldB")
+        if "fields" in c:
+            fl = c["fields"]
+            if (not isinstance(fl, list) or len(fl) < 2
+                    or len(set(fl)) != len(fl)
+                    or not all(isinstance(x, str) and x.strip() for x in fl)
+                    or c.get("fieldA") not in fl or c.get("fieldB") not in fl):
+                errs.append(f"{c.get('id')}: bad fields list")
         key = "|".join(sorted([str(c.get("fieldA")), str(c.get("fieldB"))]))
         pairs[key] = pairs.get(key, 0) + 1
     for p, n in pairs.items():
@@ -161,7 +168,16 @@ adjacent ones): {', '.join(seeds)}.
 Style reference - the two most recent cards:
 {sample}
 
-Write 3 new cards as a JSON array. Schema per card (all 17 keys
+Write 3 new cards as a JSON array - a POLLINATION LADDER:
+- Card 1 bridges exactly 2 fields.
+- Card 2 braids exactly 3 fields into one mechanism.
+- Card 3 fuses 4-6 fields around a single deep structural pattern.
+Every card carries an extra key "fields": the ordered list of ALL fields it
+braids (2, 3, and 4-6 entries respectively). fieldA and fieldB must be the two
+most central fields and both must appear in "fields". For 3+ field cards the
+title must name the chain (e.g. "X, Y and Z share one clock"), and the
+connection and mechanism must genuinely use EVERY field - a field that only
+appears as a name-drop is a failure. Include every field (lowercased) in tags. Schema per card (all 17 keys
 required): id (new unique kebab-case slug), fieldA, fieldB (different, short
 field names), title, hook (one arresting sentence), connection (200-400 chars:
 why the fields are the same underneath), mechanism (200-400 chars: the actual
@@ -191,6 +207,11 @@ Reply with ONLY the JSON array in a ```json fenced block."""
                   file=sys.stderr)
             continue
         errs = validate(cards + new_cards)
+        widths = sorted(len(c.get("fields", [c.get("fieldA"), c.get("fieldB")]))
+                        for c in new_cards)
+        if len(new_cards) == 3 and not (widths[0] == 2 and widths[1] == 3
+                                        and widths[2] >= 4):
+            errs.append(f"batch must be one 2-field, one 3-field, one 4+-field card (got widths {widths})")
         if not errs:
             pack["cards"] = cards + new_cards
             with open(CARDS_PATH, "w", encoding="utf-8") as f:
