@@ -142,7 +142,19 @@ def extract_json_array(text):
     return None
 
 
+def parse_brew(title):
+    body = re.sub(r"^\s*brew\s*:\s*", "", title, flags=re.I)
+    parts = [p.strip() for p in re.split(r"\s*[×+,|]\s*|\s+x\s+", body) if p.strip()]
+    if not 2 <= len(parts) <= 8:
+        sys.exit(f"brew needs 2-8 fields, got {parts!r}")
+    return parts
+
+
 def main():
+    brew = None
+    if len(sys.argv) >= 3 and sys.argv[1] == "--brew":
+        brew = parse_brew(sys.argv[2])
+        print("BREW REQUEST:", brew)
     pack = json.load(open(CARDS_PATH, encoding="utf-8"))
     cards = pack["cards"]
     ids = [c["id"] for c in cards]
@@ -195,6 +207,16 @@ HARD CONSTRAINTS:
 
 Reply with ONLY the JSON array in a ```json fenced block."""
 
+    if brew:
+        prompt = prompt + f"""
+
+OVERRIDE FOR THIS RUN: a reader has requested ONE custom card. Write a JSON
+array containing EXACTLY 1 card that braids EXACTLY these fields (its "fields"
+key must contain exactly this set, any sensible order/casing):
+{json.dumps(brew)}
+Research the genuine structural mechanism connecting them. The pollination
+ladder instruction above does not apply. All other schema rules apply."""
+
     last_err = "?"
     for attempt in range(3):
         text = call_claude(prompt if attempt == 0 else prompt +
@@ -207,11 +229,22 @@ Reply with ONLY the JSON array in a ```json fenced block."""
                   file=sys.stderr)
             continue
         errs = validate(cards + new_cards)
-        widths = sorted(len(c.get("fields", [c.get("fieldA"), c.get("fieldB")]))
-                        for c in new_cards)
-        if len(new_cards) == 3 and not (widths[0] == 2 and widths[1] == 3
-                                        and widths[2] >= 4):
-            errs.append(f"batch must be one 2-field, one 3-field, one 4+-field card (got widths {widths})")
+        if brew:
+            if len(new_cards) != 1:
+                errs.append("brew run must return exactly 1 card")
+            else:
+                want = {f.casefold() for f in brew}
+                got = {f.casefold() for f in
+                       new_cards[0].get("fields", [new_cards[0].get("fieldA"),
+                                                   new_cards[0].get("fieldB")])}
+                if want != got:
+                    errs.append(f"brew fields mismatch: wanted {sorted(want)} got {sorted(got)}")
+        else:
+            widths = sorted(len(c.get("fields", [c.get("fieldA"), c.get("fieldB")]))
+                            for c in new_cards)
+            if len(new_cards) == 3 and not (widths[0] == 2 and widths[1] == 3
+                                            and widths[2] >= 4):
+                errs.append(f"batch must be one 2-field, one 3-field, one 4+-field card (got widths {widths})")
         if not errs:
             pack["cards"] = cards + new_cards
             with open(CARDS_PATH, "w", encoding="utf-8") as f:

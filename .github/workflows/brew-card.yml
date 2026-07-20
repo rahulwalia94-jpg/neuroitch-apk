@@ -1,0 +1,45 @@
+name: brew-card
+on:
+  issues:
+    types: [opened]
+jobs:
+  brew:
+    # Only the repo owner may brew - protects the API budget on a public repo.
+    if: startsWith(github.event.issue.title, 'brew:') && github.event.issue.user.login == github.repository_owner
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Brew requested card
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          BREW_TITLE: ${{ github.event.issue.title }}
+        run: python scripts/generate_cards.py --brew "$BREW_TITLE"
+      - name: Commit and push
+        env:
+          BREW_TITLE: ${{ github.event.issue.title }}
+        run: |
+          git config user.name "neuroitch-cards-bot"
+          git config user.email "cards-bot@neuroitch.local"
+          git add cards.json
+          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -m "Brew (#${{ github.event.issue.number }}): $BREW_TITLE"
+          git pull --rebase origin main
+          git push origin main
+      - name: Reply and close
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} -R ${{ github.repository }} -b "Brewed and published. Open the app with internet and the card will sync in on next launch."
+          gh issue close ${{ github.event.issue.number }} -R ${{ github.repository }}
+      - name: Reply on failure
+        if: failure()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue comment ${{ github.event.issue.number }} -R ${{ github.repository }} -b "Brewing failed this time. Open a new issue titled like 'brew: Field A x Field B x Field C' to retry."
