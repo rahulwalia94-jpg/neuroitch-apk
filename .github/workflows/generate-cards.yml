@@ -1,0 +1,30 @@
+name: generate-cards
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+concurrency:
+  group: generate-cards
+  cancel-in-progress: false
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Generate and validate 3 new cards
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/generate_cards.py
+      - name: Commit and push
+        run: |
+          git config user.name "neuroitch-cards-bot"
+          git config user.email "cards-bot@neuroitch.local"
+          git add cards.json
+          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -m "Cards: +3 ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git pull --rebase origin main
+          git push origin main
