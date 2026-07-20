@@ -25,6 +25,18 @@ DOMAINS = [
     "chess theory", "supply chains", "astronomy", "typography", "seismology",
 ]
 
+LENS_FAMILY = {
+    "isomorphism": "structural", "homology": "structural",
+    "structural_mapping": "structural", "abstraction": "structural",
+    "transfer_learning": "structural", "inversion": "transformative",
+    "constraint_removal": "transformative", "scale_shift": "transformative",
+    "time_shift": "transformative", "perspective_shift": "transformative",
+    "contrast": "dialectical", "paradox": "dialectical",
+    "dialectic": "dialectical", "irony": "dialectical",
+    "counterfactual": "generative", "thought_experiment": "generative",
+    "first_principles": "generative",
+}
+
 FIELDS_17 = [
     "id", "fieldA", "fieldB", "title", "hook", "connection", "mechanism",
     "mentalModel", "realWorld", "historical", "business", "personal",
@@ -74,6 +86,31 @@ def validate(cards):
     for p, n in pairs.items():
         if n > 3:
             errs.append(f"pair overused: {p} x{n}")
+    return errs
+
+
+def validate_lens(cards):
+    """Lens dimension checks, applied to the whole pack."""
+    errs = []
+    lens_counts = {}
+    for c in cards:
+        lens = c.get("lens")
+        if lens not in LENS_FAMILY:
+            errs.append(f"{c.get('id')}: invalid lens {lens!r}")
+            continue
+        if c.get("lensFamily") != LENS_FAMILY[lens]:
+            errs.append(f"{c.get('id')}: lensFamily mismatch")
+        for k in ("whereItFails", "whereElse", "opposite"):
+            v = c.get(k, "")
+            if not isinstance(v, str) or len(v) <= 60:
+                errs.append(f"{c.get('id')}: {k} too short")
+        if "relation" not in c or not isinstance(c["relation"], str):
+            errs.append(f"{c.get('id')}: relation missing")
+        lens_counts[lens] = lens_counts.get(lens, 0) + 1
+    total = len(cards)
+    for lens, n in lens_counts.items():
+        if total and n / total > 0.40:
+            errs.append(f"lens {lens} exceeds 40% ({n}/{total})")
     return errs
 
 
@@ -164,6 +201,13 @@ def main():
         k = "|".join(sorted([c["fieldA"], c["fieldB"]]))
         pair_counts[k] = pair_counts.get(k, 0) + 1
     full_pairs = sorted(k for k, n in pair_counts.items() if n >= 3)
+    lens_counts = {}
+    for c in cards:
+        if c.get("lens"):
+            lens_counts[c["lens"]] = lens_counts.get(c["lens"], 0) + 1
+    near_cap = sorted(l for l, n in lens_counts.items()
+                      if (len(cards) and n / len(cards) > 0.33))
+    rare = sorted(l for l in LENS_FAMILY if lens_counts.get(l, 0) <= 1)
     sample = json.dumps(cards[-2:], indent=2, ensure_ascii=False)
     seeds = random.sample(DOMAINS, 4)
 
@@ -199,6 +243,31 @@ business, personal (each a concrete non-empty paragraph), openQuestion
 lowercase strings), difficulty (int 1-3, vary across the 3 cards),
 readMinutes (int 2-8).
 
+THE THINKING LENS (required on every card): the card must also declare the
+cognitive move it performs, not just its subject.
+- "lens": one of these snake_case values, and "lensFamily" its family:
+  STRUCTURAL: isomorphism (same mathematical structure), homology (shared
+  ancestry / common origin), structural_mapping (same relationships between
+  different objects, e.g. predator:prey :: hacker:network), abstraction,
+  transfer_learning.
+  TRANSFORMATIVE: inversion, constraint_removal, scale_shift, time_shift,
+  perspective_shift.
+  DIALECTICAL: contrast, paradox, dialectic, irony.
+  GENERATIVE: counterfactual, thought_experiment, first_principles.
+  Do NOT default everything to isomorphism. Isomorphism means the SAME maths;
+  if the claim is shared ancestry it is homology; if it maps relationships
+  between different objects it is structural_mapping. Judge honestly.
+- "relation": the relational skeleton like "predator : prey :: hacker :
+  network" when the card has one, else an empty string "".
+- "whereItFails": REQUIRED, over 60 chars. The specific boundary where the
+  mapping genuinely breaks down. Not a hedge. A real divergence point.
+- "whereElse": REQUIRED, over 60 chars. Two or three other domains the same
+  pattern appears in.
+- "opposite": REQUIRED, over 60 chars. The inversion of the core claim and
+  what it would imply if true.
+Prefer these under-used lenses this run if you can do so honestly: {rare}.
+Avoid over-using these already-common lenses: {near_cap}.
+
 HARD CONSTRAINTS:
 - Do not reuse any of these ids: {json.dumps(ids)}
 - Do not rehash any of these existing titles/topics: {json.dumps(titles)}
@@ -229,6 +298,7 @@ ladder instruction above does not apply. All other schema rules apply."""
                   file=sys.stderr)
             continue
         errs = validate(cards + new_cards)
+        errs += validate_lens(cards + new_cards)
         if brew:
             if len(new_cards) != 1:
                 errs.append("brew run must return exactly 1 card")
