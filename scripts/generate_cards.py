@@ -100,7 +100,7 @@ def validate_lens(cards):
             continue
         if c.get("lensFamily") != LENS_FAMILY[lens]:
             errs.append(f"{c.get('id')}: lensFamily mismatch")
-        for k in ("whereItFails", "whereElse", "opposite"):
+        for k in ("whereItFails", "whereElse", "opposite", "plainly"):
             v = c.get(k, "")
             if not isinstance(v, str) or len(v) <= 60:
                 errs.append(f"{c.get('id')}: {k} too short")
@@ -265,6 +265,11 @@ cognitive move it performs, not just its subject.
   pattern appears in.
 - "opposite": REQUIRED, over 60 chars. The inversion of the core claim and
   what it would imply if true.
+- "plainly": REQUIRED, over 60 chars. A plain-English explanation a curious
+  non-expert would instantly get, with zero jargon. Use everyday images and
+  a relatable comparison. This is the first thing the reader meets, so make
+  it land. Do not restate the title; explain the idea like you would to a
+  friend who knows nothing about either field.
 Prefer these under-used lenses this run if you can do so honestly: {rare}.
 Avoid over-using these already-common lenses: {near_cap}.
 

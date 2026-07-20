@@ -34,7 +34,8 @@
       "relation": "pathogen : immune reserve :: expected default : loan provision",
       "whereItFails": "The immune system cannot choose to under-provision to hit a quarterly target, whereas a bank absolutely can and routinely does, so the analogy breaks exactly where human incentive enters.",
       "whereElse": "The same forward-provisioning logic appears in insurance reserving, in warranty accounting, and in the precautionary stockpiling of vaccines before a season.",
-      "opposite": "If provisioning were purely reactive rather than anticipatory, both bodies and banks would only respond after damage was done, which is precisely the fragile posture that kills organisms and firms in a shock."
+      "opposite": "If provisioning were purely reactive rather than anticipatory, both bodies and banks would only respond after damage was done, which is precisely the fragile posture that kills organisms and firms in a shock.",
+      "plainly": "Your body keeps a running guess about how much trouble is coming and quietly sets aside defences in advance, exactly the way a sensible bank puts money aside for loans it expects to go bad before anyone actually misses a payment."
     },
     {
       "id": "c002",
@@ -69,7 +70,8 @@
       "relation": "waste heat : heat sink :: organisational friction : slack capacity",
       "whereItFails": "A heat sink dissipates energy passively down a gradient, but organisational tension does not flow downhill on its own and often pools exactly where no one is looking, so the passive-dissipation picture misleads.",
       "whereElse": "The same dumped-energy problem shows up in electrical grids needing dump loads, in ecosystems needing decomposers, and in codebases needing scratch refactors.",
-      "opposite": "If a company could run with zero slack and no dissipation channel, it would be maximally efficient, but the thermodynamic claim is that it would instead overheat and seize under the first real load."
+      "opposite": "If a company could run with zero slack and no dissipation channel, it would be maximally efficient, but the thermodynamic claim is that it would instead overheat and seize under the first real load.",
+      "plainly": "Any busy system throws off waste, and if there's nowhere for that waste to go it builds up and gums everything up. A company needs a deliberate place to dump friction and tension, the same way a computer needs a fan."
     },
     {
       "id": "c003",
@@ -105,7 +107,8 @@
       "relation": "",
       "whereItFails": "Fire suppression and easy money differ in that forests have no agent deliberately setting fires, while markets contain actors who exploit the very stability the suppression creates, adding reflexivity ecology lacks.",
       "whereElse": "The same suppression-breeds-catastrophe irony appears in flood control on the Mississippi, in antibiotic overuse breeding resistance, and in helicopter parenting producing fragile adults.",
-      "opposite": "If small crises were allowed to burn freely, the system would look chaotic and painful in the short run, yet the claim is that it would never accumulate the fuel load that makes a total collapse possible."
+      "opposite": "If small crises were allowed to burn freely, the system would look chaotic and painful in the short run, yet the claim is that it would never accumulate the fuel load that makes a total collapse possible.",
+      "plainly": "Stamp out every small fire and the forest quietly fills with dead wood until one spark burns everything. Block every small wobble in the economy and the same thing happens: calm for years, then one enormous crash."
     },
     {
       "id": "c004",
@@ -139,7 +142,8 @@
       "relation": "",
       "whereItFails": "Compression explains elegance but not warmth or moral beauty, so treating all beauty as near-failed compression flattens aesthetic experiences that have nothing to do with information at all.",
       "whereElse": "The compression-at-the-edge idea also lights up in humour timing, in mathematical proof elegance, and in the design of memorable brand logos.",
-      "opposite": "If beauty were maximal compression rather than compression that almost fails, the most beautiful thing would be a blank page or a single point, which is precisely what nobody finds beautiful."
+      "opposite": "If beauty were maximal compression rather than compression that almost fails, the most beautiful thing would be a blank page or a single point, which is precisely what nobody finds beautiful.",
+      "plainly": "Things feel beautiful when they're almost too simple to hold together but just about do. A tune or a face that is perfectly regular is boring, and one that is chaos is ugly, but the near-miss between the two feels lovely."
     },
     {
       "id": "c005",
@@ -174,7 +178,8 @@
       "relation": "",
       "whereItFails": "Annealing assumes a controllable temperature schedule, but a human brain cannot be reheated and cooled at will, so the metallurgical control knob has no clean biological equivalent.",
       "whereElse": "The same slow-cool-to-settle principle transfers to simulated annealing in optimisation, to spaced repetition in study, and to gradual exposure in therapy.",
-      "opposite": "If cramming actually worked better than spaced learning, then rapid quenching would produce the strongest metal and the most durable memory, whereas both instead lock in brittle, fracture-prone structure."
+      "opposite": "If cramming actually worked better than spaced learning, then rapid quenching would produce the strongest metal and the most durable memory, whereas both instead lock in brittle, fracture-prone structure.",
+      "plainly": "Blacksmiths make metal strong by heating it and letting it cool slowly so the insides settle. Cramming is the opposite: you heat up fast and cool instantly, which locks in a brittle mess that shatters at exam time."
     },
     {
       "id": "c006",
@@ -209,7 +214,8 @@
       "relation": "",
       "whereItFails": "The R0 model assumes well-mixed contact, but ideas spread through clustered, homophilous networks where a single number hides the structure that actually decides whether it catches.",
       "whereElse": "The reproduction-number logic also governs viral products, bank-run contagion, and the spread of scientific citations.",
-      "opposite": "If reach mattered more than transmissibility, then broadcasting to millions would guarantee adoption, yet history is full of huge launches with R0 below one that vanished without a trace."
+      "opposite": "If reach mattered more than transmissibility, then broadcasting to millions would guarantee adoption, yet history is full of huge launches with R0 below one that vanished without a trace.",
+      "plainly": "An idea doesn't spread because loads of people hear it. It spreads if each person who catches it passes it to more than one other person. A whisper that each listener repeats twice beats a billboard nobody mentions."
     },
     {
       "id": "c007",
@@ -244,7 +250,8 @@
       "relation": "",
       "whereItFails": "A control loop assumes a measurable set-point, but parenting has no agreed target value and the child is itself an adaptive controller fighting back, which linear control theory does not model.",
       "whereElse": "The same excess-gain instability appears in thermostat hunting, in over-corrected steering, and in central banks over-tightening.",
-      "opposite": "If more responsiveness were always better, then the highest-gain parent would raise the calmest child, whereas maximum gain in any loop produces the wildest oscillation."
+      "opposite": "If more responsiveness were always better, then the highest-gain parent would raise the calmest child, whereas maximum gain in any loop produces the wildest oscillation.",
+      "plainly": "If you react too hard every time your kid wobbles, you actually make them wobble more, like yanking a steering wheel and swerving all over the road. Gentle, smaller corrections keep everyone far steadier."
     },
     {
       "id": "c008",
@@ -279,7 +286,8 @@
       "relation": "load path : redundant member :: income : redundant skill",
       "whereItFails": "Structural redundancy is designed against known load cases, but careers face genuinely novel shocks, so a redundancy that looks ample can be irrelevant to the failure that actually arrives.",
       "whereElse": "The same redundancy-versus-efficiency tension appears in electrical grid design, in biological gene duplication, and in supply-chain dual sourcing.",
-      "opposite": "If specialisation were strictly safer, then the most narrowly optimised bridge and the most single-skilled worker would be the most robust, when both are the first to fail under an unexpected load."
+      "opposite": "If specialisation were strictly safer, then the most narrowly optimised bridge and the most single-skilled worker would be the most robust, when both are the first to fail under an unexpected load.",
+      "plainly": "Bridges stay up because they have spare parts carrying no load until something fails. People who bet everything on one narrow skill have no spare, so when that skill stops being needed, they fall."
     },
     {
       "id": "c009",
@@ -313,7 +321,8 @@
       "relation": "gene : bacterium :: capability : acquiring firm",
       "whereItFails": "Horizontal gene transfer moves genes that are already self-contained, but a company capability is embedded in people and culture that often die on transplant, so the clean gene-swap picture overstates how portable capability is.",
       "whereElse": "The same borrow-rather-than-evolve pattern appears in software dependency reuse, in culinary fusion, and in legal transplantation of statutes between countries.",
-      "opposite": "If internal R&D always beat acquisition, then bacteria that refused foreign DNA would dominate, whereas in reality the promiscuous gene-swappers are the ones that conquer new niches fastest."
+      "opposite": "If internal R&D always beat acquisition, then bacteria that refused foreign DNA would dominate, whereas in reality the promiscuous gene-swappers are the ones that conquer new niches fastest.",
+      "plainly": "Bacteria get ahead by grabbing ready-made genes from their neighbours instead of slowly evolving their own. Companies do the same by buying a rival that already has the thing they want, rather than building it from scratch."
     },
     {
       "id": "c010",
@@ -348,7 +357,8 @@
       "relation": "",
       "whereItFails": "Queueing theory assumes stable arrival rates and interchangeable servers, but people are not identical M/M/1 servers and can raise throughput temporarily in ways queues cannot, blurring the tidy utilisation curve.",
       "whereElse": "The same congestion-explodes-near-full law governs motorway traffic, hospital bed occupancy, and server CPU scheduling.",
-      "opposite": "If burnout were about willpower rather than utilisation, then loading someone to 100 percent would be sustainable with enough grit, whereas the maths says waiting time diverges to infinity regardless of effort."
+      "opposite": "If burnout were about willpower rather than utilisation, then loading someone to 100 percent would be sustainable with enough grit, whereas the maths says waiting time diverges to infinity regardless of effort.",
+      "plainly": "Burnout isn't about being weak. If you run at 100 percent capacity with no gaps, any small extra demand makes the backlog explode, the same way a motorway seizes up completely once it gets too full."
     },
     {
       "id": "c011",
@@ -382,7 +392,8 @@
       "relation": "",
       "whereItFails": "Expert narrowing helps in stable domains but is a liability in novel ones, so praising the small field of view ignores that the same narrowing is exactly what blindsides experts in a paradigm shift.",
       "whereElse": "The same useful-narrowing shows up in chess masters' chunking, in radiologists' trained gaze, and in musicians' selective hearing.",
-      "opposite": "If a wider field of view were always better, then the novice who notices everything would outperform the expert, whereas the novice usually drowns in irrelevant detail the expert has learned to ignore."
+      "opposite": "If a wider field of view were always better, then the novice who notices everything would outperform the expert, whereas the novice usually drowns in irrelevant detail the expert has learned to ignore.",
+      "plainly": "Experts aren't better because they see more. They're better because they've learned to ignore almost everything and look only at what matters. The narrow view is the skill, though it's also the thing that blindsides them."
     },
     {
       "id": "c012",
@@ -416,7 +427,8 @@
       "relation": "secret : verifier :: private evidence : person judging trust",
       "whereItFails": "A zero-knowledge proof is mathematically sound, but human trust judgements are noisy and forgeable in ways cryptographic protocols are explicitly designed to prevent, so people are far worse verifiers than the analogy implies.",
       "whereElse": "The same prove-without-revealing pattern appears in job references, in credit scores, and in academic peer review.",
-      "opposite": "If trust required full disclosure rather than selective proof, then intimacy would demand total transparency, whereas functioning relationships run precisely on verified partial knowledge."
+      "opposite": "If trust required full disclosure rather than selective proof, then intimacy would demand total transparency, whereas functioning relationships run precisely on verified partial knowledge.",
+      "plainly": "You can prove you know a password without ever showing it. Trusting a person works the same way: you look for small proofs that they are who they claim, without ever seeing the whole of them."
     },
     {
       "id": "c013",
@@ -451,7 +463,8 @@
       "relation": "nutrient : fallow field :: idea reserve : rest period",
       "whereItFails": "Soil recovers by biochemical cycling on a fixed calendar, but knowledge workers do not replenish on a predictable seasonal clock, so the agricultural timing has no reliable cognitive counterpart.",
       "whereElse": "The same lie-fallow logic appears in fishery quotas, in muscle recovery between workouts, and in crop rotation.",
-      "opposite": "If rest were merely absence of work rather than active replenishment, then the most productive worker would be the one who never stopped, whereas continuous cropping exhausts both soil and mind."
+      "opposite": "If rest were merely absence of work rather than active replenishment, then the most productive worker would be the one who never stopped, whereas continuous cropping exhausts both soil and mind.",
+      "plainly": "Leaving a field empty for a season isn't laziness, it's letting the soil rebuild what crops stripped out. Time away from work isn't slacking either, it's your mind quietly restocking the ingredients good thinking needs."
     },
     {
       "id": "c014",
@@ -485,7 +498,8 @@
       "relation": "",
       "whereItFails": "Seismic stress accumulates in rigid crust with known mechanics, but organisational tension is continuously renegotiated by people, so the clean elastic-rebound model overstates how inevitable the reorg quake is.",
       "whereElse": "The same slow-load-sudden-slip pattern appears in avalanche formation, in political revolutions, and in the snapping of overloaded supply chains.",
-      "opposite": "If reorganisations released tension smoothly rather than in sudden slips, then change would be continuous and painless, whereas suppressed stress is exactly what makes the eventual rupture violent."
+      "opposite": "If reorganisations released tension smoothly rather than in sudden slips, then change would be continuous and painless, whereas suppressed stress is exactly what makes the eventual rupture violent.",
+      "plainly": "Pressure builds silently between rocks for years, then releases all at once as an earthquake. A big company reorganisation is the same: tension that's been quietly building for ages, finally let go in one violent jolt."
     },
     {
       "id": "c015",
@@ -520,7 +534,8 @@
       "relation": "",
       "whereItFails": "Pharmacokinetics assumes a physical clearance mechanism, but incentives decay through shifting expectations rather than metabolism, so the half-life is a useful metaphor without a measurable biological rate.",
       "whereElse": "The same tolerance-and-decay curve appears in drug dependence, in advertising wear-out, and in the fading thrill of pay rises.",
-      "opposite": "If incentives kept full potency indefinitely, then a one-time bonus would motivate forever, whereas in practice the dose must keep rising just to hold the same effect."
+      "opposite": "If incentives kept full potency indefinitely, then a one-time bonus would motivate forever, whereas in practice the dose must keep rising just to hold the same effect.",
+      "plainly": "Every reward wears off. The first bonus thrills you, the tenth barely registers, exactly like a painkiller you build up a tolerance to, so you keep needing a bigger dose just to feel the same thing."
     },
     {
       "id": "c016",
@@ -554,7 +569,8 @@
       "relation": "",
       "whereItFails": "Glacial flow follows deterministic ice rheology, but habits are subject to sudden conscious intervention that has no glaciological analogue, so the slow-flow picture misses how abruptly a human can choose to change.",
       "whereElse": "The same creep-then-calve dynamic appears in reputation change, in language drift, and in the slow build then sudden release of geological faults.",
-      "opposite": "If habits changed only gradually and never calved, then no one would ever break a habit overnight, whereas sudden dramatic breaks are exactly what the calving image predicts and life confirms."
+      "opposite": "If habits changed only gradually and never calved, then no one would ever break a habit overnight, whereas sudden dramatic breaks are exactly what the calving image predicts and life confirms.",
+      "plainly": "Glaciers look frozen but creep along slowly, then suddenly a huge chunk breaks off. Habits are the same: nothing seems to change for ages, then one day a big piece of your behaviour just snaps into place or falls away."
     },
     {
       "id": "c017",
@@ -588,7 +604,8 @@
       "relation": "substrate language : creole :: legacy constraint : accreted system",
       "whereItFails": "Creoles form under specific contact conditions with native speakers, but software has no equivalent generational transmission, so the linguistic mechanism is only loosely parallel to code accretion.",
       "whereElse": "The same layered-accretion appears in English legal language, in city street plans, and in the human genome's junk and relics.",
-      "opposite": "If legacy systems could be cleaned to a pure design, then any creole could be reverted to its parent languages, whereas both are irreversible fusions whose history cannot be unmixed."
+      "opposite": "If legacy systems could be cleaned to a pure design, then any creole could be reverted to its parent languages, whereas both are irreversible fusions whose history cannot be unmixed.",
+      "plainly": "When two languages collide, people mash them into a new one that can never be cleanly separated again. Old software is the same mash of past decisions, which is exactly why you can't just tidy it up."
     },
     {
       "id": "c018",
@@ -622,7 +639,8 @@
       "relation": "",
       "whereItFails": "A watershed is a fixed physical catchment, but attention has no stable topography and can be redirected by will, so the hydrological map freezes something that is actually fluid and contested.",
       "whereElse": "The same catchment-and-flow abstraction appears in economic spillovers, in electrical drainage basins, and in how rumours pool in a community.",
-      "opposite": "If attention had no watershed and spread evenly everywhere, then focus would be impossible, whereas the whole point is that it concentrates and drains along channels you rarely notice."
+      "opposite": "If attention had no watershed and spread evenly everywhere, then focus would be impossible, whereas the whole point is that it concentrates and drains along channels you rarely notice.",
+      "plainly": "Rain doesn't fall evenly, it collects into streams and rivers along hidden channels in the land. Your attention drains the same way, pooling toward certain things and away from others, mostly without you noticing."
     },
     {
       "id": "c019",
@@ -657,7 +675,8 @@
       "relation": "strength : brittleness :: toughness : yielding",
       "whereItFails": "The strength-toughness trade-off is quantifiable in materials but only metaphorical in teams, where a group can sometimes be both robust and adaptive in ways a single alloy cannot.",
       "whereElse": "The same hard-versus-tough tension appears in immune specificity versus breadth, in legal rules versus standards, and in rigid versus agile processes.",
-      "opposite": "If a team could maximise both strength and toughness at once, then materials science would not force the choice, yet the deep result is that resisting deformation and absorbing energy pull against each other."
+      "opposite": "If a team could maximise both strength and toughness at once, then materials science would not force the choice, yet the deep result is that resisting deformation and absorbing energy pull against each other.",
+      "plainly": "You can make something hard so it resists bending, or tough so it absorbs a blow, but not both at once. Teams face the same choice, and most pick rigid and strong right up until a shock they can't absorb snaps them."
     },
     {
       "id": "c020",
@@ -692,7 +711,8 @@
       "relation": "",
       "whereItFails": "Birds minimise variance through behaviour shaped by selection, but they do not compute a covariance matrix, so the Markowitz parallel describes the outcome without any shared mechanism of optimisation.",
       "whereElse": "The same don't-put-all-eggs logic appears in crop diversification, in bet-hedging bacteria, and in venture-fund portfolio construction.",
-      "opposite": "If concentration beat diversification, then the bird that stored all its seeds in one cache would out-survive the spreaders, whereas variance reduction is exactly what keeps a lineage alive through bad years."
+      "opposite": "If concentration beat diversification, then the bird that stored all its seeds in one cache would out-survive the spreaders, whereas variance reduction is exactly what keeps a lineage alive through bad years.",
+      "plainly": "Don't keep all your seeds in one hiding spot. Birds spread their food stores so one raided cache doesn't starve them, which is the same simple wisdom behind not putting all your savings in one investment."
     },
     {
       "id": "c021",
@@ -726,7 +746,8 @@
       "relation": "hypha : nutrient signal :: dealer : price signal",
       "whereItFails": "Fungal networks route resources by local chemical gradients with no forward-looking valuation, so calling it pricing imports intentionality and expectation that mycelium simply does not have.",
       "whereElse": "The same distributed-allocation-without-a-centre appears in ant foraging, in neural resource routing, and in electricity spot markets.",
-      "opposite": "If a central planner allocated better than the distributed fungal network, then top-down credit allocation would beat markets, whereas the decentralised gradient-follower is strikingly efficient without any overseer."
+      "opposite": "If a central planner allocated better than the distributed fungal network, then top-down credit allocation would beat markets, whereas the decentralised gradient-follower is strikingly efficient without any overseer.",
+      "plainly": "Underground fungal networks shuttle food to where it's needed and starve the dead ends, with no boss in charge. It's a strikingly good way of pricing what's worth investing in, better than a lot of actual markets."
     },
     {
       "id": "c022",
@@ -760,7 +781,8 @@
       "relation": "",
       "whereItFails": "Acoustic resonance has a fixed natural frequency set by physics, but a meeting's dysfunction is driven by changeable social dynamics, so the resonance metaphor implies an inevitability that facilitation can actually break.",
       "whereElse": "The same driven-at-resonance failure appears in bridges collapsing under marching feet, in economic boom-bust cycles, and in feedback howl in a PA system.",
-      "opposite": "If meetings had no resonant failure mode, then any cadence would work equally well, whereas certain rhythms reliably amplify the same dysfunction until it dominates the room."
+      "opposite": "If meetings had no resonant failure mode, then any cadence would work equally well, whereas certain rhythms reliably amplify the same dysfunction until it dominates the room.",
+      "plainly": "Push a swing at just the wrong rhythm and it builds into a wild wobble. Meetings have a rhythm too, and certain cadences keep amplifying the same dysfunction until it takes over the whole room."
     },
     {
       "id": "c023",
@@ -795,7 +817,8 @@
       "relation": "",
       "whereItFails": "Map projections have provably quantified distortion, but financial models distort in unknown and shifting ways, so the reassuring precision of cartographic error does not carry across to markets.",
       "whereElse": "The same no-faithful-projection truth appears in statistical dimensionality reduction, in translation between languages, and in any lossy compression.",
-      "opposite": "If a model could represent reality with no distortion anywhere, then a perfect flat map of the globe would exist, whereas the theorem is that every projection must lie somewhere to tell the truth elsewhere."
+      "opposite": "If a model could represent reality with no distortion anywhere, then a perfect flat map of the globe would exist, whereas the theorem is that every projection must lie somewhere to tell the truth elsewhere.",
+      "plainly": "You can't flatten a globe onto paper without stretching something, so every map lies somewhere. Every financial model is a flat map of a round world too, and the danger is forgetting which part of it is the lie."
     },
     {
       "id": "c024",
@@ -829,7 +852,8 @@
       "relation": "transaction : write-ahead log :: daily experience : sleep replay",
       "whereItFails": "A write-ahead log replays deterministically to durable storage, but memory consolidation is reconstructive and edits the record, so the database metaphor misses that sleep changes what it saves.",
       "whereElse": "The same log-then-commit pattern appears in accounting journals, in event-sourced systems, and in a court transcribing before ruling.",
-      "opposite": "If sleep were faithful replay rather than reconstruction, then memories would be perfect recordings, whereas the reconstructive nature of consolidation is exactly why we misremember and reinterpret."
+      "opposite": "If sleep were faithful replay rather than reconstruction, then memories would be perfect recordings, whereas the reconstructive nature of consolidation is exactly why we misremember and reinterpret.",
+      "plainly": "Before saving your work, good software jots down what it's about to do, then does it, so nothing is lost in a crash. Sleep does the same: it replays the day and writes it properly into long-term memory."
     },
     {
       "id": "c025",
@@ -863,7 +887,8 @@
       "relation": "edict : prior contract :: new API version : existing client",
       "whereItFails": "Roman jurists preserved obligations through interpretation by human judges, but software compatibility is enforced by unforgiving machines, so the flexible juristic mechanism differs sharply from a rigid version contract.",
       "whereElse": "The same don't-break-existing-promises principle appears in constitutional law, in biological backwards compatibility of the genetic code, and in file-format versioning.",
-      "opposite": "If breaking changes carried no cost, then every new API version could ignore old clients, whereas the entire discipline exists because a broken promise silently shatters everything downstream."
+      "opposite": "If breaking changes carried no cost, then every new API version could ignore old clients, whereas the entire discipline exists because a broken promise silently shatters everything downstream.",
+      "plainly": "Roman lawyers worked out how to add new rules without breaking promises already made to citizens. That's exactly the discipline behind updating software without breaking the apps that already depend on it."
     },
     {
       "id": "c026",
@@ -897,7 +922,8 @@
       "relation": "",
       "whereItFails": "Surface-to-volume scaling is exact for solids, but a company's coordination surface does not scale as a clean geometric power law, so the biological ratio is suggestive rather than predictive.",
       "whereElse": "The same scaling-limits-size law appears in why cells stay small, in why large animals need circulatory systems, and in why megacities need transit.",
-      "opposite": "If coordination cost stayed constant with size, then the largest company would be the nimblest, whereas the surface-to-volume argument says communication overhead grows until it throttles the giant."
+      "opposite": "If coordination cost stayed constant with size, then the largest company would be the nimblest, whereas the surface-to-volume argument says communication overhead grows until it throttles the giant.",
+      "plainly": "A small animal is mostly surface, so it heats and cools fast; a big one is mostly inside, so it's sluggish. Big companies are sluggish for the same reason: too much inside to coordinate relative to their edges."
     },
     {
       "id": "c027",
@@ -931,7 +957,8 @@
       "relation": "tannin polymerisation : wine ageing :: repeated proof : reputation",
       "whereItFails": "Tannins age by defined chemistry on a physical timescale, but reputation is revised by fickle observers, so the smooth maturation curve has no guaranteed social counterpart.",
       "whereElse": "The same slow-integration-beats-early-flash pattern appears in scientific credibility, in vintage brand equity, and in the maturing of friendships.",
-      "opposite": "If reputation aged like fruit and decayed fast, then early hype would be the whole game, whereas the claim is that durable standing integrates slowly and outlasts the sweet first impression."
+      "opposite": "If reputation aged like fruit and decayed fast, then early hype would be the whole game, whereas the claim is that durable standing integrates slowly and outlasts the sweet first impression.",
+      "plainly": "Good wine gets better slowly as harsh young flavours soften into something smooth. Reputation works like that too: it isn't the sweet quick hit of hype, it's the slow maturing that outlasts everyone's first impression."
     },
     {
       "id": "c028",
@@ -965,7 +992,8 @@
       "relation": "parity bit : message :: repeated rite : cultural memory",
       "whereItFails": "Error-correcting codes have provable recovery guarantees, but rituals transmit meaning that mutates over generations, so the coding metaphor overstates how faithfully culture is actually restored.",
       "whereElse": "The same redundancy-preserves-signal principle appears in DNA repair, in oral epic formulae, and in legal precedent.",
-      "opposite": "If ritual added no redundancy, then culture would be transmitted once and lost to the first disruption, whereas repetition is exactly what lets a tradition self-correct across noisy generations."
+      "opposite": "If ritual added no redundancy, then culture would be transmitted once and lost to the first disruption, whereas repetition is exactly what lets a tradition self-correct across noisy generations.",
+      "plainly": "To send a message through noise, you add a bit of repetition so mistakes can be caught and fixed. Religious rituals do that for culture: the repetition is what lets a tradition survive being passed down imperfectly."
     },
     {
       "id": "c029",
@@ -1000,7 +1028,8 @@
       "relation": "",
       "whereItFails": "Lotka-Volterra dynamics assume closed populations with fixed rates, but hiring is shaped by anticipatory managers who see the cycle coming, adding foresight the predator-prey equations lack.",
       "whereElse": "The same delayed-oscillation pattern appears in commodity hog cycles, in inventory bullwhips, and in academic field booms.",
-      "opposite": "If hiring tracked demand instantly, then there would be no boom-bust, whereas the lagged coupling between openings and talent is exactly what makes both overshoot like lynx and hare."
+      "opposite": "If hiring tracked demand instantly, then there would be no boom-bust, whereas the lagged coupling between openings and talent is exactly what makes both overshoot like lynx and hare.",
+      "plainly": "Predators boom when prey is plentiful, then crash when they've eaten too many, and the cycle repeats with a lag. Tech hiring booms and busts follow the very same delayed swing between too many jobs and too few."
     },
     {
       "id": "c030",
@@ -1034,7 +1063,8 @@
       "relation": "",
       "whereItFails": "Fragmentation explains loss of unified experience but not the full absence of pain response, so treating anaesthesia purely as fragmentation understates the genuine shutdown of some pathways.",
       "whereElse": "The same integration-is-the-thing view appears in split-brain studies, in distributed-system consensus failure, and in dissociation.",
-      "opposite": "If consciousness were simply switched off rather than fragmented, then anaesthesia and dreamless sleep would be identical, whereas the evidence points to broken integration rather than a clean power cut."
+      "opposite": "If consciousness were simply switched off rather than fragmented, then anaesthesia and dreamless sleep would be identical, whereas the evidence points to broken integration rather than a clean power cut.",
+      "plainly": "Anaesthetic doesn't flick your mind off like a light switch. It shatters the teamwork between parts of your brain, so the pieces are still there but can no longer talk to each other to make one experience."
     },
     {
       "id": "c031",
@@ -1068,7 +1098,8 @@
       "relation": "",
       "whereItFails": "The loom and the computer share a genuine ancestral line through punch cards, but the loom had no notion of conditional logic, so the shared lineage should not be mistaken for shared computational power.",
       "whereElse": "The same punch-card lineage runs through the Jacquard loom, Hollerith's census machines, and early mainframe programs.",
-      "opposite": "If programmability had a single sudden origin rather than a woven ancestry, then computing would owe nothing to textiles, whereas the stored pattern of instructions descends literally from punching flowers into cards."
+      "opposite": "If programmability had a single sudden origin rather than a woven ancestry, then computing would owe nothing to textiles, whereas the stored pattern of instructions descends literally from punching flowers into cards.",
+      "plainly": "The machine that wove patterned cloth by feeding it punched cards was, without anyone realising, the first computer program. Modern code is a direct descendant of a loom punching flowers into paper."
     },
     {
       "id": "c032",
@@ -1102,7 +1133,8 @@
       "relation": "",
       "whereItFails": "Coastline fractality is a geometric fact, but project scope is bounded by human decisions that can stop the subdivision, so estimates do not truly diverge to infinity the way a fractal measurement does.",
       "whereElse": "The same measurement-depends-on-ruler effect appears in river-length disputes, in fractal cost of detail in graphics, and in the endless subdivision of a task list.",
-      "opposite": "If a project had a single true length independent of how finely you looked, then estimation would converge, whereas the coastline paradox says the closer you inspect, the longer it gets."
+      "opposite": "If a project had a single true length independent of how finely you looked, then estimation would converge, whereas the coastline paradox says the closer you inspect, the longer it gets.",
+      "plainly": "Ask how long a coastline is and the answer grows the closer you look, because of all the little wiggles. Asking how long a project will take does the same thing: the finer you break it down, the bigger it gets."
     },
     {
       "id": "c033",
@@ -1137,7 +1169,8 @@
       "relation": "hidden sample : blind taster :: held-out data : validated model",
       "whereItFails": "Blind tasting removes label bias but not the taster's trained priors, so it is a weaker guarantee of honesty than a properly held-out statistical test with no human in the loop.",
       "whereElse": "The same blind-evaluation principle appears in double-blind trials, in Kaggle private leaderboards, and in anonymised grading.",
-      "opposite": "If tasting with the label visible were just as honest, then open backtesting on seen data would be valid, whereas both collapse the moment the evaluator knows the answer in advance."
+      "opposite": "If tasting with the label visible were just as honest, then open backtesting on seen data would be valid, whereas both collapse the moment the evaluator knows the answer in advance.",
+      "plainly": "The only fair test of a wine expert is tasting with the label hidden, so they can't be swayed by the name. Testing a prediction is the same: it only counts if you check it on data it has never seen."
     },
     {
       "id": "c034",
@@ -1172,7 +1205,8 @@
       "relation": "",
       "whereItFails": "Stigmergy coordinates termites through stable pheromone fields, but software teams communicate through language and intent that no termite possesses, so the no-manager picture omits the human layer of explicit coordination.",
       "whereElse": "The same build-through-environmental-traces pattern appears in ant trails, in Wikipedia editing, and in open-source codebases.",
-      "opposite": "If large structures required a central plan, then termite cathedrals could not exist, whereas stigmergy shows sophisticated order emerging with no blueprint and no boss at all."
+      "opposite": "If large structures required a central plan, then termite cathedrals could not exist, whereas stigmergy shows sophisticated order emerging with no blueprint and no boss at all.",
+      "plainly": "Termites build huge, clever mounds with no architect and no boss, just each one reacting to what the others left behind. Good software teams can build big things the same way, coordinating through the work itself."
     },
     {
       "id": "c035",
@@ -1207,7 +1241,8 @@
       "relation": "",
       "whereItFails": "Inoculation theory transfers immune logic to persuasion, but arguments have no equivalent of memory cells with lifelong specificity, so the protective duration is far shorter and vaguer than real immunity.",
       "whereElse": "The same pre-expose-to-a-weak-form principle appears in fire drills, in stress inoculation training, and in red-team security exercises.",
-      "opposite": "If exposure to counterarguments made people more persuadable rather than less, then shielding audiences would strengthen their beliefs, whereas a weak challenge reliably builds resistance to the strong one."
+      "opposite": "If exposure to counterarguments made people more persuadable rather than less, then shielding audiences would strengthen their beliefs, whereas a weak challenge reliably builds resistance to the strong one.",
+      "plainly": "A vaccine is a weak dose of a germ that trains your body to fight the real thing. You can inoculate someone's opinion the same way: show them a mild version of the counterargument and the strong one bounces off."
     },
     {
       "id": "c036",
@@ -1242,7 +1277,8 @@
       "relation": "",
       "whereItFails": "Conservation of energy is exact in physics, but emotions are not literally conserved quantities, so 'you cannot destroy it, only move it' is a powerful frame rather than a measurable law of the mind.",
       "whereElse": "The same displace-rather-than-destroy idea appears in economic externalities, in whack-a-mole risk transfer, and in squeezing a balloon.",
-      "opposite": "If feelings could simply be destroyed rather than displaced, then suppression would work permanently, whereas the claim is that unfelt emotion reappears elsewhere with interest."
+      "opposite": "If feelings could simply be destroyed rather than displaced, then suppression would work permanently, whereas the claim is that unfelt emotion reappears elsewhere with interest.",
+      "plainly": "You can't destroy heat, only move it somewhere else, which is all a fridge really does. Feelings work the same: bottling one up doesn't make it vanish, it just pops up somewhere else, usually worse."
     },
     {
       "id": "c037",
@@ -1276,7 +1312,8 @@
       "relation": "song dialect : fledgling :: accent : child",
       "whereItFails": "Both rely on a critical period for vocal learning, but human accent also encodes deliberate class signalling that birdsong lacks, so the parallel misses the strategic dimension of human speech.",
       "whereElse": "The same critical-period imprinting appears in language acquisition, in imprinting in geese, and in the fixing of musical pitch perception.",
-      "opposite": "If accent were freely rechosen in adulthood, then anyone could shed their origins at will, whereas the critical-period claim is that the window closes and the early pattern largely sticks."
+      "opposite": "If accent were freely rechosen in adulthood, then anyone could shed their origins at will, whereas the critical-period claim is that the window closes and the early pattern largely sticks.",
+      "plainly": "Songbirds pick up a local accent as chicks and can't change it later. People are the same: the accent you learn young marks where you're from and quietly signals your background for the rest of your life."
     },
     {
       "id": "c038",
@@ -1310,7 +1347,8 @@
       "relation": "",
       "whereItFails": "Preferential attachment generates the same power law in rivers and wealth, but rivers have no policy lever, so the shared mathematics hides that wealth concentration is politically alterable in a way geology is not.",
       "whereElse": "The same rich-get-richer dynamic appears in citation networks, in city-size distributions, and in social-media follower counts.",
-      "opposite": "If accumulation were size-independent, then wealth and tributaries would spread evenly, whereas preferential attachment says the big node grabs new links fastest and pulls away."
+      "opposite": "If accumulation were size-independent, then wealth and tributaries would spread evenly, whereas preferential attachment says the big node grabs new links fastest and pulls away.",
+      "plainly": "Water that already has a big channel grabs even more of the next rainfall, so rivers pile up. Money does the same: whoever already has the most is best placed to grab the next bit, so wealth keeps piling onto wealth."
     },
     {
       "id": "c039",
@@ -1345,7 +1383,8 @@
       "relation": "",
       "whereItFails": "The thymus resolves the tolerance paradox biologically, but a society cannot delete intolerant members the way negative selection deletes self-reactive T-cells, so the free-speech parallel has no humane enforcement mechanism.",
       "whereElse": "The same tolerate-almost-everything-except-the-destroyer problem appears in autoimmune disease, in Popper's paradox of tolerance, and in open-platform moderation.",
-      "opposite": "If a system tolerated everything including what attacks tolerance itself, then the immune system would ignore self-attackers, whereas unchecked self-reactivity is precisely what causes fatal autoimmunity."
+      "opposite": "If a system tolerated everything including what attacks tolerance itself, then the immune system would ignore self-attackers, whereas unchecked self-reactivity is precisely what causes fatal autoimmunity.",
+      "plainly": "Your immune system must attack invaders without attacking you, and it learns the difference in a special training camp before release. Free speech faces the same puzzle: tolerate everything except what would destroy tolerance."
     },
     {
       "id": "c040",
@@ -1380,7 +1419,8 @@
       "relation": "dissolved limestone : cave :: lost know-how : institution",
       "whereItFails": "Limestone dissolves by steady chemistry, but institutional knowledge can be deliberately documented and restored, so the invisible-then-collapse image understates how much decay is preventable.",
       "whereElse": "The same hollowing-out-then-collapse pattern appears in muscle atrophy, in coral bleaching, and in the erosion of tacit craft skills.",
-      "opposite": "If knowledge loss announced itself early, then organisations would act in time, whereas the karst analogy warns that the cavern is invisible until the roof suddenly falls in."
+      "opposite": "If knowledge loss announced itself early, then organisations would act in time, whereas the karst analogy warns that the cavern is invisible until the roof suddenly falls in.",
+      "plainly": "Water hollows out limestone caves invisibly for years, then one day the roof caves in. A company's know-how erodes the same silent way as people leave, until suddenly nobody remembers how something crucial is done."
     },
     {
       "id": "c041",
@@ -1414,7 +1454,8 @@
       "relation": "engulfed bacterium : cell :: outsourced function : firm",
       "whereItFails": "Endosymbiosis fused two organisms permanently and irreversibly, but outsourcing contracts are meant to be exited, so the mitochondrial deal is far more binding than any business arrangement it is compared to.",
       "whereElse": "The same absorb-a-specialist pattern appears in chloroplasts, in vertically integrated firms swallowing suppliers, and in platform acquisitions.",
-      "opposite": "If outsourced functions always stayed external and independent, then mitochondria would still be free-living bacteria, whereas the deepest outsourcing deals end in total, unbreakable integration."
+      "opposite": "If outsourced functions always stayed external and independent, then mitochondria would still be free-living bacteria, whereas the deepest outsourcing deals end in total, unbreakable integration.",
+      "plainly": "The powerhouses inside your cells were once free-living bacteria that got permanently absorbed, the most successful outsourcing deal ever. A company handing off a job is doing a much looser, breakable version of the same move."
     },
     {
       "id": "c042",
@@ -1448,7 +1489,8 @@
       "relation": "",
       "whereItFails": "The Nyquist limit is exact for band-limited signals, but memory does not sample experience at a fixed rate, so aliasing is a suggestive metaphor rather than a literal account of misremembering.",
       "whereElse": "The same under-sampling-creates-artefacts law appears in strobe-lit wagon wheels, in digital audio, and in polling that misses a fast-moving electorate.",
-      "opposite": "If memory sampled experience densely enough, then recall would be faithful, whereas sparse sampling is exactly why you reconstruct a smooth false story from too few real frames."
+      "opposite": "If memory sampled experience densely enough, then recall would be faithful, whereas sparse sampling is exactly why you reconstruct a smooth false story from too few real frames.",
+      "plainly": "Film a spinning wheel and it can look like it's going backwards, because the camera samples too slowly. Your memory samples your life too sparsely as well, which is exactly why you confidently misremember your own past."
     },
     {
       "id": "c043",
@@ -1482,7 +1524,8 @@
       "relation": "polyp : reef substrate :: platform : ecosystem of sellers",
       "whereItFails": "Coral mutualism is genetically hard-wired, but platform relationships are contractual and can flip to extraction overnight, so the reef metaphor understates how quickly a platform can turn on its tenants.",
       "whereElse": "The same host-provides-habitat pattern appears in gut microbiomes, in shopping-mall anchor tenants, and in app-store economies.",
-      "opposite": "If a platform could thrive after driving out its sellers, then a bleached reef would still teem with life, whereas the exodus that follows extraction is exactly what leaves a lifeless white skeleton."
+      "opposite": "If a platform could thrive after driving out its sellers, then a bleached reef would still teem with life, whereas the exodus that follows extraction is exactly what leaves a lifeless white skeleton.",
+      "plainly": "A coral reef is a landlord giving tiny creatures a home, and when it dies everyone flees, leaving a bleached ghost town. Online platforms are landlords too, and when they squeeze their sellers, the same exodus follows."
     },
     {
       "id": "c044",
@@ -1517,7 +1560,8 @@
       "relation": "",
       "whereItFails": "Gödel's theorem is about sufficiently powerful formal systems, but a regulatory regime is not a closed axiomatic system, so the incompleteness result is an analogy about gaps rather than a strict proof about law.",
       "whereElse": "The same no-complete-consistent-system limit appears in the halting problem, in tax-code loophole arms races, and in attempts at a complete legal contract.",
-      "opposite": "If a finite rulebook could cover every case without gap or contradiction, then Gödel would be wrong, whereas any system rich enough to be useful is guaranteed to leave some true situation unprovable."
+      "opposite": "If a finite rulebook could cover every case without gap or contradiction, then Gödel would be wrong, whereas any system rich enough to be useful is guaranteed to leave some true situation unprovable.",
+      "plainly": "Any rulebook powerful enough to be useful will always have a situation it can't cleanly decide. That's a proven fact about logic, and it's why your compliance rules will always have a gap someone can wriggle through."
     },
     {
       "id": "c045",
@@ -1551,7 +1595,8 @@
       "relation": "",
       "whereItFails": "Tidal locking follows gravitational dissipation on astronomical timescales, but partners can consciously choose to keep surprising each other, so the deterministic locking has a human escape hatch physics lacks.",
       "whereElse": "The same energy-dissipation-to-synchrony pattern appears in metronomes coupling on a table, in fireflies flashing together, and in circadian entrainment.",
-      "opposite": "If relationships never locked, then long partners would keep rotating fresh faces forever, whereas the dissipative pull toward showing one another a single steady face is exactly what tidal locking predicts."
+      "opposite": "If relationships never locked, then long partners would keep rotating fresh faces forever, whereas the dissipative pull toward showing one another a single steady face is exactly what tidal locking predicts.",
+      "plainly": "The Moon shows Earth the same face forever because their pull slowly locked them together. Long partnerships tend to do the same: over years the pull settles each person into showing the other one steady, familiar side."
     },
     {
       "id": "c046",
@@ -1586,7 +1631,8 @@
       "relation": "wild culture : starter :: shared norms : community",
       "whereItFails": "A sourdough starter is a stable microbial ecology, but a community is reflective and can rewrite its own norms, so the culinary metaphor misses that human cultures argue about what they are becoming.",
       "whereElse": "The same cultivate-a-living-culture pattern appears in gut flora, in soil microbiomes, and in the seeding of a scientific research group.",
-      "opposite": "If community could be installed from a recipe rather than grown, then any group could be bought off the shelf, whereas a starter proves that some living systems must be fed and inherited, never manufactured."
+      "opposite": "If community could be installed from a recipe rather than grown, then any group could be bought off the shelf, whereas a starter proves that some living systems must be fed and inherited, never manufactured.",
+      "plainly": "A sourdough starter is a living colony you feed and inherit, not a recipe you can buy off a shelf. A real community is the same: you can't just install it, you have to grow and feed it over time."
     },
     {
       "id": "c047",
@@ -1621,7 +1667,8 @@
       "relation": "",
       "whereItFails": "Ballistic error growth is governed by fixed physics, but strategic plans can be re-aimed mid-flight, so the fire-and-forget image ignores the feedback corrections that real planning allows.",
       "whereElse": "The same small-angle-huge-miss effect appears in navigation dead reckoning, in compounding forecast error, and in the butterfly effect.",
-      "opposite": "If long-horizon errors stayed small, then a tiny initial misalignment would not matter, whereas the ballistic claim is that a fraction of a degree at launch becomes miles of miss at the target."
+      "opposite": "If long-horizon errors stayed small, then a tiny initial misalignment would not matter, whereas the ballistic claim is that a fraction of a degree at launch becomes miles of miss at the target.",
+      "plainly": "Aim a rifle a fraction off and up close you barely miss, but at a mile you're way off. A five-year plan is the same: a tiny error in your assumptions now becomes an enormous miss by the time you get there."
     },
     {
       "id": "c048",
@@ -1656,7 +1703,8 @@
       "relation": "",
       "whereItFails": "Extremophiles thrive by tolerating brutal conditions, but a niche career still needs a market of some kind, so 'thrive where competition is impossible' fails where absence of rivals also means absence of demand.",
       "whereElse": "The same avoid-competition-not-seek-comfort logic appears in blue-ocean strategy, in desert-adapted plants, and in deep-sea vent ecosystems.",
-      "opposite": "If organisms and careers thrived where conditions are easiest, then the crowded temperate zone would hold the winners, whereas extremophiles show that the empty harsh frontier can be the safest place to dominate."
+      "opposite": "If organisms and careers thrived where conditions are easiest, then the crowded temperate zone would hold the winners, whereas extremophiles show that the empty harsh frontier can be the safest place to dominate.",
+      "plainly": "Some microbes thrive in boiling acid where nothing else can survive, not because it's comfy but because there's no competition. A niche career works the same: the harsh, empty corner can be the safest place to win."
     },
     {
       "id": "c049",
@@ -1691,7 +1739,8 @@
       "relation": "",
       "whereItFails": "Perceptual habituation transfers neatly to standards decay, but organisations can install external audits that noses cannot, so the sensory metaphor understates how the drift can be deliberately arrested.",
       "whereElse": "The same stop-noticing-the-constant pattern appears in tuning out background noise, in banner blindness, and in ignoring a chronic ache.",
-      "opposite": "If we kept noticing constant stimuli forever, then no one would ever adapt to a smell or a bad process, whereas habituation is exactly why the slowly worsening becomes invisible."
+      "opposite": "If we kept noticing constant stimuli forever, then no one would ever adapt to a smell or a bad process, whereas habituation is exactly why the slowly worsening becomes invisible.",
+      "plainly": "You stop smelling your own home because your nose tunes out anything constant. Teams stop noticing their own bad habits the same way, so a slowly worsening process becomes invisible right up until it's a disaster."
     },
     {
       "id": "c050",
@@ -1725,7 +1774,8 @@
       "relation": "",
       "whereItFails": "Shedding works for hull surfaces with no memory, but human relationships remember and resent being shed, so the slough-it-off strategy that protects ships can wound people the analogy ignores.",
       "whereElse": "The same renew-the-surface-rather-than-scrub principle appears in skin cell turnover, in snake moulting, and in non-stick coatings.",
-      "opposite": "If boundaries were maintained by constant effortful scrubbing rather than by shedding, then the most disciplined person would have the healthiest limits, whereas the antifouling lesson is that a self-renewing surface beats endless cleaning."
+      "opposite": "If boundaries were maintained by constant effortful scrubbing rather than by shedding, then the most disciplined person would have the healthiest limits, whereas the antifouling lesson is that a self-renewing surface beats endless cleaning.",
+      "plainly": "Ships don't stay clean by being scrubbed, their special surfaces constantly shed so nothing can cling. Healthy personal boundaries work the same way: not endless effortful policing, but a surface that quietly sheds what shouldn't stick."
     },
     {
       "id": "c051",
@@ -1759,7 +1809,8 @@
       "relation": "",
       "whereItFails": "Phase transitions have a sharp critical point in physics, but culture has no single order parameter, so the abrupt-flip image can overstate how cleanly a team's culture actually tips.",
       "whereElse": "The same sudden-collective-flip appears in water boiling, in magnetisation, and in the tipping of public opinion.",
-      "opposite": "If culture changed only gradually and never tipped, then organisations could adjust it by small continuous nudges, whereas the phase-transition claim is that nothing visible happens until it all happens at once."
+      "opposite": "If culture changed only gradually and never tipped, then organisations could adjust it by small continuous nudges, whereas the phase-transition claim is that nothing visible happens until it all happens at once.",
+      "plainly": "Water doesn't warm up smoothly into steam, it sits there then suddenly boils all at once at a magic temperature. A team's culture changes the same way: nothing visible for ages, then it all flips in a rush."
     },
     {
       "id": "c052",
@@ -1794,7 +1845,8 @@
       "relation": "",
       "whereItFails": "Falconry accepts a bird that can physically leave, but employees are bound by economic need the falcon does not feel, so the pure voluntarism of the hawk overstates how free most workers really are.",
       "whereElse": "The same manage-the-free-agent stance appears in open-source maintainership, in freelance networks, and in keeping volunteers.",
-      "opposite": "If talent could be owned rather than merely attracted, then the tightest contract would hold the best people, whereas the falconer's craft insists that the one who can always leave is the only one worth keeping."
+      "opposite": "If talent could be owned rather than merely attracted, then the tightest contract would hold the best people, whereas the falconer's craft insists that the one who can always leave is the only one worth keeping.",
+      "plainly": "A falconer's bird can always fly away and never come back, and accepting that is the whole craft. Managing talented people is the same: they can always leave, and the skill is in making them want to stay."
     },
     {
       "id": "c053",
@@ -1829,7 +1881,8 @@
       "relation": "midden : archaeologist :: data exhaust : analyst",
       "whereItFails": "Middens are inert and honestly accumulated, but data exhaust can be gamed and surveilled in real time, so reconstructing a person from their traces raises consent problems ancient rubbish never did.",
       "whereElse": "The same reconstruct-from-byproducts pattern appears in ice-core climate records, in browser histories, and in forensic trace evidence.",
-      "opposite": "If people left no unintended residue, then neither civilisations nor users could be reconstructed after the fact, whereas the midden shows that what you discard without thinking tells the truest story."
+      "opposite": "If people left no unintended residue, then neither civilisations nor users could be reconstructed after the fact, whereas the midden shows that what you discard without thinking tells the truest story.",
+      "plainly": "Archaeologists rebuild whole civilisations from their rubbish heaps. The trail of data you leave behind without thinking, your clicks and leftovers, lets anyone reconstruct you the very same way."
     },
     {
       "id": "c054",
@@ -1864,7 +1917,8 @@
       "relation": "",
       "whereItFails": "Both bullwhip and phantom jams share the same delayed-feedback wave equation, but drivers can see brake lights while supply chains often cannot see downstream demand, so the observability differs sharply.",
       "whereElse": "The same amplified-oscillation-from-delay appears in thermostat hunting, in predator-prey cycles, and in feedback in audio systems.",
-      "opposite": "If reactions were instantaneous and perfectly informed, then neither jams nor bullwhips would form, whereas the shared claim is that lagged over-correction alone manufactures the wave from nothing."
+      "opposite": "If reactions were instantaneous and perfectly informed, then neither jams nor bullwhips would form, whereas the shared claim is that lagged over-correction alone manufactures the wave from nothing.",
+      "plainly": "One driver tapping the brakes can freeze a motorway miles back with no crash anywhere. A shop over-ordering ripples the same way up a supply chain, and both are literally the same wave of overreaction travelling backwards."
     },
     {
       "id": "c055",
@@ -1899,7 +1953,8 @@
       "relation": "",
       "whereItFails": "Black-Scholes is literally the heat equation, but heat has no arbitrageurs exploiting the model, so the physical diffusion is exact while the financial version is undermined by the very traders who use it.",
       "whereElse": "The same diffusion PDE governs heat spreading in a rod, ink dispersing in water, and pollutants spreading in groundwater.",
-      "opposite": "If option prices did not diffuse like heat, then the elegant closed-form solution would not exist, whereas the deep fact is that money uncertainty and thermal energy obey one identical equation."
+      "opposite": "If option prices did not diffuse like heat, then the elegant closed-form solution would not exist, whereas the deep fact is that money uncertainty and thermal energy obey one identical equation.",
+      "plainly": "The famous formula that prices stock options was solved by pretending money uncertainty spreads out exactly like heat spreading through a metal bar. They turned out to be the very same piece of maths."
     },
     {
       "id": "c056",
@@ -1934,7 +1989,8 @@
       "relation": "",
       "whereItFails": "May's stability criterion applies to both banks and food webs, but banks can be bailed out by a central authority that ecosystems have no equivalent of, so the shared instability maths omits the rescuer.",
       "whereElse": "The same complexity-breeds-fragility result appears in power grids, in ecological food webs, and in tightly coupled software systems.",
-      "opposite": "If more connections always meant more stability, then the densest bank network and richest food web would be safest, whereas May proved that beyond a threshold, added coupling guarantees collapse."
+      "opposite": "If more connections always meant more stability, then the densest bank network and richest food web would be safest, whereas May proved that beyond a threshold, added coupling guarantees collapse.",
+      "plainly": "A banking network and a food web collapse by the same rule: past a certain point, adding more connections doesn't make them safer, it makes them fragile. An economist and an ecologist found the identical equation."
     },
     {
       "id": "slime-mold-network-design",
@@ -1969,7 +2025,8 @@
       "relation": "",
       "whereItFails": "Slime mould and rail planners converge on the same optimal graph, but the mould has no budget or land-rights constraints, so the biological solution ignores the political frictions that dominate real network design.",
       "whereElse": "The same efficient-network-emergence appears in leaf venation, in ant trail networks, and in road systems that grow without central planning.",
-      "opposite": "If optimal networks required top-down design, then a brainless organism could not match human engineers, whereas Physarum reproduces the Tokyo rail map showing the optimum emerges from local rules alone."
+      "opposite": "If optimal networks required top-down design, then a brainless organism could not match human engineers, whereas Physarum reproduces the Tokyo rail map showing the optimum emerges from local rules alone.",
+      "plainly": "A brainless blob of slime, just by spreading toward food and pulling back from dead ends, rebuilt the map of Tokyo's rail network almost exactly. The best design emerged with no designer, from dead-simple local rules."
     },
     {
       "id": "costly-signals-honesty",
@@ -2004,7 +2061,8 @@
       "relation": "",
       "whereItFails": "The handicap principle and Spence signalling share one equilibrium equation, but a peacock cannot fake its tail while humans routinely game credentials, so the honesty guarantee is weaker in the labour market.",
       "whereElse": "The same costly-to-fake-so-honest logic appears in gazelle stotting, in luxury advertising, and in venture-backed cash burn as a commitment signal.",
-      "opposite": "If cheap signals were as believable as costly ones, then a claimed quality would be as trusted as a proven one, whereas the equilibrium holds only because the signal hurts the low-quality sender more."
+      "opposite": "If cheap signals were as believable as costly ones, then a claimed quality would be as trusted as a proven one, whereas the equilibrium holds only because the signal hurts the low-quality sender more.",
+      "plainly": "A peacock's ridiculous tail is believable precisely because a weak bird couldn't afford to grow one. A hard degree works the same way: it's trusted because faking it would cost more than it's worth to a weak candidate."
     },
     {
       "id": "free-energy-brain-physics",
@@ -2039,7 +2097,8 @@
       "relation": "",
       "whereItFails": "Predictive coding and statistical mechanics share the free-energy functional, but the brain actively resists equilibrium while a gas relaxes toward it, so the mapping inverts the direction of the dynamics.",
       "whereElse": "The same free-energy-minimisation appears in thermodynamic systems, in variational inference in machine learning, and in self-organising physical systems.",
-      "opposite": "If the brain minimised surprise by seeking a dark silent room, then free-energy minimisation would predict inertia, whereas organisms resolve the paradox by acting to make their predictions come true."
+      "opposite": "If the brain minimised surprise by seeking a dark silent room, then free-energy minimisation would predict inertia, whereas organisms resolve the paradox by acting to make their predictions come true.",
+      "plainly": "Your brain stays alive by constantly guessing what happens next and cutting down on surprises, and it turns out that's the same maths that describes a gas settling down as it cools. Mind and physics share one equation."
     },
     {
       "id": "kalman-missile-market-glacier",
@@ -2079,7 +2138,8 @@
       "relation": "",
       "whereItFails": "The Kalman filter optimally tracks all three under Gaussian, linear assumptions, but markets have fat tails and reflexive agents, so the optimality guarantee quietly fails exactly where finance is most dangerous.",
       "whereElse": "The same predict-then-correct estimator appears in GPS navigation, in weather assimilation, and in robot localisation.",
-      "opposite": "If the underlying noise were not roughly Gaussian, then one filter could not track missiles, markets and glaciers alike, whereas the filter's power comes precisely from that shared statistical structure."
+      "opposite": "If the underlying noise were not roughly Gaussian, then one filter could not track missiles, markets and glaciers alike, whereas the filter's power comes precisely from that shared statistical structure.",
+      "plainly": "There's one clever recipe for tracking something you can't see perfectly: guess, measure, blend, repeat. The exact same recipe steers missiles, follows markets and watches glaciers, just fed with different numbers."
     },
     {
       "id": "critical-state-faults-banks-careers",
@@ -2119,7 +2179,8 @@
       "relation": "",
       "whereItFails": "Self-organised criticality describes all three, but careers involve deliberate choices that can defuse the buildup, so the sandpile inevitability overstates how unavoidable a personal or financial avalanche is.",
       "whereElse": "The same buildup-to-a-critical-slope appears in sandpile avalanches, in forest fires, and in earthquake magnitude distributions.",
-      "opposite": "If stress dissipated smoothly rather than in scale-free avalanches, then breakdowns would be small and predictable, whereas criticality says the same slope produces both tiny slips and total collapse."
+      "opposite": "If stress dissipated smoothly rather than in scale-free avalanches, then breakdowns would be small and predictable, whereas criticality says the same slope produces both tiny slips and total collapse.",
+      "plainly": "Pile sand and it stays put until one grain triggers an avalanche of any size. Earthquake faults, banks and even careers build up stress the same way, so the same little push can cause a tiny slip or a total collapse."
     },
     {
       "id": "crease-parity-dna-scaffold-route",
@@ -2157,7 +2218,8 @@
       "relation": "",
       "whereItFails": "Both paper and DNA obey the same flat-foldability parity law, but DNA folds in a wet thermal bath with base-pairing constraints paper lacks, so the shared combinatorics omits the chemistry that actually drives folding.",
       "whereElse": "The same fold-and-parity mathematics appears in protein folding, in map-folding puzzles, and in self-assembling deployable structures.",
-      "opposite": "If crease patterns folded regardless of parity, then any pattern would lie flat, whereas Maekawa's law shows the difference between mountain and valley folds at each vertex must be exactly two."
+      "opposite": "If crease patterns folded regardless of parity, then any pattern would lie flat, whereas Maekawa's law shows the difference between mountain and valley folds at each vertex must be exactly two.",
+      "plainly": "There's a hidden counting rule that decides whether a folded pattern will lie flat. It governs both origami paper and the way strands of DNA are folded into tiny machines, which obey the exact same law."
     },
     {
       "id": "hexagon-law-grain-froth-cornea",
@@ -2197,7 +2259,8 @@
       "relation": "",
       "whereItFails": "Metal grains, soap froths and cornea cells all relax toward hexagons, but living cells are actively regulated while froth is purely physical, so the shared geometry hides very different driving forces.",
       "whereElse": "The same six-sided-equilibrium appears in honeycomb, in basalt columns, and in dried-mud cracking.",
-      "opposite": "If surface tension did not drive area minimisation, then cells and bubbles would tile randomly, whereas von Neumann's law forces the same hexagonal average wherever boundaries minimise their length."
+      "opposite": "If surface tension did not drive area minimisation, then cells and bubbles would tile randomly, whereas von Neumann's law forces the same hexagonal average wherever boundaries minimise their length.",
+      "plainly": "Squeeze a load of bubbles, or metal grains, or cells in your eye together and they all drift toward six-sided shapes. It's the same rule everywhere: packing things to take up the least edge keeps making hexagons."
     },
     {
       "id": "phase-problem-crystal-star-voice-lens",
@@ -2239,7 +2302,8 @@
       "relation": "",
       "whereItFails": "Crystallography, imaging and audio all lose the phase and must reconstruct it, but a crystal's constraints differ from a voice's, so a phase-retrieval trick that works in optics can fail badly in acoustics.",
       "whereElse": "The same lost-phase problem appears in X-ray diffraction, in astronomical speckle imaging, and in reconstructing a signal from its spectrogram magnitude.",
-      "opposite": "If intensity measurements preserved phase, then reconstruction would be trivial, whereas the deep difficulty everywhere is that detectors record only magnitude and throw the crucial phase away."
+      "opposite": "If intensity measurements preserved phase, then reconstruction would be trivial, whereas the deep difficulty everywhere is that detectors record only magnitude and throw the crucial phase away.",
+      "plainly": "When you photograph a crystal, a star, or record a voice, you capture how strong the signal is but lose a hidden timing detail called phase, and you have to reconstruct it. The same missing piece haunts all of them."
     }
   ]
 }
