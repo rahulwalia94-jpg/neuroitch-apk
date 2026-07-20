@@ -70,17 +70,7 @@ def validate(cards):
     return errs
 
 
-def call_claude(prompt):
-    body = {
-        "model": MODEL,
-        "max_tokens": 8000,
-        "tools": [{
-            "type": "web_search_20250305",
-            "name": "web_search",
-            "max_uses": 6,
-        }],
-        "messages": [{"role": "user", "content": prompt}],
-    }
+def _post(body):
     req = urllib.request.Request(
         "https://api.anthropic.com/v1/messages",
         data=json.dumps(body).encode(),
@@ -91,7 +81,30 @@ def call_claude(prompt):
         },
     )
     with urllib.request.urlopen(req, timeout=600) as r:
-        res = json.load(r)
+        return json.load(r)
+
+
+def call_claude(prompt):
+    messages = [{"role": "user", "content": prompt}]
+    body = {
+        "model": MODEL,
+        "max_tokens": 16000,
+        "tools": [{
+            "type": "web_search_20250305",
+            "name": "web_search",
+            "max_uses": 6,
+        }],
+        "messages": messages,
+    }
+    res = _post(body)
+    # Server-side web search can pause the turn; continue until finished.
+    rounds = 0
+    while res.get("stop_reason") == "pause_turn" and rounds < 6:
+        messages.append({"role": "assistant", "content": res["content"]})
+        body["messages"] = messages
+        res = _post(body)
+        rounds += 1
+    print("stop_reason:", res.get("stop_reason"), "| rounds:", rounds + 1)
     texts = [b.get("text", "") for b in res.get("content", [])
              if b.get("type") == "text"]
     return "\n".join(texts)
@@ -115,7 +128,7 @@ def extract_json_array(text):
     for c in reversed(candidates):
         try:
             arr = json.loads(c)
-            if isinstance(arr, list) and len(arr) == 3:
+            if isinstance(arr, list) and 1 <= len(arr) <= 5:
                 return arr
         except json.JSONDecodeError:
             continue
@@ -148,7 +161,7 @@ adjacent ones): {', '.join(seeds)}.
 Style reference - the two most recent cards:
 {sample}
 
-Write EXACTLY 3 new cards as a JSON array. Schema per card (all 17 keys
+Write 3 new cards as a JSON array. Schema per card (all 17 keys
 required): id (new unique kebab-case slug), fieldA, fieldB (different, short
 field names), title, hook (one arresting sentence), connection (200-400 chars:
 why the fields are the same underneath), mechanism (200-400 chars: the actual
@@ -166,13 +179,16 @@ HARD CONSTRAINTS:
 
 Reply with ONLY the JSON array in a ```json fenced block."""
 
-    for attempt in range(2):
+    last_err = "?"
+    for attempt in range(3):
         text = call_claude(prompt if attempt == 0 else prompt +
                            "\n\nYour previous output failed validation: " +
                            last_err + "\nFix and resend the full array.")
         new_cards = extract_json_array(text)
         if new_cards is None:
-            last_err = "output was not a parseable JSON array of 3 cards"
+            last_err = "output was not a parseable JSON array of cards"
+            print("PARSE FAIL. response head:", text[:600].replace("\n", " "),
+                  file=sys.stderr)
             continue
         errs = validate(cards + new_cards)
         if not errs:
