@@ -1686,6 +1686,40 @@
       ],
       "difficulty": 3,
       "readMinutes": 6
+    },
+    {
+      "id": "kalman-missile-market-glacier",
+      "fieldA": "Ballistics",
+      "fieldB": "Financial Models",
+      "fields": [
+        "Ballistics",
+        "Financial Models",
+        "Glaciology"
+      ],
+      "title": "Missiles, markets and glaciers are tracked by the same filter",
+      "hook": "A 1960 equation built to steer an interceptor onto a moving warhead is now hedging stock portfolios and reconstructing what's happening under a mile of Antarctic ice.",
+      "connection": "A radar tracking an incoming missile, a trader estimating a hedge ratio no one can see directly, and a glaciologist inferring the friction under a kilometer of ice all face one problem: noisy, incomplete measurements plus an imperfect model of how the hidden state evolves, with the true state never directly observable.",
+      "mechanism": "The Kalman filter recursively predicts the next state from a dynamical model, then corrects that prediction with a new noisy measurement, weighting each by its own covariance so the less-certain source contributes less. <cite index=\"34-1,34-2\">The Kalman filter is a least-squares stepwise parameter estimation technique, originally developed in the early 60's to predict rocket trajectories from a set of their past positions</cite>, and <cite index=\"34-4\">gives, mathematically speaking, exactly the same result as a standard least squares minimization</cite>. Finance uses the identical state-space machinery to update <cite index=\"47-1\">hedging ratios between assets in a statistical arbitrage pairs trade</cite> and, via the ensemble Kalman filter, <cite index=\"45-9,45-10\">estimate volatility and interest rate, where the price of call and put options is used in the observation and forecasting step</cite>. Glaciology runs the same ensemble variant to <cite index=\"24-7,24-10\">assimilate transient observations of surface elevation and velocities, estimating both the state of the model and the basal conditions, with simultaneous inversion of basal friction and topography</cite>.",
+      "mentalModel": "When you can never see the thing you care about directly — only noisy hints of it, plus a shaky theory of how it changes — don't trust either source alone. Weight your model's prediction and your latest measurement by how much you actually trust each one, and let the blend update itself as new evidence arrives.",
+      "realWorld": "The same filter architecture that lets a missile-defense radar reconstruct a warhead's true trajectory from jittery returns lets a quant desk reconstruct a 'true' price trend from noisy ticks, and lets a glaciology team reconstruct unmeasurable basal friction from a handful of satellite elevation passes — three teams who have likely never spoken to each other, running the same fifteen lines of linear algebra.",
+      "historical": "<cite index=\"29-1,29-4,29-5\">In 1960, mathematician Rudolf E. Kalman developed a new method for estimating the true state of a system when measurements contain uncertainty, at a time when engineers were searching for better ways to guide aircraft, missiles, and spacecraft</cite>; the technique migrated into econometric state-space forecasting through the 1980s and into glaciology only much more recently as satellite altimetry and ensemble variants made it tractable for nonlinear ice-flow models.",
+      "business": "Firms running statistical-arbitrage desks and agencies funding satellite ice-sheet monitoring are, functionally, buying the same product: a recursive estimator that turns an expensive stream of imperfect sensor data into a continuously-updated best guess, which is why 'more frequent, noisier measurements plus a decent dynamical model' often beats 'fewer, more expensive precise ones' in both domains.",
+      "personal": "You're running an informal Kalman filter whenever you take a friend's noisy, biased account of an event and blend it with your own prior sense of who they are — trusting the update in proportion to how reliable you judge the source to be, not accepting or dismissing it outright.",
+      "openQuestion": "The classical filter assumes linear dynamics and Gaussian noise, conditions violated by fat-tailed market crashes and by highly nonlinear ice-sheet collapse alike — both fields have moved to particle filters and ensemble variants to cope, so it's an open question whether the deep isomorphism survives once the linear-Gaussian scaffolding is stripped away, or whether it was doing more of the explanatory work than it appears.",
+      "reading": [
+        "A New Approach to Linear Filtering and Prediction Problems - Rudolf E. Kalman (Journal of Basic Engineering, 1960)",
+        "Forecasting, Structural Time Series Models and the Kalman Filter - Andrew C. Harvey",
+        "Assimilation of surface observations in a transient marine ice sheet model using an ensemble Kalman filter - Fabien Gillet-Chaulet (The Cryosphere, 2020)"
+      ],
+      "tags": [
+        "ballistics",
+        "financial models",
+        "glaciology",
+        "estimation-theory",
+        "bayesian-inference"
+      ],
+      "difficulty": 3,
+      "readMinutes": 6
     }
   ]
 }
