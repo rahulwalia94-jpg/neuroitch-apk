@@ -15,14 +15,42 @@ MODEL = os.environ.get("MODEL", "claude-sonnet-5")
 API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
 DOMAINS = [
-    "mathematics", "biology", "economics", "linguistics", "materials science",
-    "music theory", "ecology", "cryptography", "anthropology", "thermodynamics",
-    "law", "epidemiology", "game theory", "neuroscience", "logistics",
-    "mycology", "queueing theory", "origami mathematics", "auction theory",
-    "immunology", "fluid dynamics", "archaeology", "control theory",
-    "fermentation", "cartography", "information theory", "urban planning",
-    "evolutionary biology", "signal processing", "sociology", "metallurgy",
-    "chess theory", "supply chains", "astronomy", "typography", "seismology",
+    # formal + natural sciences
+    "mathematics", "probability", "statistics", "topology", "number theory",
+    "physics", "thermodynamics", "quantum mechanics", "fluid dynamics",
+    "chemistry", "biology", "evolutionary biology", "genetics", "ecology",
+    "immunology", "neuroscience", "epidemiology", "mycology", "botany",
+    "astronomy", "geology", "seismology", "materials science", "metallurgy",
+    # mind + behaviour
+    "psychology", "cognitive science", "behavioural economics", "psychoanalysis",
+    "developmental psychology", "social psychology", "decision theory",
+    "perception", "memory", "emotion", "habit formation",
+    # society + humanities
+    "anthropology", "sociology", "economics", "game theory", "auction theory",
+    "law", "political theory", "history", "archaeology", "linguistics",
+    "philosophy", "ethics", "logic", "rhetoric", "theology", "religion",
+    # myth, story, culture
+    "mythology", "folklore", "comparative mythology", "storytelling",
+    "narrative theory", "poetry", "drama", "comedy", "fairy tales",
+    "ritual", "symbolism", "iconography",
+    # arts + craft
+    "music theory", "harmony", "rhythm", "architecture", "typography",
+    "painting", "sculpture", "dance", "cinema", "photography", "cooking",
+    "fermentation", "textiles", "ceramics", "woodworking", "perfumery",
+    "origami mathematics", "calligraphy",
+    # systems + making
+    "engineering", "control theory", "information theory", "signal processing",
+    "cryptography", "queueing theory", "logistics", "supply chains",
+    "urban planning", "cartography", "networks", "computer science",
+    "systems thinking", "cybernetics",
+    # human skills + practices
+    "negotiation", "leadership", "teaching", "coaching", "improvisation",
+    "chess theory", "poker strategy", "martial arts", "sailing", "gardening",
+    "medicine", "surgery", "nursing", "firefighting", "diplomacy",
+    "journalism", "advertising", "sales", "accounting", "meditation",
+    # ways of thinking (methods, not just subjects)
+    "first-principles reasoning", "analogy", "abstraction", "forecasting",
+    "experimentation", "modelling", "heuristics", "counterfactual reasoning",
 ]
 
 LENS_FAMILY = {
@@ -116,14 +144,6 @@ def validate_lens(cards):
         ex = c.get("example", "")
         if not isinstance(ex, str) or len(ex) <= 80:
             errs.append(f"{c.get('id')}: example too short")
-        pe = c.get("personaExamples", {})
-        if not isinstance(pe, dict):
-            errs.append(f"{c.get('id')}: personaExamples not a map")
-        else:
-            for pid in PERSONA_BRIEF:
-                v = pe.get(pid, "")
-                if not isinstance(v, str) or len(v) <= 60:
-                    errs.append(f"{c.get('id')}: persona {pid} too short")
         if "relation" not in c or not isinstance(c["relation"], str):
             errs.append(f"{c.get('id')}: relation missing")
         lens_counts[lens] = lens_counts.get(lens, 0) + 1
@@ -238,8 +258,12 @@ fields are the same thing underneath and backs it with the actual mechanism.
 Use web search to research REAL published cross-disciplinary mechanisms,
 isomorphisms or shared mathematics. Verify the mechanism is accurate and cite
 2-3 real books or papers (format "Title - Author") in the reading list. Never
-invent citations. Start your exploration from some of these seed domains (or
-adjacent ones): {', '.join(seeds)}.
+invent citations. Start your exploration from some of these seed domains (or adjacent ones):
+{', '.join(seeds)}. Roam the WHOLE of human knowledge, not just the sciences:
+psychology, mythology, storytelling, ritual, philosophy, the arts, crafts,
+and human skills (negotiation, sailing, cooking, chess) are as welcome as
+physics. Mix a FIELD with a SKILL, or a myth with a mechanism, not only two
+academic subjects.
 
 Style reference - the two most recent cards:
 {sample}
@@ -348,6 +372,12 @@ ladder instruction above does not apply. All other schema rules apply."""
             if len(new_cards) == 3 and not (widths[0] == 2 and widths[1] == 3
                                             and widths[2] >= 4):
                 errs.append(f"batch must be one 2-field, one 3-field, one 4+-field card (got widths {widths})")
+            fams = {LENS_FAMILY.get(c.get("lens")) for c in new_cards}
+            if len(new_cards) == 3 and not (
+                    fams & {"dialectical", "generative"}):
+                errs.append("batch must include at least one dialectical or "
+                            "generative lens (irony/paradox/contrast/"
+                            "counterfactual/thought_experiment/first_principles)")
         if not errs:
             pack["cards"] = cards + new_cards
             with open(CARDS_PATH, "w", encoding="utf-8") as f:

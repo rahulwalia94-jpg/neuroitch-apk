@@ -1,0 +1,29 @@
+name: diversify-cards
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - scripts/diversify_cards.py
+jobs:
+  diversify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Inject diverse-lens cards
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python scripts/diversify_cards.py
+      - name: Commit and push
+        run: |
+          git config user.name "neuroitch-cards-bot"
+          git config user.email "cards-bot@neuroitch.local"
+          git add cards.json
+          git diff --cached --quiet && { echo "nothing to commit"; exit 0; }
+          git commit -m "Diversify: inject irony/paradox/dialectic/counterfactual cards across humanities and skills"
+          git pull --rebase origin main
+          git push origin main
