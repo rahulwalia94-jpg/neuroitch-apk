@@ -37,6 +37,15 @@ LENS_FAMILY = {
     "first_principles": "generative",
 }
 
+PERSONA_BRIEF = {
+    "student": "a university student juggling lectures, deadlines and part-time work",
+    "founder": "a startup founder worrying about runway, hiring and product",
+    "healthcare": "a nurse or doctor working long clinical shifts on a busy ward",
+    "teacher": "a schoolteacher managing a classroom, marking and lesson plans",
+    "parent": "a busy parent running a household and raising young children",
+    "engineer": "a software engineer shipping code, on-call rotas and reviews",
+}
+
 FIELDS_17 = [
     "id", "fieldA", "fieldB", "title", "hook", "connection", "mechanism",
     "mentalModel", "realWorld", "historical", "business", "personal",
@@ -107,6 +116,14 @@ def validate_lens(cards):
         ex = c.get("example", "")
         if not isinstance(ex, str) or len(ex) <= 80:
             errs.append(f"{c.get('id')}: example too short")
+        pe = c.get("personaExamples", {})
+        if not isinstance(pe, dict):
+            errs.append(f"{c.get('id')}: personaExamples not a map")
+        else:
+            for pid in PERSONA_BRIEF:
+                v = pe.get(pid, "")
+                if not isinstance(v, str) or len(v) <= 60:
+                    errs.append(f"{c.get('id')}: persona {pid} too short")
         if "relation" not in c or not isinstance(c["relation"], str):
             errs.append(f"{c.get('id')}: relation missing")
         lens_counts[lens] = lens_counts.get(lens, 0) + 1
@@ -278,6 +295,9 @@ cognitive move it performs, not just its subject.
   like "Picture..." or "Imagine..." or "You...". Not another abstract
   statement, an actual little story from ordinary life (a shop, a commute,
   a family, a team) that demonstrates the pattern in action.
+- "personaExamples": REQUIRED object. For EACH of these keys, write the same
+  idea's example rewritten for that person's world (each over 60 chars, a
+  concrete scene from their life): student (a university student juggling lectures, deadlines and part-time work); founder (a startup founder worrying about runway, hiring and product); healthcare (a nurse or doctor working long clinical shifts on a busy ward); teacher (a schoolteacher managing a classroom, marking and lesson plans); parent (a busy parent running a household and raising young children); engineer (a software engineer shipping code, on-call rotas and reviews)
 Prefer these under-used lenses this run if you can do so honestly: {rare}.
 Avoid over-using these already-common lenses: {near_cap}.
 
