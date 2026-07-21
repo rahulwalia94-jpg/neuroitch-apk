@@ -104,6 +104,9 @@ def validate_lens(cards):
             v = c.get(k, "")
             if not isinstance(v, str) or len(v) <= 60:
                 errs.append(f"{c.get('id')}: {k} too short")
+        ex = c.get("example", "")
+        if not isinstance(ex, str) or len(ex) <= 80:
+            errs.append(f"{c.get('id')}: example too short")
         if "relation" not in c or not isinstance(c["relation"], str):
             errs.append(f"{c.get('id')}: relation missing")
         lens_counts[lens] = lens_counts.get(lens, 0) + 1
@@ -270,6 +273,11 @@ cognitive move it performs, not just its subject.
   a relatable comparison. This is the first thing the reader meets, so make
   it land. Do not restate the title; explain the idea like you would to a
   friend who knows nothing about either field.
+- "example": REQUIRED, over 80 chars. A concrete everyday scene the reader
+  can picture themselves in that makes the idea click. Start with something
+  like "Picture..." or "Imagine..." or "You...". Not another abstract
+  statement, an actual little story from ordinary life (a shop, a commute,
+  a family, a team) that demonstrates the pattern in action.
 Prefer these under-used lenses this run if you can do so honestly: {rare}.
 Avoid over-using these already-common lenses: {near_cap}.
 
