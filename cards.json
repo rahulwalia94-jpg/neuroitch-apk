@@ -3278,6 +3278,56 @@
         "parent": "Working out a car-share and pickup schedule so no two families whose kids fight are ever put in the same car at the same time is a graph-coloring problem, the same structure a Sudoku puzzle uses to keep repeating digits out of the same row.",
         "engineer": "Assigning shared build-server slots so no two CI jobs that touch the same database table ever run at once is you writing, by hand, the same register-allocation logic a compiler uses to decide which program variables can safely share one physical CPU register."
       }
+    },
+    {
+      "id": "two-level-switch-protest-finance-quantum",
+      "fieldA": "Protest",
+      "fieldB": "Quantum Physics",
+      "fields": [
+        "Protest",
+        "Personal Finance",
+        "Quantum Physics"
+      ],
+      "title": "Protest crowds, your money decisions and a laser all flip through the same quantum switch",
+      "hook": "The equations physicists use to describe an atom sitting undecided between two energy states, waiting to be triggered into a flip, are the same equations now used to describe you hesitating over an investment — and a crowd hesitating over a revolution.",
+      "connection": "A protest crowd and an indecisive saver are both described with the identical non-classical mathematics built for quantum systems: Hilbert-space superposition, order-dependent measurement, and population inversion. Neither a citizen's willingness to protest nor a saver's risk appetite holds one fixed value beforehand — both stay undetermined until a triggering 'measurement' or coherent signal collapses them into a single, often abrupt, action.",
+      "mechanism": "Quantum cognition treats a financial bet as a superposed mental state with no fixed value until asked, which is why real-money gambles violate Savage's sure-thing principle the way <cite index=\"26-1,26-2,26-3\">a two-stage win/loss/unknown $200-versus-$100 gamble experiment</cite> demonstrated. Khrennikov's social-laser theory reuses the literal laser-physics description of <cite index=\"37-19,37-20,37-21\">cascade dynamics leading to exponential amplification of coherent social actions, the basic feature of laser's functioning</cite>, so a population of quiet grievance-holders reaches <cite index=\"38-1,38-2\">population inversion when the human gain medium is exposed to the flow of coherent news</cite> before flipping into synchronized protest via stimulated emission.",
+      "mentalModel": "Whenever you meet a system holding two mutually exclusive latent states — invest or hold, stay home or march — that has no fixed probability until something forces the question, stop asking 'what is the underlying rate' and start asking 'what is the coherence threshold that flips the whole population at once.'",
+      "realWorld": "A financial adviser watching a client agonize over selling in a crash is watching the same undetermined, order-sensitive state that a sociologist watching a crowd of silently furious citizens is watching the night before a spark — in both cases nothing is 'decided' in any classical sense until the triggering event actually happens.",
+      "historical": "Ellsberg's 1961 ambiguity paradox and Kuran's 1989 work on unanticipated revolutions were both treated for decades as separate curiosities of irrational behavior, until quantum cognition researchers in the 2000s and Andrei Khrennikov's social-laser program in the 2010s independently reached for the same Hilbert-space formalism to explain why both financial choices and mass uprisings refuse to obey classical, fixed-probability models.",
+      "business": "A hedge fund pricing tail risk on client redemptions and a PR firm gauging whether a public backlash will 'go critical' are both, whether they know it or not, trying to estimate how close a population is to the same coherence threshold — the one where individually contained hesitation flips into a single synchronized action.",
+      "personal": "Next time you catch yourself flip-flopping over whether to sell an investment depending on whether you 'already know' the market fell or not, remember you're exhibiting the identical order-sensitive, undecided-until-asked behavior that a crowd of frustrated neighbors shows in the hours before they either stay quiet forever or all pour into the street on the same night.",
+      "openQuestion": "Researchers openly admit the puzzle isn't solved: <cite index=\"19-9,19-10\">quantum-inspired models can successfully reproduce experimental data in psychology and decision science, however a fundamental question remains unresolved: why should quantum probability appear in decision making at all</cite> — and nobody yet knows whether that's a deep truth about minds and societies or just a convenient borrowed notation.",
+      "reading": [
+        "Quantum Models of Cognition and Decision - Jerome R. Busemeyer and Peter D. Bruza",
+        "Social Laser: Application of Quantum Information and Field Theories to Modeling of Social Processes - Andrei Khrennikov",
+        "Quantum Mechanics and Violations of the Sure-Thing Principle: The Use of Probability Interference and Other Concepts - Andrei Khrennikov and Emmanuel Haven"
+      ],
+      "tags": [
+        "protest",
+        "personal finance",
+        "quantum physics",
+        "quantum cognition",
+        "decision theory"
+      ],
+      "difficulty": 3,
+      "readMinutes": 6,
+      "lens": "isomorphism",
+      "lensFamily": "structural",
+      "relation": "two-level atom awaiting a trigger : population inversion & stimulated emission :: undecided investor : superposed bet collapsing on measurement :: quiet grievance-holder : synchronized protest triggered by coherent news",
+      "whereItFails": "Quantum superposition in physics is a verified physical fact about particles with no hidden prior value, while 'quantum-like' models of minds and crowds are explicitly operational analogies — no physicist claims neurons or protesters are literally in coherent quantum states, only that the same algebra predicts their statistics.",
+      "whereElse": "The same order-sensitive, threshold-flip pattern shows up in bistable visual perception switching between two readings of an ambiguous image, in jury deliberations where question order changes verdicts, and in bank runs where individually rational depositors tip en masse into panic.",
+      "opposite": "If human choices and crowds obeyed classical, order-independent, always-fixed-prior probabilities, framing effects, the disjunction effect, and Kuran's 'unanticipated revolutions' would never have been paradoxical — they'd be routine predictions of ordinary statistics, and nobody would have needed to borrow physics to explain them.",
+      "plainly": "Imagine a coin that genuinely has no side until the moment you look at it — not hidden, just undecided. Your gut feeling about whether to sell a stock works like that coin, and so does a crowd's mood the night before it either stays calm forever or suddenly erupts: nothing is fixed in advance, it only becomes real the instant it's tested.",
+      "example": "Picture a woman staring at her brokerage app during a market dip: she can't say whether she'd sell if told the market recovered tomorrow, or whether she'd sell if told it kept falling, and asking her the two questions in a different order gives different answers — the exact same shifting, order-sensitive indecision that a city's frustrated residents show for months, before one particular night's news finally pushes enough of them over the edge at once and the street fills with marchers.",
+      "personaExamples": {
+        "student": "You can't decide whether to switch your part-time savings into a riskier fund, and your answer literally depends on whether your friend mentions the news headline before or after you check your balance — the same order-flip a protest movement shows before a single triggering rumor sends everyone into the square together.",
+        "founder": "You're unsure whether to raise a bridge round now or wait, and your gut answer changes depending on whether your co-founder frames the runway numbers as 'months left' or 'cash burned' first — a founder's board deck is quietly running the same order-sensitive math as a crowd deciding whether to walk out.",
+        "healthcare": "A nurse deciding whether to challenge a risky order changes her answer depending on whether she's told the patient's vitals first or the doctor's seniority first — the identical order-dependent flip that determines whether a ward staff collectively raises an alarm or stays silent.",
+        "teacher": "Ask a staffroom whether they'd support a pay strike after telling them the union's turnout numbers, versus telling them the headteacher's response first, and you get different answers — the same coherence-threshold behavior that decides whether frustrated teachers quietly grumble or organize a walkout.",
+        "parent": "You waver over whether to switch your child's college fund into safer bonds, and asking yourself 'what if the market recovers' before or after 'what if it doesn't' changes your answer — the same undecided, order-sensitive hesitation a neighborhood shows before a single spark decides whether it stays quiet or organizes.",
+        "engineer": "You're unsure whether to roll back a risky deploy, and your decision flips depending on whether you check the error dashboard before or after hearing your manager's opinion — the same order-dependent, undetermined-until-measured state that governs whether a frustrated engineering org quietly complains or collectively walks into HR's office."
+      }
     }
   ]
 }
