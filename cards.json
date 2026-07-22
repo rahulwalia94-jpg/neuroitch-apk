@@ -3428,6 +3428,56 @@
         "parent": "You see a neighborhood safety app's 'reported incidents' counter rise and feel compelled to add your own report, exactly as a family's savings app showing 'others withdrew today' nudges you to withdraw too — both counters recruit the behavior they display, unlike the bathroom scale that never changes your weight by showing it.",
         "engineer": "You watch an internal dashboard's 'active outage reports' counter climb and file your own ticket faster because of it, the same way a public status page showing rising complaints can trigger a stock dip that spooks more customers into complaining — neither behaves like a build server's pass/fail log, which reports history without ever recruiting more of it."
       }
+    },
+    {
+      "id": "sure-thing-crowd-quantum-probability",
+      "fieldA": "Protest",
+      "fieldB": "Personal Finance",
+      "fields": [
+        "Protest",
+        "Personal Finance",
+        "Quantum Physics"
+      ],
+      "title": "Protest, personal finance and quantum physics all fail the same sure-thing test",
+      "hook": "A gambler who'd take a bet if told she won and take it if told she lost will still refuse the same bet when the outcome is hidden — and the only math that has ever correctly predicted that refusal was built for photons.",
+      "connection": "A gambler weighing a bet, a citizen weighing whether to join a march, and a photon passing through two slits all break the same rule of classical logic: probabilities that should simply add up instead interfere, shifting with the order and context of the question. Quantum probability theory, built for particles, turns out to be the literal calculus needed to fit real human choices and real crowds, not a loose analogy borrowed for flavor.",
+      "mechanism": "Classical probability demands P(A)=P(A|B)P(B)+P(A|¬B)P(¬B), but Tversky and Shafir found people violate exactly this: <cite index=\"6-1,6-2\">Savage's sure-thing principle states that if some option x is preferred given some other event A occurs, and if option x is preferred given this event A does not occur, then x should be preferred even when the outcome of A is unknown</cite>, yet <cite index=\"6-3,6-4,6-5,6-6\">Tversky and Shafir claim that this basic principle is frequently violated in two-step gambles</cite>. Khrennikov's quantum-like models patch the gap with the same missing term physics uses for light through two slits: <cite index=\"3-3,3-7\">we offer the quantum-like (QL) representation of the Shafir–Tversky statistical effect... the law of total probability is violated for the experimental data</cite>, quantified by a genuine <cite index=\"3-16\">coefficient of interference</cite>. His Social Laser theory extends the identical open-quantum-system formalism to crowds: <cite index=\"11-3,11-4\">individuals are exposed to intensive, resonant information streams... elevating their motivational or mental states... When a critical mass of individuals reaches an excited mental state, society enters a preparatory phase for large-scale collective behavior</cite> — population inversion, not persuasion, is what tips a crowd, exactly as pumping tips atoms into stimulated emission.",
+      "mentalModel": "Before assuming a decision or a crowd obeys classical add-up-the-odds logic, ask whether the two possible resolving contexts are 'compatible' — can you learn one without disturbing your view of the other — because whenever they aren't, an interference term appears and no amount of averaging the separate cases will predict the combined one.",
+      "realWorld": "A pollster who asks 'will you vote' before 'will you protest' can get a reliably different answer than one who asks the questions in reverse order, on the very same population, on the very same day — the same order-dependence that shows up when a lab asks a subject to bet on a coin before or after telling them the first flip's result.",
+      "historical": "Tversky and Shafir documented the disjunction effect in two-stage gambles in 1992, showing Savage's sure-thing principle failing in ordinary people's heads; Khrennikov began importing the Hilbert-space formalism built to handle non-commuting quantum measurements into cognitive psychology in the mid-2000s, and by the 2010s had extended the same machinery, together with Haven, into models of political protest waves and financial markets under the label of quantum-like modeling and the social laser.",
+      "business": "A wealth manager who frames the same portfolio choice as 'sell now, given the market drops' versus 'sell now, given the market doesn't drop' versus 'sell now, outcome unknown' can get three different decisions from the identical client, because the uncertain framing collapses two incompatible mental contexts into one and the resulting interference term, not any new information, moves the answer.",
+      "personal": "The next time you can't decide whether to lock in a financial loss or show up to a protest, notice that your hesitation isn't indecision about facts — it's you holding two incompatible mental frames in superposition, and the moment someone forces you to resolve one context (an ultimatum, a deadline, a friend already walking out the door) is the moment the 'wavefunction' of your own intention collapses into a single choice.",
+      "openQuestion": "It remains contested among cognitive scientists whether these quantum-like models capture a genuine structural fact about how minds and crowds process incompatible contexts, or whether they are simply flexible curve-fits with enough free interference parameters to match any data that classical Markov or belief-revision models could eventually fit too.",
+      "reading": [
+        "The Disjunction Effect in Choice under Uncertainty - Amos Tversky and Eldar Shafir",
+        "Quantum Models of Cognition and Decision - Jerome R. Busemeyer and Peter D. Bruza",
+        "Social Laser: Application of Quantum Information and Field Theories to Modeling of Social Processes - Andrei Khrennikov"
+      ],
+      "tags": [
+        "protest",
+        "personal finance",
+        "quantum physics",
+        "quantum cognition",
+        "interference effects"
+      ],
+      "difficulty": 3,
+      "readMinutes": 6,
+      "lens": "dialectic",
+      "lensFamily": "dialectical",
+      "relation": "photon : passes through both slits and interferes with itself :: gambler : holds both bet outcomes unresolved and interferes with their own choice :: citizen : holds 'join' and 'stay home' unresolved until a pumped crowd collapses it",
+      "whereItFails": "Quantum-like models are phenomenological fits using an interference parameter tuned to the data, not derived from any literal quantum process in neurons or crowds, so the same disjunction-effect data can sometimes also be reproduced by classical Markov or categorization models without invoking Hilbert spaces at all.",
+      "whereElse": "The same order-dependence shows up in survey question-ordering effects on political polls, in jury verdicts shifting with the sequence evidence is presented, and in medical diagnoses changing depending on which test a doctor happens to run first.",
+      "opposite": "If human decisions and crowds obeyed classical probability strictly, the order in which you asked someone about a bet or a protest would never change their answer, a two-stage gamble would always match its combined equivalent, and pollsters would never need to worry about question order at all.",
+      "plainly": "Imagine flipping a coin twice, but if you cover the first flip before showing the second, people's guesses change compared to when they see both flips openly — that's not a fluke of psychology, it's the same mathematics that makes light behave differently depending on whether you're watching which slit it goes through.",
+      "example": "Picture a canvasser knocking on doors: ask 'would you protest if your taxes went up' first and 'would you protest if your taxes stayed flat' second, and you get one answer; swap the order, or ask about the uncertain case directly, and the same person gives a different answer — not because they're lying, but because the two questions are 'incompatible' contexts that interfere with each other exactly the way two paths interfere for a photon.",
+      "personaExamples": {
+        "student": "You'll agree to skip a party if you've already failed the exam, and you'll agree to skip it if you've already passed, but ask you to decide before the grade posts and you go to the party anyway — the same interference gap that makes a gambler flinch at an unresolved bet.",
+        "founder": "You'd cut the marketing budget if the round closes, and you'd cut it if the round falls through, yet while the term sheet is still pending you keep spending on both assumptions at once, holding two incompatible plans in superposition until the wire hits.",
+        "healthcare": "A nurse who'd escalate a patient if the second test comes back positive, and would escalate if it comes back negative, still hesitates while the result is pending — the ambiguous waiting period changes the actual decision, not just the timing of it.",
+        "teacher": "You'd assign extra homework if the class average dropped, and you'd assign it if the average rose, but while report cards are still being calculated you assign something different from either resolved case, because the unresolved context isn't simply the average of the two outcomes.",
+        "parent": "You'd let your teenager go to the demonstration if their exams are already over, and you'd let them go if the exams are still weeks away, yet in the ambiguous week right before results, your answer to the exact same request flips unpredictably.",
+        "engineer": "You'd ship on Friday if the load test passed, and you'd ship on Friday if it failed and you'd already scoped a rollback, but while the test is still queued you make a call that matches neither resolved scenario, because the pending state isn't a weighted average of the two known ones."
+      }
     }
   ]
 }
