@@ -229,9 +229,13 @@ def parse_brew(title):
 
 def main():
     brew = None
+    ask = None
     if len(sys.argv) >= 3 and sys.argv[1] == "--brew":
         brew = parse_brew(sys.argv[2])
         print("BREW REQUEST:", brew)
+    elif len(sys.argv) >= 3 and sys.argv[1] == "--ask":
+        ask = re.sub(r"^\s*ask\s*:\s*", "", sys.argv[2], flags=re.I).strip()
+        print("ASK REQUEST:", ask)
     pack = json.load(open(CARDS_PATH, encoding="utf-8"))
     cards = pack["cards"]
     ids = [c["id"] for c in cards]
@@ -343,6 +347,20 @@ key must contain exactly this set, any sensible order/casing):
 Research the genuine structural mechanism connecting them. The pollination
 ladder instruction above does not apply. All other schema rules apply."""
 
+    if ask:
+        prompt = prompt + f"""
+
+OVERRIDE FOR THIS RUN: a reader asked a QUESTION in their own words:
+"{ask}"
+Write a JSON array containing EXACTLY 1 card that answers it the Neuroitch
+way. Read the question, identify the two or more fields, forces or ideas it
+connects (put them in "fields", and use the two most central as fieldA and
+fieldB), then reveal the genuine structural bridge between them that answers
+the question. The title should speak to the question; the plainly and example
+should make the answer land for a layperson. Pick the lens that best fits the
+reasoning (it need not be isomorphism). Research it with web search if useful.
+The pollination ladder does not apply. All other schema rules apply."""
+
     last_err = "?"
     for attempt in range(3):
         text = call_claude(prompt if attempt == 0 else prompt +
@@ -356,10 +374,10 @@ ladder instruction above does not apply. All other schema rules apply."""
             continue
         errs = validate(cards + new_cards)
         errs += validate_lens(cards + new_cards)
-        if brew:
+        if brew or ask:
             if len(new_cards) != 1:
-                errs.append("brew run must return exactly 1 card")
-            else:
+                errs.append("custom run must return exactly 1 card")
+            elif brew:
                 want = {f.casefold() for f in brew}
                 got = {f.casefold() for f in
                        new_cards[0].get("fields", [new_cards[0].get("fieldA"),

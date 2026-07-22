@@ -4,8 +4,8 @@ on:
     types: [opened]
 jobs:
   brew:
-    # Only the repo owner may brew - protects the API budget on a public repo.
-    if: startsWith(github.event.issue.title, 'brew:') && github.event.issue.user.login == github.repository_owner
+    # Only the repo owner may brew/ask - protects the API budget.
+    if: (startsWith(github.event.issue.title, 'brew:') || startsWith(github.event.issue.title, 'ask:')) && github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,11 +14,16 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - name: Brew requested card
+      - name: Brew or answer the request
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BREW_TITLE: ${{ github.event.issue.title }}
-        run: python scripts/generate_cards.py --brew "$BREW_TITLE"
+        run: |
+          if [[ "$BREW_TITLE" == ask:* ]]; then
+            python scripts/generate_cards.py --ask "$BREW_TITLE"
+          else
+            python scripts/generate_cards.py --brew "$BREW_TITLE"
+          fi
       - name: Commit and push
         env:
           BREW_TITLE: ${{ github.event.issue.title }}
