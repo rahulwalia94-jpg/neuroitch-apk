@@ -220,7 +220,7 @@ def extract_json_array(text):
 
 
 def parse_brew(title):
-    body = re.sub(r"^\s*brew\s*:\s*", "", title, flags=re.I)
+    body = re.sub(r"^\s*(brew|vary)\s*:\s*", "", title, flags=re.I)
     parts = [p.strip() for p in re.split(r"\s*[×+,|]\s*|\s+x\s+", body) if p.strip()]
     if not 2 <= len(parts) <= 8:
         sys.exit(f"brew needs 2-8 fields, got {parts!r}")
@@ -236,6 +236,17 @@ def main():
     elif len(sys.argv) >= 3 and sys.argv[1] == "--ask":
         ask = re.sub(r"^\s*ask\s*:\s*", "", sys.argv[2], flags=re.I).strip()
         print("ASK REQUEST:", ask)
+    vary = None
+    avoid_lens = ""
+    avoid_text = ""
+    if len(sys.argv) >= 3 and sys.argv[1] == "--vary":
+        vary = parse_brew(sys.argv[2])
+        body = os.environ.get("VARY_BODY", "")
+        m = re.search(r"avoid-lens:\s*(\S+)", body)
+        avoid_lens = m.group(1).strip() if m else ""
+        m = re.search(r"avoid:\s*(.+)", body)
+        avoid_text = (m.group(1).strip()[:220]) if m else ""
+        print("VARY REQUEST:", vary, "| avoid lens:", avoid_lens)
     pack = json.load(open(CARDS_PATH, encoding="utf-8"))
     cards = pack["cards"]
     ids = [c["id"] for c in cards]
@@ -361,6 +372,18 @@ should make the answer land for a layperson. Pick the lens that best fits the
 reasoning (it need not be isomorphism). Research it with web search if useful.
 The pollination ladder does not apply. All other schema rules apply."""
 
+    if vary:
+        prompt = prompt + f"""
+
+OVERRIDE FOR THIS RUN: a reader wants ANOTHER ANGLE on the same fields
+{json.dumps(vary)}. They did not like the previous explanation. Write EXACTLY 1
+card braiding these exact fields (its "fields" must be exactly this set), but
+using a genuinely DIFFERENT bridging principle and a DIFFERENT lens than
+before. You MUST NOT use the lens "{avoid_lens}". Do not reuse this mechanism:
+"{avoid_text}". Reach for a different real principle (a different branch of
+maths, a different force, a different mechanism) that also honestly connects
+them. The pollination ladder does not apply. All other schema rules apply."""
+
     last_err = "?"
     for attempt in range(3):
         text = call_claude(prompt if attempt == 0 else prompt +
@@ -374,16 +397,19 @@ The pollination ladder does not apply. All other schema rules apply."""
             continue
         errs = validate(cards + new_cards)
         errs += validate_lens(cards + new_cards)
-        if brew or ask:
+        if brew or ask or vary:
             if len(new_cards) != 1:
                 errs.append("custom run must return exactly 1 card")
-            elif brew:
-                want = {f.casefold() for f in brew}
+            elif brew or vary:
+                target = brew or vary
+                want = {f.casefold() for f in target}
                 got = {f.casefold() for f in
                        new_cards[0].get("fields", [new_cards[0].get("fieldA"),
                                                    new_cards[0].get("fieldB")])}
                 if want != got:
-                    errs.append(f"brew fields mismatch: wanted {sorted(want)} got {sorted(got)}")
+                    errs.append(f"fields mismatch: wanted {sorted(want)} got {sorted(got)}")
+                if vary and new_cards[0].get("lens") == avoid_lens and avoid_lens:
+                    errs.append(f"vary must use a different lens than {avoid_lens}")
         else:
             widths = sorted(len(c.get("fields", [c.get("fieldA"), c.get("fieldB")]))
                             for c in new_cards)

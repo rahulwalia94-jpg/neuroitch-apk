@@ -4,8 +4,8 @@ on:
     types: [opened]
 jobs:
   brew:
-    # Only the repo owner may brew/ask - protects the API budget.
-    if: (startsWith(github.event.issue.title, 'brew:') || startsWith(github.event.issue.title, 'ask:')) && github.event.issue.user.login == github.repository_owner
+    # Only the repo owner may brew/ask/vary - protects the API budget.
+    if: (startsWith(github.event.issue.title, 'brew:') || startsWith(github.event.issue.title, 'ask:') || startsWith(github.event.issue.title, 'vary:')) && github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -14,13 +14,16 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: { python-version: '3.12' }
-      - name: Brew or answer the request
+      - name: Brew, answer, or re-angle the request
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           BREW_TITLE: ${{ github.event.issue.title }}
+          VARY_BODY: ${{ github.event.issue.body }}
         run: |
           if [[ "$BREW_TITLE" == ask:* ]]; then
             python scripts/generate_cards.py --ask "$BREW_TITLE"
+          elif [[ "$BREW_TITLE" == vary:* ]]; then
+            python scripts/generate_cards.py --vary "$BREW_TITLE"
           else
             python scripts/generate_cards.py --brew "$BREW_TITLE"
           fi
