@@ -11,7 +11,7 @@ import sys
 import urllib.request
 
 CARDS_PATH = "cards.json"
-MODEL = os.environ.get("MODEL", "claude-haiku-4-5-20251001")
+MODEL = os.environ.get("MODEL", "claude-sonnet-5")
 API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
 DOMAINS = [
@@ -394,8 +394,13 @@ before. You MUST NOT use the lens "{avoid_lens}". Do not reuse this mechanism:
 maths, a different force, a different mechanism) that also honestly connects
 them. The pollination ladder does not apply. All other schema rules apply."""
 
+    if brew or ask or vary or random_one:
+        prompt = prompt + ("\n\nFor this single card, do NOT include a "
+                           "personaExamples field - omit it entirely. Focus on "
+                           "getting the core card right and complete.")
+
     last_err = "?"
-    for attempt in range(3):
+    for attempt in range(4):
         text = call_claude(prompt if attempt == 0 else prompt +
                            "\n\nYour previous output failed validation: " +
                            last_err + "\nFix and resend the full array.")
