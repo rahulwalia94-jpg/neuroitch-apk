@@ -1,5 +1,5 @@
 {
-  "build": 16,
+  "build": 17,
   "apkUrl": "https://github.com/rahulwalia94-jpg/neuroitch-apk/raw/main/neuroitch-release.apk",
-  "notes": "Tap another angle on any card for a different principle"
+  "notes": "Surprise-me random card; generation on demand only"
 }
