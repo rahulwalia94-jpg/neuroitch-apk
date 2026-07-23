@@ -3684,6 +3684,47 @@
       "opposite": "If escaping a branching structure genuinely required holding the entire map in your head at once, no blind caver, no lost telegraph engineer, and no memoryless piece of software could ever navigate one — yet a rule using only local marks suffices every time, proven identically by an ancient myth and a modern proof.",
       "plainly": "Imagine dragging a piece of chalk through a corn maze, scuffing a mark at every junction, and always picking the path with the fewest scuff marks on it — that childish trick is mathematically guaranteed to get you out, and it's the same trick a mythical princess and a 19th-century mathematician both wrote down.",
       "example": "Picture walking a corn maze with your kids, scraping an X in the dirt at each junction you pass and always taking the least-scuffed path onward; by the time you stumble out the far side, you've just personally executed the algorithm a telegraph engineer formalized in 1882 and a myth had already told, with a ball of golden thread instead of chalk."
+    },
+    {
+      "id": "cirrhosis-healing-same-program-no-off-switch",
+      "fieldA": "Cirrhosis",
+      "fieldB": "Healing",
+      "fields": [
+        "Cirrhosis",
+        "Healing"
+      ],
+      "title": "Cirrhosis isn't the opposite of healing — it's healing with the off-switch stuck",
+      "hook": "A scraped knee and a scarred liver run the identical repair program, cell for cell, signal for signal; the only difference between a clean scar and a lethal one is whether the repair crew ever gets told to stop.",
+      "connection": "Cirrhosis and healing are not two different processes competing for the same tissue — they are the same causal machinery viewed at two different endpoints. Every wound, skin or liver, triggers the identical crew of activated fibroblasts laying down collagen to seal a breach; healing is what happens when that crew disbands on schedule, and cirrhosis is what happens when it never does.",
+      "mechanism": "In both organs, injury activates resident cells into myofibroblasts via TGF-β signaling, and <cite index=\"2-2\">activated myofibroblasts, predominantly derived from the hepatic stellate cells (HSCs), regulate the balance between matrix metalloproteinases and their tissue inhibitors to maintain extracellular matrix homeostasis</cite>. In normal healing this is self-limiting: <cite index=\"32-3,32-4\">the myofibroblasts that initially proliferate and produce ECM are themselves eventually driven into senescence, blocking their further proliferation and converting them into matrix-degrading cells, triggered by a dynamically expressed matricellular protein, CCN1/CYR61</cite>. Cirrhosis is what happens when the injury never stops long enough for that shutoff to fire: <cite index=\"3-1,3-2\">the normal healing process is disrupted — persistent inflammation, tissue necrosis, and infection lead to chronic myofibroblast activation and excessive accumulation of ECM components, which promotes the formation of a permanent fibrotic scar</cite>.",
+      "mentalModel": "Don't ask 'is this system healing or failing' — ask 'does this repair response have a scheduled stop.' Any repair process — cellular, organizational, emotional — that keeps recruiting resources because the triggering damage never actually ends will eventually calcify into the very dysfunction it was mobilized to fix; the danger was never the response, it was the response running with no exit condition.",
+      "realWorld": "Hospitals now treat 'stop the injury, not just the scar' as the frontline strategy for liver disease: antiviral therapy for hepatitis C or abstinence in alcoholic liver disease removes the fibrogenic stimulus, and clinicians then watch fibrosis quietly reverse over months, because the underlying repair program was never broken, it was just never allowed to complete.",
+      "historical": "For decades cirrhosis was taught as a one-way, irreversible endpoint; that dogma has been overturned by direct evidence that the same stellate cells driving the scar can be switched back off. <cite index=\"13-2,13-3\">The traditional view of liver disease as an irreversible process is obsolete and it is now evident that the development of liver fibrosis is a dynamic and potentially bidirectional process — spontaneous resolution of scarring is seen in animal models and in human trials in which the stimuli responsible for chronic or repeated hepatic inflammation is successfully removed.</cite>",
+      "business": "A company running an endless 'crisis mode' — hiring contractors, bolting on process, adding oversight after every incident without ever removing the source of instability — is doing exactly what a cirrhotic liver does: laying down permanent structural reinforcement because nobody ever silences the alarm that keeps calling for repair, until the reinforcement itself is what strangles the organization's function.",
+      "personal": "Grief, guilt and old resentments follow the same rule: a fresh wound needs an active repair response, tears, rumination, retelling the story, and that's healthy exactly as long as it has an end point — the moment you keep reopening the injury (checking their social media, replaying the argument) is the moment healthy repair tips into the emotional equivalent of scar tissue that never stops thickening.",
+      "openQuestion": "It isn't yet known why the same senescence-based shutoff that reliably ends fibrogenesis in a skin wound so often fails to engage in the liver under chronic injury — whether it's a difference in signaling thresholds, tissue-specific senescence programs, or simply that liver injury is rarely a single event the way a cut is.",
+      "reading": [
+        "Reversibility of Liver Fibrosis - Antonella Pellicoro, Prakash Ramachandran, John P. Iredale",
+        "Cellular Senescence Controls Fibrosis in Wound Healing - Joon-Il Jun, Lester F. Lau",
+        "Common and Unique Mechanisms Regulate Fibrosis in Various Fibroproliferative Diseases - Thomas A. Wynn"
+      ],
+      "tags": [
+        "cirrhosis",
+        "healing",
+        "fibrosis",
+        "wound repair",
+        "medicine"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "paradox",
+      "lensFamily": "dialectical",
+      "relation": "acute wound : myofibroblasts self-limit via senescence, healing completes :: cirrhosis : myofibroblasts stay chronically activated, healing never completes",
+      "whereItFails": "Skin can regenerate its lost architecture after scarring resolves, but a cirrhotic liver's nodular regeneration replaces normal lobular structure with permanent architectural distortion even after fibrogenesis stops, so late-stage reversal is structural, not just biochemical, and far harder to achieve.",
+      "whereElse": "The same chronic-repair-becomes-disease pattern shows up in pulmonary fibrosis, atherosclerosis (arterial wall 'healing' that narrows the vessel), keloid scars, and chronic inflammatory arthritis, wherever a repair signal keeps firing after the original damage has already been contained.",
+      "opposite": "If cirrhosis were a genuinely separate disease process from healing rather than healing stuck in a loop, removing the injurious stimulus — quitting alcohol, curing hepatitis — should do nothing to the scar tissue; instead fibrosis regression after stimulus removal is exactly what's observed, confirming the two are one mechanism, not two.",
+      "plainly": "Think of a construction crew called in to patch a pothole: if the road keeps cracking in the same spot every night, the crew never leaves, they just keep pouring more asphalt until the whole street is a solid slab of patched concrete — cirrhosis is your liver's repair crew that was never told the pothole stopped forming.",
+      "example": "Picture someone who drinks heavily for twenty years: each binge damages liver cells, and each time the liver's stellate cells activate to patch the damage with collagen, exactly as skin does after a cut; because the next binge arrives before the last patch job finishes and stands down, the patches never get removed, and years of unstopped patching quietly turns into the rock-hard, scarred liver a doctor eventually calls cirrhosis."
     }
   ]
 }
