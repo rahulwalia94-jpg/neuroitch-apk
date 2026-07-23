@@ -3601,6 +3601,48 @@
       "opposite": "If markets truly required money, written contracts and a central regulator to function, no price could ever emerge among wordless, penniless organisms — yet nectar concentration, cleaner-fish service quality and mycorrhizal nutrient exchange all move with supply and demand exactly as if a regulator were enforcing a deal.",
       "plainly": "A flower can't write a contract and a bee can't sign one, yet the flower still has to offer a 'fair' amount of sugar or the bee will simply fly to a better flower next door — which is the whole trick behind every price you've ever paid, minus the cash register.",
       "example": "Picture a farmers' market with two stalls selling the same peaches: neither seller can force you to buy, there's no referee fining anyone for a bad price, yet the moment one stall's peaches taste better for the same coin, the other stall quietly drops its price to compete — that silent adjustment, driven by nothing but your freedom to walk ten feet away, is the exact mechanism setting the sugar content of nectar in a meadow full of competing flowers."
+    },
+    {
+      "id": "punchline-throw-redirect-not-oppose",
+      "fieldA": "Comedy",
+      "fieldB": "Aikido",
+      "fields": [
+        "Comedy",
+        "Aikido"
+      ],
+      "title": "A punchline and an aikido throw both work by redirecting force, never opposing it",
+      "hook": "A stand-up comic and an aikido master are running the exact same illegal move: neither one ever blocks the thing coming at them — they step inside it, turn it, and let its own momentum finish the job.",
+      "connection": "Comedy and aikido are the same discovery about confrontation: never meet a committed force head-on. A joke's setup and an attacker's strike are both momentum already released; the punchline and the throw don't refute or block that momentum, they enter it, turn it, and let it complete itself in a direction its owner never intended.",
+      "mechanism": "A joke's setup locks the listener into one interpretive script as the expected reading, and <cite index=\"3-3\">the punchline forces the listener to switch from the initial script to a secondary, often opposing or incongruous, script</cite> by pivoting the same words rather than contradicting them. Aikido runs an identical two-beat structure on physical force: <cite index=\"14-9\">irimi is the act of stepping forward into the space of the attack, aligning with the direction of force instead of avoiding it</cite>, then <cite index=\"14-2\">tenkan allows you to blend with an attack and rotate around its force, creating space, balance, and opportunity</cite> — so that, as aikido teacher Yamada put it, <cite index=\"17-2\">the movement of the body coordinates in such a way that his energy blends with the attacker's, so that Aikidoka becomes the force that controls both energies</cite>.",
+      "mentalModel": "Next time something is charging straight at you — an argument, an insult, a heckle, an expectation you can't stop — resist the instinct to plant your feet and push back with equal force. Ask instead where you could step into its line, turn with it, and let its own momentum carry it somewhere it never meant to go; opposition creates a collision, redirection creates a resolution.",
+      "realWorld": "Improv comedy formalizes this as its founding rule: never block your scene partner's offer, always accept it and add a turn — the verbal equivalent of irimi-tenkan performed live, in real time, with no chance to plan the redirection in advance.",
+      "historical": "The comic mechanism was formalized as a psychological model well before anyone connected it to martial arts: <cite index=\"4-9\">the research by Suls, 1972, Suls, 1977, Suls, 1983 is among the most influential proposals</cite> of the two-stage incongruity-resolution model, later expanded when <cite index=\"3-5\">Victor Raskin and Salvatore Attardo developed the General Theory of Verbal Humor (GTVH), which, while more complex, integrates core principles of incongruity</cite>. Aikido's blending principle was codified decades earlier by Morihei Ueshiba, who built the entire art around the single rule of never opposing an attacker's force directly.",
+      "business": "Businesses that survive a hostile pitch or a brutal review are usually running tenkan, not a rebuttal: they don't block the criticism, they enter it. Avis famously turned the exact weakness a rival would attack — being smaller than Hertz — into the whole campaign's punchline, redirecting the audience's expectation instead of fighting it.",
+      "personal": "In an argument with a partner, the instinct is to block the accusation head-on and defend; the enter-then-turn move is to step into the truth buried in it first — 'you're right, I was late' — before turning the conversation toward what actually needs solving, which lands softer and faster than any counter-argument ever does.",
+      "openQuestion": "It remains unresolved whether 'enter, then turn' reflects one genuine shared cognitive-motor template for defusing incoming force — verbal or physical — or whether comedy and aikido merely converged on a convenient metaphor for the same folk wisdom, with no common mechanism underneath the shared vocabulary of redirection.",
+      "reading": [
+        "A Two-Stage Model for the Appreciation of Jokes and Cartoons: Information-Processing Analysis - Jerry M. Suls",
+        "Script Theory Revis(it)ed: Joke Similarity and Joke Representation Model - Salvatore Attardo and Victor Raskin",
+        "The Art of Peace - Morihei Ueshiba"
+      ],
+      "tags": [
+        "comedy",
+        "aikido",
+        "humor theory",
+        "martial arts",
+        "incongruity"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "structural_mapping",
+      "lensFamily": "structural",
+      "relation": "setup : primes the audience's expected script :: irimi : enters the attacker's line of force || punchline : turns that script into a second one :: tenkan : turns that force into a throw",
+      "whereItFails": "Aikido categorically forbids ever meeting force with force, while comedy has an entire rival tradition — deadpan absurdism, anti-humor — that gets laughs by refusing resolution altogether, blending nothing.",
+      "whereElse": "The same enter-then-turn structure shows up in improv's 'yes, and' rule, in judo's use of an opponent's own pull to throw them, and in negotiation tactics that absorb an objection before steering it toward agreement.",
+      "opposite": "If comedy and aikido instead worked by opposing force with force — a comedian bulldozing an audience with insistence, a martial artist blocking a strike dead-on — we'd expect strained silence and injury, not laughter or a clean throw, which is exactly what both traditions warn beginners away from.",
+      "plainly": "Picture stepping just slightly sideways as a shopping cart rolls toward you, catching its handle, and steering it gently into a parking spot instead of bracing for the crash — a good joke and a good aikido throw both work by steering the oncoming thing, never stopping it.",
+      "example": "Picture a comic bombing until a heckler yells an insult; instead of arguing back, she repeats the insult approvingly, twists one word, and the room roars — she never fought the heckler's momentum, she turned it, the exact move an aikido student uses to send a lunging attacker past her shoulder onto the mat.",
+      "personaExamples": null
     }
   ]
 }
