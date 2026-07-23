@@ -3848,6 +3848,47 @@
       "opposite": "If Zeno's premise were correct — that rest at every instant forbids motion overall — then a reel of genuinely static frames should produce nothing but flicker, never a runner or a galloping horse; instead cinema has reliably produced seamless perceived motion from stacks of still images for over a century, showing the premise fails for perception exactly as calculus shows it fails for physics.",
       "plainly": "Flip through a paper flip-book fast enough and the stick figure on the page starts to run, even though every single page is just a motionless drawing — nobody drew the running, your eye and brain built it for you out of the gaps between the drawings, which is the exact same trick an old philosopher used 2,500 years ago to try to prove that motion couldn't exist at all.",
       "example": "Imagine flicking through your phone's burst-mode photos of a kid jumping off a diving board: each individual photo shows a completely frozen, motionless body hanging in one spot, arms in one fixed position, yet swipe through them quickly and you watch a full dive unfold — the jump was never inside any one photo, your mind assembled it the instant it saw the sequence, precisely the trick a movie projector performs 24 times a second."
+    },
+    {
+      "id": "continued-fraction-twelve-key-octave",
+      "fieldA": "Continued Fractions",
+      "fieldB": "Musical Tuning",
+      "fields": [
+        "Continued Fractions",
+        "Musical Tuning"
+      ],
+      "title": "Why a piano has 12 keys per octave: number theory already decided it",
+      "hook": "No composer voted for twelve notes to the octave — the Euclidean algorithm did, three thousand years before anyone built a piano.",
+      "connection": "A twelve-note piano scale and a continued fraction convergent aren't cousins, they're the same object wearing different clothes. Tuning a scale means finding the best whole-number stand-in for an irrational ratio, and continued fractions are the proven algorithm that generates exactly that best stand-in, at every resolution, for any real number you feed it — music just happens to be the number log2(3/2).",
+      "mechanism": "Equal temperament needs integers m,n with m/n approximating log2(3/2), the exponent turning n equal octave-steps into m perfect fifths. <cite index=\"16-23\">The continued fraction expansion for log[2](3) is [1,1,1,2,2,3,1,5,2,23,2,2,1,...]</cite>, and <cite index=\"4-2\">The continued fraction approximation of frac(log23) yields 1/2, 3/5, 7/12, 24/41, ... as best rational approximations</cite>, of which <cite index=\"4-3\">the one to take is 7/12</cite> — hence twelve semitones per octave, with 41 and 53 as the next honest upgrades.",
+      "mentalModel": "When you're forced to approximate a continuous ideal with discrete equal steps, don't guess at a nice round number — write out the continued fraction of the target ratio and read off the convergents; each one is provably the best you can do at that size, and every non-convergent in between is provably not worth trying.",
+      "realWorld": "Composer Wendy Carlos used this same machinery deliberately rather than inheriting it, choosing different convergents than 7/12 to build 'xenharmonic' scales with intervals no ordinary piano can produce, turning a continued-fraction expansion directly into a synthesizer tuning table.",
+      "historical": "Long before anyone knew the underlying algorithm, <cite index=\"2-2\">the 16th century theorists Guillaume Costeley and Francisco de Salinas advocated use of 19 notes to the octave</cite>, unknowingly proposing an earlier convergent of the same expansion that Western music would later settle on as 12; Ottoman and Byzantine musicians independently converged on the far more accurate 53-tone convergent, which is <cite index=\"3-11\">sometimes used in Turkish music theory</cite> to this day.",
+      "business": "A retailer deciding how many price tiers to offer — three, five, or nine — is quietly solving the same problem: too few tiers and you can't approximate what customers actually want to pay, too many and the system becomes unusable, and the mathematically 'best' tier counts for approximating a smooth demand curve follow the identical convergent logic as picking 12 over 11 or 13 piano keys.",
+      "personal": "Anyone who has tuned a guitar by ear knows the frustration: you set each string a perfect fifth above the last, and by the sixth string the chord sounds subtly, maddeningly sour — that's not bad ears, it's the small residual error baked into the 7/12 convergent, a gap the mathematics predicts exactly and no amount of careful listening can fully erase.",
+      "openQuestion": "It isn't settled whether the human ear's tolerance for the small errors in 12-tone tuning is a hard psychoacoustic limit or a learned cultural habit — listeners raised on 19-tone or 53-tone systems report those scales sounding perfectly natural, which leaves open whether a 'better' convergent like 41-TET is objectively superior or just unfamiliar.",
+      "reading": [
+        "Pianos and Continued Fractions - Edward Dunne, Mark McConnell",
+        "Continued Fractions, Best Measurements, and Musical Scales and Intervals - J. Douthett, R. Krantz",
+        "An Introduction to the Theory of Numbers - G.H. Hardy, E.M. Wright"
+      ],
+      "tags": [
+        "continued fractions",
+        "musical tuning",
+        "number theory",
+        "piano",
+        "equal temperament"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "isomorphism",
+      "lensFamily": "structural",
+      "relation": "log2(3/2) : irrational target ratio :: 7/12, 24/41, 31/53 : successive best whole-number tunings generated by the same continued fraction",
+      "whereItFails": "Continued fractions cleanly optimize one interval at a time, but real scales must fit fifths and major thirds simultaneously, and once you demand both, unlike ordinary convergents, these do not always increase in quality as denominators grow — 34-equal turns up as a good compromise before the theoretically 'next' 31-equal does, so the tidy one-dimensional theorem breaks down under multiple constraints.",
+      "whereElse": "The same convergent-hunting logic sets the Gregorian calendar's leap-year rule as a rational approximation to the tropical year's length, drove Christiaan Huygens' gear-ratio calculations for mechanical planetariums, and shows up whenever any continuous physical quantity must be approximated by a small whole-number ratio of moving parts.",
+      "opposite": "If continued fractions weren't actually tracking the best approximations, finer octave divisions should sometimes produce worse fifths than coarser ones in an unpredictable way; instead every convergent denominator — 12, then 41, then 53 — is guaranteed strictly better than any non-convergent number of divisions below it, the opposite of what trial-and-error tuning by ear would predict.",
+      "plainly": "Try to climb a staircase using steps sized so that three of them always land you exactly on a step that's also a clean multiple of two — you can't do it perfectly, but there's a best possible number of steps for any staircase length, and that same 'best possible' arithmetic trick, run on a musical ratio instead of a staircase, is the actual reason your piano has twelve black-and-white keys instead of ten or fifteen.",
+      "example": "Picture tuning a guitar with a clip-on tuner: you set the low E, then dial each string a perfect fifth above the last by ear, and by the time you reach the high E string the final chord sounds audibly, faintly sour — that drift is the tiny leftover error baked into the 7/12 approximation, the exact gap the continued fraction predicts before you've plucked a single string."
     }
   ]
 }
