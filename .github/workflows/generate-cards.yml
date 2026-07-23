@@ -1,7 +1,6 @@
 name: generate-cards
 on:
-  schedule:
-    - cron: '0 */2 * * *'
+  # Automated generation disabled - cards are made on demand from the app.
   workflow_dispatch:
 concurrency:
   group: generate-cards

@@ -11,7 +11,7 @@ import sys
 import urllib.request
 
 CARDS_PATH = "cards.json"
-MODEL = os.environ.get("MODEL", "claude-sonnet-5")
+MODEL = os.environ.get("MODEL", "claude-haiku-4-5-20251001")
 API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
 DOMAINS = [
@@ -237,6 +237,7 @@ def main():
         ask = re.sub(r"^\s*ask\s*:\s*", "", sys.argv[2], flags=re.I).strip()
         print("ASK REQUEST:", ask)
     vary = None
+    random_one = len(sys.argv) >= 2 and sys.argv[1] == "--random"
     avoid_lens = ""
     avoid_text = ""
     if len(sys.argv) >= 3 and sys.argv[1] == "--vary":
@@ -372,6 +373,15 @@ should make the answer land for a layperson. Pick the lens that best fits the
 reasoning (it need not be isomorphism). Research it with web search if useful.
 The pollination ladder does not apply. All other schema rules apply."""
 
+    if random_one:
+        prompt = prompt + f"""
+
+OVERRIDE FOR THIS RUN: write EXACTLY 1 card from a surprising, fresh pairing
+that YOU choose - roam widely across {', '.join(seeds)} and beyond (sciences,
+humanities, myth, story, the arts, and human skills). Pick whichever lens
+genuinely fits; favour a non-isomorphism lens for variety. The pollination
+ladder does not apply. All schema rules apply."""
+
     if vary:
         prompt = prompt + f"""
 
@@ -397,7 +407,7 @@ them. The pollination ladder does not apply. All other schema rules apply."""
             continue
         errs = validate(cards + new_cards)
         errs += validate_lens(cards + new_cards)
-        if brew or ask or vary:
+        if brew or ask or vary or random_one:
             if len(new_cards) != 1:
                 errs.append("custom run must return exactly 1 card")
             elif brew or vary:

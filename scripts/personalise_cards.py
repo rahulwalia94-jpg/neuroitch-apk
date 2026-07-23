@@ -12,7 +12,7 @@ import sys
 import urllib.request
 
 CARDS_PATH = "cards.json"
-MODEL = os.environ.get("MODEL", "claude-sonnet-5")
+MODEL = os.environ.get("MODEL", "claude-haiku-4-5-20251001")
 API_KEY = os.environ["ANTHROPIC_API_KEY"]
 
 PERSONAS = {
