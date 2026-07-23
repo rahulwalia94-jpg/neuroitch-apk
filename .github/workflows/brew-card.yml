@@ -5,7 +5,7 @@ on:
 jobs:
   brew:
     # Only the repo owner may brew/ask/vary - protects the API budget.
-    if: (startsWith(github.event.issue.title, 'brew:') || startsWith(github.event.issue.title, 'ask:') || startsWith(github.event.issue.title, 'vary:')) && github.event.issue.user.login == github.repository_owner
+    if: (startsWith(github.event.issue.title, 'brew:') || startsWith(github.event.issue.title, 'ask:') || startsWith(github.event.issue.title, 'vary:') || startsWith(github.event.issue.title, 'random:')) && github.event.issue.user.login == github.repository_owner
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -24,6 +24,8 @@ jobs:
             python scripts/generate_cards.py --ask "$BREW_TITLE"
           elif [[ "$BREW_TITLE" == vary:* ]]; then
             python scripts/generate_cards.py --vary "$BREW_TITLE"
+          elif [[ "$BREW_TITLE" == random:* ]]; then
+            python scripts/generate_cards.py --random
           else
             python scripts/generate_cards.py --brew "$BREW_TITLE"
           fi
