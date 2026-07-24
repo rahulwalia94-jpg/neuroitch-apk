@@ -3972,6 +3972,47 @@
       "lensFamily": "structural",
       "relation": "susceptible : infected : recovered patient :: solvent : distressed : resolved bank, both governed by the same eigenvalue threshold",
       "opposite_unused": ""
+    },
+    {
+      "id": "phalanx-guerrilla-plant-negotiation",
+      "fieldA": "Botany",
+      "fieldB": "Negotiation",
+      "fields": [
+        "Botany",
+        "Negotiation"
+      ],
+      "title": "A strawberry runner and a stubborn negotiator are running the same resource-allocation rule",
+      "hook": "The word botanists use for a spreading weed was stolen straight from a general's vocabulary, and the theft turns out to describe negotiators just as precisely as it describes plants.",
+      "connection": "A clonal plant deciding whether to pack its shoots tightly or send one long runner into open ground, and a negotiator deciding whether to dig in on one demand or float offers across many issues, are both solving one problem: given a patchy landscape of value, do you consolidate on a rich contested spot or disperse to unclaimed ground?",
+      "mechanism": "Botanists borrowed the terms directly from warfare: <cite index=\"7-2,7-3\">both of these terms come from warfare, and reflect the idea that the spread of a clonal plant across a site has an element of force about it, since in warfare a phalanx represents a massed army formed in closed, deep ranks</cite>. Phalanx plants pack ramets close because that formation <cite index=\"2-8\">enables clonal plants to tolerate more stressful conditions, make better use of locally abundant resources and out-compete other species in a favourable microsite</cite>, while guerrilla plants throw out long, widely spaced runners because that spread lets them <cite index=\"1-6\">spread quickly and escape from less favorable patches where resources are deficient or stress is high</cite>. Negotiation theory formalizes the identical branch under different names: distributive bargaining holds a single position over one contested resource exactly like a phalanx defending rich ground, while integrative bargaining trades across many issues simultaneously, sending exploratory offers into unclaimed parts of the deal exactly like a guerrilla spacer probing open soil.",
+      "mentalModel": "Before choosing how hard to push in any contest over scarce resources, first ask whether the value on the table is concentrated in one rich, defensible spot or scattered thin across many unclaimed options — concentrated value rewards packing in and holding ground, scattered value rewards sending out long, cheap probes and grabbing whatever opens up first.",
+      "realWorld": "Union negotiators trained in integrative bargaining are explicitly taught to widen the table — pay, benefits, hours, seniority rules — rather than fight over one number, the human equivalent of a guerrilla plant sending runners into every open patch instead of massing all its shoots around a single root.",
+      "historical": "Lovett-Doust's 1981 paper on the clonal buttercup Ranunculus repens formalized the phalanx-guerrilla distinction decades before negotiation researchers like Walton and McKersie mapped out distributive versus integrative bargaining as separate strategic tracks within the same deal — two fields independently rediscovering that competing for a shared resource has exactly two stable postures, one that consolidates and one that disperses.",
+      "business": "A startup pricing a single enterprise contract behaves like a phalanx, packing every negotiating resource around defending list price on one deal, while a startup running dozens of small self-serve trials behaves like a guerrilla, sending cheap low-commitment offers into many unclaimed accounts and letting the ones that take root become the next round of expansion.",
+      "personal": "Anyone haggling at a flea market intuitively switches modes mid-negotiation: dig in hard on the one item you actually want, but for everything else, toss out a low, quick, take-it-or-leave-it offer on ten other things at once and walk away happy with whichever three stick — phalanx on the prize, guerrilla on the rest.",
+      "openQuestion": "It isn't settled whether a negotiator's choice between these two postures is a deliberate strategic decision, the way a mediator recommends it, or something closer to the plant's case, where the posture is largely fixed by temperament and situation and only mildly adjustable — nobody has shown whether coaching can shift a habitually 'phalanx' negotiator into 'guerrilla' mode as easily as changing soil nutrients shifts a plant's growth form.",
+      "reading": [
+        "Population Dynamics and Local Specialization in a Clonal Perennial (Ranunculus repens) - Jonathan Lovett-Doust",
+        "A Behavioral Theory of Labor Negotiations - Richard E. Walton, Robert B. McKersie",
+        "Getting to Yes: Negotiating Agreement Without Giving In - Roger Fisher, William Ury"
+      ],
+      "tags": [
+        "botany",
+        "negotiation",
+        "clonal plants",
+        "bargaining strategy",
+        "game theory"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "structural_mapping",
+      "lensFamily": "structural",
+      "relation": "phalanx ramet : consolidates on one resource-rich patch :: positional bargaining : consolidates on one contested demand || guerrilla spacer : forages across open, patchy ground :: integrative offer : forages across many unclaimed issues",
+      "whereItFails": "A plant cannot switch postures on purpose mid-season the way a trained negotiator can consciously shift from positional to integrative tactics within a single afternoon of talks.",
+      "whereElse": "The same consolidate-versus-disperse split shows up in military doctrine's massed formations versus guerrilla insurgency, in venture capital's concentrated bets versus spray-and-pray seed investing, and in foraging animals choosing to defend a rich patch or range widely for scattered food.",
+      "opposite": "If the mapping were false, a negotiator's choice of posture should have nothing to do with how concentrated the disputed value actually is; instead both plants and negotiators reliably switch strategies as resource concentration changes, which is the opposite of a fixed, arbitrary style.",
+      "plainly": "Think of a plant like a strawberry: when the ground nearby is rich, it clumps its shoots tight to hoard that one good spot, but when the ground is patchy and poor, it sends thin runners far and wide hoping one lands somewhere better — and a negotiator does the exact same thing, holding firm on one juicy demand but scattering small, easy offers across everything else on the table.",
+      "example": "Imagine two coworkers splitting a shared bonus pool and a shared parking spot: on the parking spot, worth fighting for outright, they both dig in and refuse to budge, exactly like a phalanx plant crowding its shoots around one good patch of soil; on the bonus pool, they instead float five small trade-offs — extra vacation days, a preferred shift, a training budget — sending out cheap probes until one lands, exactly like a guerrilla plant's long runners finding open ground nobody else claimed."
     }
   ]
 }
