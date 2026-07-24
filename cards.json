@@ -3930,6 +3930,48 @@
       "opposite": "If reciprocal inhibition were false, pairing calm with a feared stimulus should do nothing at all in either setting; instead decades of phobia trials and generations of stage-trained performers both show the same graded climb reliably overwriting fear, which is the opposite of what a random, ungraded plunge into the feared situation produces.",
       "plainly": "Think of learning to touch a big dog: nobody starts by hugging a Rottweiler, you start with a photo of a puppy, then a calm dog on a leash across the street, then petting it — and the exact same staircase, one small brave step at a time with a calm breath at each rung, is what actually cures a fear of dogs and what actually cures a fear of walking on stage, because underneath, both are the same nervous system learning the same lesson.",
       "example": "Picture a trainee teacher who goes pale at the thought of the first staff assembly: instead of being thrown straight onto that stage, she first reads her notes aloud alone in an empty classroom, then to one colleague, then to five colleagues over coffee, and only once each of those stops making her hands shake does she walk out in front of the full hall — the same three-rung climb a therapist would build for a client terrified of dogs, just relabelled as 'rehearsal' instead of 'treatment'."
+    },
+    {
+      "id": "sir-model-bank-run-fever",
+      "fieldA": "Medicine",
+      "fieldB": "Banking",
+      "fields": [
+        "Medicine",
+        "Banking"
+      ],
+      "title": "A bank run is a fever: medicine's contagion equations run the banking system",
+      "hook": "Central bankers now describe a failing bank using the exact same three-letter alphabet a doctor uses for a flu outbreak: Susceptible, Infected, Recovered.",
+      "connection": "A hospital ward tracking an outbreak and a regulator tracking a banking crisis are reading the same equations off different data. Both are networks where a local shock — a pathogen, a bad loan — spreads only through direct contact, and both are formally solved by sorting every node into susceptible, infected, or recovered and watching the population move between those three boxes.",
+      "mechanism": "The classic epidemic model splits a population into compartments and moves individuals between them over time; banking researchers borrowed it directly, with <cite index=\"3-1\">the SIR model capturing bank progression through a healthy Susceptible state, a distressed Infected state, and a Recovered state</cite>. In both settings <cite index=\"6-11,6-12\">the spreading process is governed by a threshold equal to the reciprocal of the principal eigenvalue of the network's adjacency matrix</cite>, and whether the shock dies out or cascades system-wide depends only on whether transmission crosses that single number — the same contagion-rate parameter β against a recovery-rate parameter γ decides an epidemic and a credit crisis alike.",
+      "mentalModel": "Whenever damage spreads only through direct contact in a network — not randomly, not everywhere at once — stop asking 'how bad is the shock' and start asking 'how connected is the network,' because the eigenvalue of the contact graph, not the severity of the initial hit, is what actually decides if the whole system goes down.",
+      "realWorld": "The comparison is not a metaphor economists invented for color: <cite index=\"12-3,12-6\">Andrew Haldane, executive director for financial stability at the Bank of England, and ecologist Robert May drew analogies with ecological food webs and infectious-disease networks to explore complexity and stability in financial networks</cite>, and separately <cite index=\"1-1,1-20\">Mervi Toivanen applied an epidemiological model to risk contagion in banking networks in 2013, using data from European banks</cite>.",
+      "historical": "The machinery predates finance by eight decades: the compartmental S-I-R equations were first written down for measles-like outbreaks by <cite index=\"9-8,9-9,9-11,9-12\">Kermack and McKendrick in 'A contribution to the mathematical theory of epidemics,' Proceedings of the Royal Society, 1927</cite>. It sat unused by economists until the 2008 crisis exposed how little balance-sheet accounting alone could explain — only then did regulators reach for the disease-network toolkit that epidemiologists had been refining since the 1920s.",
+      "business": "Stress-testing a bank's capital and stress-testing a new drug follow the same logic in reverse: a drug trial deliberately exposes a controlled population to a pathogen to measure γ, the recovery rate, while a bank stress test deliberately exposes a balance sheet to a simulated shock to measure how fast the institution 'recovers' solvency — and just as public-health policy prioritizes vaccinating the most-connected 'superspreaders' first, post-2008 regulation targets extra capital at the most interconnected 'systemically important' banks first, for the identical network reason.",
+      "personal": "Think of the one wildly social coworker who seems to catch — and spread — every office cold within a day of it arriving; a bank with dense interbank borrowing plays the identical role in a credit crunch, not because its own loans are worse than anyone else's, but purely because its position in the contact network makes it a hub through which everyone else's trouble passes.",
+      "openQuestion": "It isn't settled which compartmental model finance actually obeys: SIR assumes a bailed-out bank gains lasting 'immunity' and can't be reinfected by the same shock, but researchers also use the SIS variant, where a rescued bank returns straight to 'susceptible' with no immunity at all — and nobody has proven which one better describes what happens to a bank the second time a crisis hits.",
+      "whereItFails": "A quarantined patient can't be cured by decree, but a central bank can inject capital into a distressed institution overnight — recovery in banking can be manufactured by policy in a way biological immunity cannot, and credit exposures are directed debtor-creditor amounts, not the symmetric contact of a handshake or a cough.",
+      "whereElse": "The same compartmental logic is used to model the spread of rumors and product adoption through social networks, the propagation of computer viruses across the internet, and cascading power-grid failures, anywhere damage moves strictly along the edges of a connectivity graph.",
+      "opposite": "If banking contagion didn't actually follow epidemic mathematics, then a bank's failure risk should track its own balance sheet alone regardless of who it's connected to; instead the same eigenvalue threshold that predicts outbreak size in a contact network also predicts cascade size in interbank lending data, which is the opposite of what pure balance-sheet accounting would forecast.",
+      "plainly": "Imagine one sick kid at a birthday party: whether the whole party gets sick depends less on how contagious the bug is and more on how many other kids that one child hugs — and a shaky bank works exactly the same way, its failure spreading fastest not through the banks with the worst loans, but through whichever bank talks to, and lends to, the most other banks.",
+      "example": "Picture a small regional bank that mostly makes local mortgages and barely touches the interbank lending market: when a mortgage borrower defaults, the loss stays local, like a cold caught at home that never leaves the house. Now picture a large dealer bank wired into dozens of counterparties overnight — the same size default there doesn't stay put; within days it shows up on the books of banks that never made a bad loan themselves, the exact pattern an epidemiologist would predict by looking at the contact network alone, before ever checking who was actually 'sick.'",
+      "reading": [
+        "Systemic risk in banking ecosystems - Andrew G. Haldane, Robert M. May",
+        "Contagion in the interbank network: An epidemiological approach - Mervi Toivanen",
+        "A contribution to the mathematical theory of epidemics - William Ogilvy Kermack, Anderson G. McKendrick"
+      ],
+      "tags": [
+        "medicine",
+        "banking",
+        "epidemiology",
+        "systemic risk",
+        "contagion"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "isomorphism",
+      "lensFamily": "structural",
+      "relation": "susceptible : infected : recovered patient :: solvent : distressed : resolved bank, both governed by the same eigenvalue threshold",
+      "opposite_unused": ""
     }
   ]
 }
