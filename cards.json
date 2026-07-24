@@ -3889,6 +3889,47 @@
       "opposite": "If continued fractions weren't actually tracking the best approximations, finer octave divisions should sometimes produce worse fifths than coarser ones in an unpredictable way; instead every convergent denominator — 12, then 41, then 53 — is guaranteed strictly better than any non-convergent number of divisions below it, the opposite of what trial-and-error tuning by ear would predict.",
       "plainly": "Try to climb a staircase using steps sized so that three of them always land you exactly on a step that's also a clean multiple of two — you can't do it perfectly, but there's a best possible number of steps for any staircase length, and that same 'best possible' arithmetic trick, run on a musical ratio instead of a staircase, is the actual reason your piano has twelve black-and-white keys instead of ten or fifteen.",
       "example": "Picture tuning a guitar with a clip-on tuner: you set the low E, then dial each string a perfect fifth above the last by ear, and by the time you reach the high E string the final chord sounds audibly, faintly sour — that drift is the tiny leftover error baked into the 7/12 approximation, the exact gap the continued fraction predicts before you've plucked a single string."
+    },
+    {
+      "id": "stage-fright-cure-is-phobia-cure",
+      "fieldA": "Exposure Therapy",
+      "fieldB": "Actor Training",
+      "fields": [
+        "Exposure Therapy",
+        "Actor Training"
+      ],
+      "title": "Curing stage fright and curing a phobia of spiders run the identical protocol",
+      "hook": "The therapist curing a fear of spiders and the coach curing a fear of six hundred watching strangers are running the same three-step program, in the same order, for the same reason.",
+      "connection": "A phobia clinic and a rehearsal room aren't two applications of one idea — they run one procedure, verbatim: rank the feared stimulus into graded steps, pair each step with a state the nervous system cannot hold alongside terror, and climb the ladder until the top step no longer fires the alarm.",
+      "mechanism": "Wolpe's reciprocal-inhibition principle holds that <cite index=\"10-1\">you cannot be genuinely relaxed and genuinely terrified at the same moment</cite>. Both protocols rank the feared stimulus, advancing only once each rung stops triggering panic — <cite index=\"15-9,15-10\">each item is given a subjective ranking on the severity of induced anxiety</cite> — driven neurally by <cite index=\"2-1\">dlPFC inhibition of amygdala activity via the vmPFC, the mechanism implicated in exposure therapy</cite>.",
+      "mentalModel": "Whenever a fear feels too large to face head-on, don't attack the whole fear at once — build a ladder of graded intensity, install a competing calm response at the bottom rung first, and only move up once that rung stops producing a fear response; the eventual size of the fear doesn't matter, only whether each step is small enough to actually win.",
+      "realWorld": "Actors already import the clinical protocol wholesale: performance coaches now list <cite index=\"12-5\">deep breathing, visualization, systematic desensitization, and cognitive restructuring</cite> among proven fixes for stage fright, and Adele has credited <cite index=\"12-12\">deep breathing, systematic desensitization, and cognitive restructuring</cite> with helping her through nerves severe enough to make her sick before shows, while Barbra Streisand's near three-decade retreat from live performance shows what happens when nobody climbs the hierarchy at all.",
+      "historical": "Wolpe's technique began in the lab, not the clinic: <cite index=\"18-12\">he first conditioned fear in cats and then had them eat, letting the act of eating override and inhibit the learned fear response</cite>, and only later generalized this reciprocal-inhibition logic into human therapy, decades before any acting coach explicitly borrowed the same ladder for the stage.",
+      "business": "A sales manager training a nervous new hire to cold-call is running the identical ladder without naming it: start with the easiest, friendliest existing client, let the rep feel the call go fine, and only after that success does the next call up the difficulty scale — pitching a hostile prospect cold — get attempted, because throwing a beginner straight at the hardest call first teaches nothing but panic and produces a rep who avoids the phone entirely.",
+      "personal": "Anyone who has taught a child to swim knows the sequence without a textbook: first sitting on the pool steps with water at the ankles, then wading to the waist, then a supported float, then letting go for two seconds — each step only attempted once the last one stopped producing tears, the exact hierarchy-and-calm sequence a clinician would use on a fear of dogs, just applied to a fear of water by an amateur who never read Wolpe.",
+      "openQuestion": "It's unresolved whether rehearsing in a safe, imaginal green room produces the same lasting extinction as being genuinely, unpredictably exposed on a live stage in front of a real audience, or whether — as some anxiety researchers now argue about return-of-fear after clinical exposure — the calm learned in rehearsal only ever suppresses the fear response rather than erasing it, leaving it free to resurface the moment the context changes.",
+      "reading": [
+        "Psychotherapy by Reciprocal Inhibition - Joseph Wolpe",
+        "Emotional Processing of Fear: Exposure to Corrective Information - Edna B. Foa, Michael J. Kozak",
+        "Exposure Therapy for Anxiety: Principles and Practice - Jonathan S. Abramowitz, Brett J. Deacon, Stephen P. H. Whiteside"
+      ],
+      "tags": [
+        "exposure therapy",
+        "actor training",
+        "stage fright",
+        "systematic desensitization",
+        "psychology"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "transfer_learning",
+      "lensFamily": "structural",
+      "relation": "phobic hierarchy : ranked feared objects paired with relaxation :: stage-fright hierarchy : ranked audience sizes paired with rehearsed calm",
+      "whereItFails": "Clinical exposure targets a fear with zero adaptive value, like an indoor spider, while a performer's edge of nervousness often sharpens genuine sensitivity to an audience, so erasing it completely can flatten a performance instead of improving it.",
+      "whereElse": "The same graded-hierarchy-plus-competing-response structure shows up in public-speaking clubs building up from small rooms to large halls, fear-of-flying courses that start on a stationary plane before takeoff, and physical therapy programs that load an injured joint in small, tolerable increments rather than all at once.",
+      "opposite": "If reciprocal inhibition were false, pairing calm with a feared stimulus should do nothing at all in either setting; instead decades of phobia trials and generations of stage-trained performers both show the same graded climb reliably overwriting fear, which is the opposite of what a random, ungraded plunge into the feared situation produces.",
+      "plainly": "Think of learning to touch a big dog: nobody starts by hugging a Rottweiler, you start with a photo of a puppy, then a calm dog on a leash across the street, then petting it — and the exact same staircase, one small brave step at a time with a calm breath at each rung, is what actually cures a fear of dogs and what actually cures a fear of walking on stage, because underneath, both are the same nervous system learning the same lesson.",
+      "example": "Picture a trainee teacher who goes pale at the thought of the first staff assembly: instead of being thrown straight onto that stage, she first reads her notes aloud alone in an empty classroom, then to one colleague, then to five colleagues over coffee, and only once each of those stops making her hands shake does she walk out in front of the full hall — the same three-rung climb a therapist would build for a client terrified of dogs, just relabelled as 'rehearsal' instead of 'treatment'."
     }
   ]
 }
