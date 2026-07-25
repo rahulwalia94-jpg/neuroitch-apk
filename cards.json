@@ -4054,6 +4054,47 @@
       "opposite": "If this weren't true, GDP growth from a stimulus check should scale only with the size of the check; instead it hinges on the fraction re-spent each round, exactly as reactor yield hinges on k rather than the size of the neutron burst that starts it.",
       "plainly": "Think of one domino falling into slightly more than one other domino every time - the whole row keeps toppling forever; if each domino only reaches less than one other domino on average, the chain dies out no matter how hard you push the first one. A nuclear reactor and a government stimulus check are both just counting whether their 'domino' knocks over more, fewer, or exactly one more.",
       "example": "Picture a $1,200 stimulus check landing in a family's account: they spend 80 cents of every dollar at the local diner, whose owner spends 80 cents of that on payroll and produce, whose workers spend 80 cents of that on rent, and so on - the same rule an engineer uses to calculate whether a stack of uranium rods will sustain a reaction or quietly go dark."
+    },
+    {
+      "id": "cinderella-trendline-third-touch",
+      "fieldA": "Fairy Tales",
+      "fieldB": "Forecasting",
+      "fields": [
+        "Fairy Tales",
+        "Forecasting"
+      ],
+      "title": "Cinderella's third ball and a trader's third touch confirm the same thing",
+      "hook": "A stock chart and a bedtime story both refuse to believe a pattern is real until it has survived being tested a third time.",
+      "connection": "A trendline and a fairy-tale refrain are both claims about a hidden pattern, and both fields independently discovered that two instances of anything can never prove the pattern is real — only a third instance, which either confirms the rule or breaks it, actually carries information. Storytellers and chart-readers arrived at identical rule of three from opposite directions.",
+      "mechanism": "Geometrically, any two points can be joined by a line, so a two-touch trendline is unfalsifiable: <cite index=\"12-1\">It takes two points to draw a trend line, and the third one confirms the validity.</cite> Traders formalize this explicitly: <cite index=\"11-1,11-2\">A trendline is only confirmed if you can get three points of contact because you can always connect any two random points on your charts. But when three points of contact are lining up, it is no coincidence anymore.</cite> Oral tradition runs the same test on events instead of prices — <cite index=\"1-1\">The Law of Repetition (Events are repeated, often 3 times) The Law of Three (Things come in threes)</cite> — and in Cinderella <cite index=\"7-7\">repetition structures the narrative rhythm, with the heroine attending the ball three times and losing a slipper only on the third</cite>, the exact instant where the pattern breaks and reveals the real structure underneath.",
+      "mentalModel": "Before you trust any pattern that has shown up twice — in a chart, a relationship, a run of luck, a story you're being told — treat it as a coincidence you cannot yet judge, and wait for a genuine third instance: if it holds, the pattern is real; if it breaks, the break itself is the actual information, not a failure of the pattern.",
+      "realWorld": "Professional traders build entire entry rules around this: <cite index=\"14-6,14-7\">Have you connected your line through at least three significant swing points? A line with just two touches is still just a guess.</cite> Folklorists across unrelated oral traditions independently converged on the same threshold, cataloguing it as one of the basic structural laws governing how stories are built and remembered.",
+      "historical": "Axel Olrik documented the law of three across Scandinavian and European oral narrative in his 1908 essay on the epic laws of folk narrative, arguing these were structural rules of composition rather than accidents of any single culture's storytelling; technical analysts developed the three-touch trendline rule independently through decades of chart-reading practice, with old-school chartists like Bill O'Neil teaching that <cite index=\"16-7\">trend lines classically needed 3 touch points to remain valid</cite> long before anyone connected it to folklore.",
+      "business": "A founder watching two quarters of revenue growth is exactly where a trader is at the second touch of a trendline — the growth could be a fluke of timing, a single big contract, or seasonal noise — and disciplined operators wait for a third consecutive quarter before treating the curve as a real trend worth hiring against, rather than restaffing off two data points that could be joined by any line at all.",
+      "personal": "If a friend cancels plans on you twice, it is easy to write it off as bad luck for both of you; it is only the third cancellation that quietly converts 'coincidence' into 'pattern,' the same moment a trader stops calling a line a guess and starts calling it a trend.",
+      "openQuestion": "It isn't settled whether 'three' is doing real epistemic work in both domains or is a culturally inherited convention riding on top of a much weaker true requirement — the geometric argument for chart trendlines is rigorous (two points are always trivially collinear), but no one has shown that human narrative memory or trader psychology couldn't function just as well anchored on four repetitions instead of three, or whether three is simply the smallest number that still feels dramatically satisfying to a human mind.",
+      "reading": [
+        "Principles for Oral Narrative Research - Axel Olrik (trans. Kirsten Wolf and Jody Jensen)",
+        "Technical Analysis of Stock Trends - Robert D. Edwards, John Magee",
+        "Morphology of the Folktale - Vladimir Propp"
+      ],
+      "tags": [
+        "fairy tales",
+        "forecasting",
+        "folklore",
+        "technical analysis",
+        "pattern recognition"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "thought_experiment",
+      "lensFamily": "generative",
+      "relation": "two-touch trendline : unfalsifiable line :: third touch : confirmed trend || twice-told event : possible coincidence :: third retelling : pattern proven or broken",
+      "whereItFails": "A trendline's third touch is sampled from real, continuous price data with no author behind it, while a fairy tale's third repetition is deliberately composed by a narrator choosing the beat for dramatic effect, not discovered in nature — one is discovered, the other is designed.",
+      "whereElse": "The same threshold shows up in scientific replication, which distrusts a single confirming experiment and often wants a third independent replication before treating an effect as real, in the folk legal instinct behind 'three strikes' rules, and in stand-up comedy's rule of three for joke construction.",
+      "opposite": "If the mapping were false, traders and storytellers should be just as willing to commit after two instances as after three; instead both disciplines independently refuse to trust the pattern until a third event has had the chance to break it, which is exactly the opposite of an arbitrary or coincidental threshold.",
+      "plainly": "Think about a friend who's late to coffee twice in a row — you'd probably shrug it off as bad luck both times, but if it happens a third time, something clicks and you suddenly believe it's just who they are; charts and fairy tales use that exact same click, waiting for a third touch or a third telling before they'll let you believe the pattern is real.",
+      "example": "Picture two things happening at once: a trader stares at a stock chart where price has bounced off the same rising line twice, refusing to call it a trend because any two points can be joined by a random line, while across town a child is being read a story where the hero fails at the task twice — in both cases, everyone in the room, chart or story, is silently waiting for that third event to find out whether the pattern is real or about to break."
     }
   ]
 }
