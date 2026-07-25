@@ -4013,6 +4013,47 @@
       "opposite": "If the mapping were false, a negotiator's choice of posture should have nothing to do with how concentrated the disputed value actually is; instead both plants and negotiators reliably switch strategies as resource concentration changes, which is the opposite of a fixed, arbitrary style.",
       "plainly": "Think of a plant like a strawberry: when the ground nearby is rich, it clumps its shoots tight to hoard that one good spot, but when the ground is patchy and poor, it sends thin runners far and wide hoping one lands somewhere better — and a negotiator does the exact same thing, holding firm on one juicy demand but scattering small, easy offers across everything else on the table.",
       "example": "Imagine two coworkers splitting a shared bonus pool and a shared parking spot: on the parking spot, worth fighting for outright, they both dig in and refuse to budge, exactly like a phalanx plant crowding its shoots around one good patch of soil; on the bonus pool, they instead float five small trade-offs — extra vacation days, a preferred shift, a training budget — sending out cheap probes until one lands, exactly like a guerrilla plant's long runners finding open ground nobody else claimed."
+    },
+    {
+      "id": "chain-reaction-economic-multiplier",
+      "fieldA": "Nuclear Physics",
+      "fieldB": "Economics",
+      "fields": [
+        "Nuclear Physics",
+        "Economics"
+      ],
+      "title": "Why a stimulus check and a uranium pile obey the same equation",
+      "hook": "A nuclear engineer sizing a reactor core and a treasury official sizing a stimulus package are both solving for the exact same number, just wearing different units.",
+      "connection": "A reactor core and a national economy are both counting the same thing across generations: how many descendants each 'spender' produces before it goes quiet. In a pile it's neutrons per fission; in an economy it's dollars re-spent or loans re-lent. Whether the system grows, flatlines, or fizzles depends only on that one ratio, not the size of the initial spark.",
+      "mechanism": "A reactor's multiplication factor k is defined as <cite index=\"7-6\">the average number of neutrons released per fission event that go on to cause another fission event rather than being absorbed or leaving the material</cite>, and summing that ratio over every future generation yields <cite index=\"16-2\">an enhancement factor 1/(1-k)</cite>. Economics runs the identical sum on dollars instead of neutrons: <cite index=\"22-8,22-9\">the quantity 1/(1-b) is called the investment multiplier... applying the formula for the sum of an infinite geometric series</cite>, and bank lending obeys the same rule since <cite index=\"34-14\">the money multiplier itself... equals 1 divided by the reserve ratio</cite>.",
+      "mentalModel": "Before asking 'how big was the initial shock,' ask 'what is the reproduction ratio' — one dollar, one neutron, or one favor going on to produce more or less than one successor is the only number that decides whether a system explodes, stabilizes, or dies out, regardless of how dramatic the trigger was.",
+      "realWorld": "Practitioners on both sides talk explicitly in chain-reaction language: <cite index=\"35-1\">this lending and subsequent re-depositing process creates a chain reaction, multiplying the initial deposit into a significantly larger amount of money in circulation</cite>, while reactor engineers describe fuel loading in the same generational terms nuclear texts use for k. Central banks setting reserve ratios and treasuries sizing stimulus packages are, mathematically, choosing where on the subcritical-to-supercritical scale they want the economy to sit.",
+      "historical": "The link is older than either field's modern form: both nuclear chain reactions and the Keynesian multiplier are special cases of a single branching-process idea population biologists were already using in 1922, when <cite index=\"36-9,36-10\">scientists often re-invent things that were long known... the mechanism of producing power law distributions, originally proposed in 1922 by Yule to explain experimental data on the sizes of biological genera, collected by Willis</cite>. Physicists later noticed the same arithmetic directly: <cite index=\"6-8,6-9\">the fraction of neutrons that escape without producing further fissions is analogous to the fraction of the adult males who have no sons in Galton-Watson model... the neutrons produced in a fission induced by a particular neutron are analogous to sons</cite>.",
+      "business": "A startup's referral loop is a fission pile in miniature: if each existing customer's referrals average more than one new customer, acquisition compounds like a supercritical chain reaction and customer acquisition cost effectively goes negative over time; below that ratio, the program fizzles into background noise no matter how generous the incentive, exactly as a subcritical fuel assembly cannot sustain a reaction no matter how many neutrons you fire into it once.",
+      "personal": "The office favor economy runs the same math on a slower clock: if the average person you help ends up helping slightly more than one other person in turn, gratitude cascades through a team like a chain reaction; if it averages under one, every kind act quietly dies out after two or three hops, however heartfelt the first favor was.",
+      "openQuestion": "It isn't settled whether an economy's multiplier behaves like a reactor's k at all: a pile's k is fixed by geometry and material until an engineer deliberately changes it, but the marginal propensity to consume drifts hour to hour with confidence, and nobody has shown whether an economy has anything resembling a reactor's automatic negative feedback that keeps growth from running away on its own.",
+      "reading": [
+        "Nuclear Reactor Physics - E. E. Lewis",
+        "Geometric Series for Elementary Economics - Thomas J. Sargent, John Stachurski",
+        "Re-inventing Willis - M.V. Simkin, V.P. Roychowdhury"
+      ],
+      "tags": [
+        "nuclear physics",
+        "economics",
+        "chain reaction",
+        "multiplier effect",
+        "branching process"
+      ],
+      "difficulty": 2,
+      "readMinutes": 5,
+      "lens": "isomorphism",
+      "lensFamily": "structural",
+      "relation": "neutron : next-generation neutrons (k) :: dollar spent : next-round spending (MPC), both summed as 1/(1-k)",
+      "whereItFails": "A reactor's k is a physical constant fixed by material and geometry, but an economy's multiplier is a psychological quantity - people's willingness to spend can shift overnight with no engineer adjusting any control rod.",
+      "whereElse": "The same generation-to-generation multiplication ratio governs epidemics measured by R0, chain letters and pyramid schemes, viral marketing referral loops, and the extinction probability of family surnames in population genetics.",
+      "opposite": "If this weren't true, GDP growth from a stimulus check should scale only with the size of the check; instead it hinges on the fraction re-spent each round, exactly as reactor yield hinges on k rather than the size of the neutron burst that starts it.",
+      "plainly": "Think of one domino falling into slightly more than one other domino every time - the whole row keeps toppling forever; if each domino only reaches less than one other domino on average, the chain dies out no matter how hard you push the first one. A nuclear reactor and a government stimulus check are both just counting whether their 'domino' knocks over more, fewer, or exactly one more.",
+      "example": "Picture a $1,200 stimulus check landing in a family's account: they spend 80 cents of every dollar at the local diner, whose owner spends 80 cents of that on payroll and produce, whose workers spend 80 cents of that on rent, and so on - the same rule an engineer uses to calculate whether a stack of uranium rods will sustain a reaction or quietly go dark."
     }
   ]
 }
