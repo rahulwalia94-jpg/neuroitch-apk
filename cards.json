@@ -4177,6 +4177,47 @@
       "opposite": "If this mapping were false, a potter's glaze recipe book and a geologist's permafrost survey would need completely unrelated mathematics to describe their cracks; instead, the fracture-mechanics literature explicitly treats desiccation and thermal-contraction cracking as expressions of one shared stress-release process, which is the opposite of coincidental resemblance.",
       "plainly": "Think of an old orange left out too long: the peel dries out and shrinks while the fruit inside barely changes, so the peel splits into a web of little cracks because it's stuck to something not shrinking at the same speed - a potter's crackled glaze and a cracked-open dry riverbed are that exact same orange-peel problem, just at different sizes and different temperatures.",
       "example": "Picture a potter pulling a mug from the kiln and wincing at a spiderweb of fine lines across the glaze, then imagine, later that same week, seeing a photo of a cracked-dry lakebed in a documentary about drought - both images are the same physical argument playing out: a thin skin that shrank faster than the solid stuff underneath it, with nowhere to put the tension except into a network of cracks."
+    },
+    {
+      "id": "voice-leading-freight-same-assignment-problem",
+      "fieldA": "Music Theory",
+      "fieldB": "Logistics",
+      "fields": [
+        "Music Theory",
+        "Logistics"
+      ],
+      "title": "Why smooth voice leading and cheapest freight routing are the same assignment problem",
+      "hook": "A composer moving four notes to the next chord with the least total motion is quietly running the same algorithm as a dispatcher matching trucks to docks with the least total mileage.",
+      "connection": "A chord progression and a delivery run are both, underneath, a bipartite matching problem: a finite set of movers (voices, vehicles) must be paired one-to-one with a finite set of destinations (new pitches, drop-off points) so that the sum of individual travel costs is as small as possible. Music theory calls the minimal pairing a 'voice leading'; operations research calls it an 'assignment'; both are solved by finding the cheapest one-to-one map between two equal-sized sets.",
+      "mechanism": "Tymoczko formalizes a voice leading as a bijection between two pitch multisets and proves that <cite index=\"1-9,1-10\">given any two n-note multisets of pitches, and a method of comparing voice leadings that is a total preorder satisfying the distribution constraint, there will exist a minimal bijective voice leading that is crossing free</cite> - the optimal pairing never has one voice's path cross another's. The assignment problem in operations research solves the identical structure for cargo: Kuhn's <cite index=\"13-4,13-5,13-6\">Hungarian method for the assignment problem, published in Naval Research Logistics Quarterly in 1955</cite>, finds the minimum-cost one-to-one pairing between supply points and demand points, and the optimal solution likewise never crosses itself once costs are proportional to distance. Both are instances of a linear-sum assignment: minimize total displacement subject to a strict one-to-one correspondence.",
+      "mentalModel": "Whenever two finite groups have to be paired up and the total 'distance' between paired items matters, stop hunting for a clever heuristic and ask whether a crossing-free, one-to-one matching already solves it. If your current pairing has any two paths crossing, you can almost always uncross them and get a cheaper total - in notes, trucks, or anything else being paired by cost.",
+      "realWorld": "Jazz pianists voice chords by ear using exactly this crossing-free instinct, sliding each finger to the nearest available chord tone rather than leaping across the keyboard, and freight dispatchers run software built on the same Hungarian-method logic to assign delivery vehicles to routes so that no two trucks are sent past each other toward the wrong destination.",
+      "historical": "The Hungarian method itself carries a literal fingerprint of its logistics origins - it was named for Hungarian mathematicians König and Egerváry but formalized and published as a practical algorithm inside a journal called Naval Research Logistics Quarterly, built to solve wartime assignment and scheduling problems before it was ever repurposed for anything else. Music theory arrived at its own version of the same law independently, through centuries of counterpoint teachers telling students to move voices 'by step' long before anyone had the mathematics of bipartite matching to explain why that advice worked.",
+      "business": "A supply-chain manager reassigning warehouses to retail orders after a demand spike is doing exactly what an arranger does when a chord changes key: both are re-solving the same minimum-cost matching, and both get burned the same way if they patch it manually - a hand-assigned fix that 'looks fine locally' almost always hides an avoidable crossing that a systematic solver would have caught and removed.",
+      "personal": "Reorganizing who does what during a family move or a team reshuffle is the same problem in miniature: you have people (or tasks) on one side and destinations (or roles) on the other, and the intuitive fix of giving everyone 'the next closest thing' one at a time can quietly leave two assignments crossing paths that a five-minute redraw would have caught, the exact error a composer makes when voices leap past each other instead of stepping smoothly.",
+      "openQuestion": "It isn't settled whether the crossing-free property is a deep necessary feature of any cost-minimizing bijection or a special case that only holds when the underlying space is one-dimensional and costs are additive - real freight networks have capacity limits, time windows, and multi-dimensional road costs that voice leading's near-continuous pitch space doesn't, so nobody has shown exactly where the analogy's clean mathematics gives way to logistics' messier combinatorics.",
+      "reading": [
+        "The Geometry of Musical Chords - Dmitri Tymoczko",
+        "The Hungarian Method for the Assignment Problem - Harold W. Kuhn",
+        "A Geometry of Music: Harmony and Counterpoint in the Extended Common Practice - Dmitri Tymoczko"
+      ],
+      "tags": [
+        "music theory",
+        "logistics",
+        "optimal transport",
+        "assignment problem",
+        "voice leading"
+      ],
+      "difficulty": 2,
+      "readMinutes": 5,
+      "lens": "isomorphism",
+      "lensFamily": "structural",
+      "relation": "voices : semitone distance to new pitches :: trucks : mileage to destinations :: minimum-cost crossing-free bijection solves both",
+      "whereItFails": "Voice leading lives in a small, near-continuous pitch space with octave equivalence and no hard constraints, while freight assignment adds vehicle capacities, time windows, and multi-dimensional road costs that force the full combinatorial Hungarian algorithm rather than a simple no-crossing rule.",
+      "whereElse": "The same minimum-cost bijective matching shows up in stable-marriage and dating-app matching markets, in image registration algorithms that move pixel intensities between two photos, and in the 'earth mover's distance' used to compare musical scores and word-embedding documents by their cheapest rearrangement.",
+      "opposite": "If this mapping were false, chord progressions would resolve by whatever pairing sounded conventional regardless of total motion, and dispatchers would assign trucks arbitrarily without seeking minimum mileage; instead both fields are governed by the same hard minimality principle, not by convention or chance.",
+      "plainly": "Imagine you have four kids and four bikes scattered around a yard, and you want each kid to walk to the nearest unclaimed bike so that, added up, everyone walks the least total distance - a composer nudging chord notes to their nearest new positions, and a delivery company assigning trucks to drop-off points, are both solving that exact same 'least total walking' puzzle.",
+      "example": "Picture a jazz pianist gliding from a C major chord to an A minor chord by barely moving two fingers instead of jumping her whole hand across the keyboard, and now picture a regional delivery manager reassigning five trucks to five new addresses after a route falls through, deliberately avoiding any pairing where two trucks would have to drive past each other's destinations - both are quietly refusing to let their assignments cross, because crossing always means someone is paying for unnecessary distance."
     }
   ]
 }
