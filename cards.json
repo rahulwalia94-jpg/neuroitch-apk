@@ -4136,6 +4136,47 @@
       "opposite": "If this mapping were false, a ledger's profit and a historian's verdict on an invention's importance would rest on their own raw totals; instead both fields refuse to call a number meaningful until a specific alternate world has been built and subtracted from it.",
       "plainly": "Think of it like this: to know if fertilizer really helped your tomato plant, you can't just look at how big it got, you have to imagine an identical plant that never got fertilizer and compare. An accountant checking if a business truly profited, and a historian checking if railroads truly built America, are both doing that exact same trick: imagining a twin that never existed and measuring the gap.",
       "example": "Picture a bakery owner proud of this year's profit, until her accountant points out that if she'd closed shop and just banked her savings at 5% interest, she'd have earned almost as much - her real 'excess profit' is only the sliver above that imagined, empty bakery. Across town, an economic historian runs the identical trick at national scale, imagining a nineteenth-century America crossed by canals instead of railroads to find out how much of the country's growth the trains actually bought."
+    },
+    {
+      "id": "crazed-glaze-cracked-lakebed-one-law",
+      "fieldA": "Ceramics",
+      "fieldB": "Geology",
+      "fields": [
+        "Ceramics",
+        "Geology"
+      ],
+      "title": "A potter's crazed glaze and a dried lakebed crack under one law",
+      "hook": "A potter cursing a spiderweb of cracks in a glaze and a geologist photographing a dried lakebed in the desert are reading the exact same stress equation.",
+      "connection": "A glaze fused to a pot and a crust of mud fused to wet ground are both a thin brittle skin glued to a thicker base that isn't shrinking at the same rate. One contracts from cooling, the other from drying, but a skin stuck to a base it can no longer match is forced into the same tensile trap, and nature only has one way to relieve that trap: a crack network.",
+      "mechanism": "The physics is explicit in the literature: <cite index=\"8-2\">shrinkage crack patterns are common in both natural and man-made systems, including dried mud layers and the glaze on a ceramic mug</cite>, because in both cases <cite index=\"8-6\">contraction, coupled with adhesion to a substrate, leads to a buildup of stress in the material, and when the stress exceeds the local tensile strength, the material fractures</cite>, which <cite index=\"8-7,8-8\">relieves the stress locally along the sides of the crack, but concentrates stress at the crack tip, so the crack propagates until the stress there is reduced below the local strength</cite>. Ceramicists describe the same trap from the craft side: <cite index=\"7-9\">fired ceramic is strong under compression but very weak under tension</cite>, so <cite index=\"1-1\">crazing is an incompatibility in thermal expansions of glaze and body</cite>. Researchers studying columnar basalt and permafrost call this out directly as <cite index=\"11-1\">a deep physical symmetry between these two mechanisms</cite> of desiccation and thermal contraction.",
+      "mentalModel": "Whenever you see a network of hairline cracks in something you didn't expect to crack - old paint, a mug, a riverbed, dry skin - stop looking at the crack and ask what two bonded layers are trying to shrink at different speeds. The crack pattern is never the story; it's the leftover evidence of an argument between a fast-shrinking skin and a slow-shrinking base.",
+      "realWorld": "Potters fight this daily by rebalancing silica and alumina in a glaze recipe until its expansion curve tracks the clay body closely enough to stay in compression rather than tension. Planetary geologists read the mirror-image problem on Mars and in Antarctica, using the size and geometry of polygonal ground cracks to infer how many wet-dry or freeze-thaw cycles a surface has been through, since crack patterns literally encode their own drying history.",
+      "historical": "Interest in these crack networks in geology predates the word 'geology' itself - the polygonal columns of the Giant's Causeway were already being described to the Royal Society in a 1693 letter, two and a half centuries before anyone had the fracture mechanics to explain why lava, mud, and glaze all fail into the same family of shapes. Ceramicists arrived at their half of the answer independently, through centuries of trial-and-error glaze-fit recipes long before anyone framed it as tensile stress exceeding a material's strength.",
+      "business": "A product that changes faster than the culture or infrastructure it's bonded to is a glaze on the wrong body: it looks fine coming out of the kiln, but the mismatch is already stored as stress, and it will craze - often silently, on a shelf, long after the launch - the moment something as small as a hard rollout or a slow support team applies the final twist of contraction.",
+      "personal": "A relationship where one person is changing quickly and the other is standing still is running the identical stress test as a badly fitted glaze: the mismatch doesn't show up while things are hot and pliable, it shows up during the slow cooling of ordinary weeks, and it releases as a network of small cracks - sharp comments, missed calls - long before anyone calls it a break.",
+      "openQuestion": "Fracture physicists have shown ceramic glaze crazing and true desiccation mud cracks belong to genuinely different crack-junction families (three-fold versus four-fold vertices) that only converge into the same hexagonal geometry after many repeated cycles, so it isn't settled whether 'contraction stress cracks a bonded layer' is truly one universal law with two dialects, or two related but distinct laws that happen to look alike at a glance.",
+      "reading": [
+        "Development and Geometry of Isotropic and Directional Shrinkage Crack Patterns - Kelly A. Shorlin, John R. de Bruyn, Malcolm Graham, Stephen W. Morris",
+        "Evolving Fracture Patterns: Columnar Joints, Mud Cracks, and Polygonal Terrain - Lucas Goehring",
+        "Cracking Mud, Freezing Dirt, and Breaking Rocks - Lucas Goehring"
+      ],
+      "tags": [
+        "ceramics",
+        "geology",
+        "fracture mechanics",
+        "materials science",
+        "pattern formation"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "isomorphism",
+      "lensFamily": "structural",
+      "relation": "glaze bonded to clay body : shrinks faster on cooling :: crust bonded to wet sediment : shrinks faster on drying || tensile stress exceeds strength : crack network relieves it in both",
+      "whereItFails": "True desiccation cracks in mud typically start as four-fold T-junctions and only evolve toward hexagonal three-fold junctions over many wet-dry cycles, while ceramic glaze crazing happens fast enough on a single cooling pass that it lands directly in the three-fold 'relaxation regime' - so the two processes are close cousins, not identical twins, and conflating them erases a real difference in how many cycles each needs.",
+      "whereElse": "The same contraction-stress-crack sequence produces the craquelure networks in centuries-old oil paintings, the polygonal 'patterned ground' covering Arctic and Martian permafrost, and the hexagonal columns of the Giant's Causeway, where slowly cooling lava cracked exactly the way a drying cornstarch slurry does in a lab dish.",
+      "opposite": "If this mapping were false, a potter's glaze recipe book and a geologist's permafrost survey would need completely unrelated mathematics to describe their cracks; instead, the fracture-mechanics literature explicitly treats desiccation and thermal-contraction cracking as expressions of one shared stress-release process, which is the opposite of coincidental resemblance.",
+      "plainly": "Think of an old orange left out too long: the peel dries out and shrinks while the fruit inside barely changes, so the peel splits into a web of little cracks because it's stuck to something not shrinking at the same speed - a potter's crackled glaze and a cracked-open dry riverbed are that exact same orange-peel problem, just at different sizes and different temperatures.",
+      "example": "Picture a potter pulling a mug from the kiln and wincing at a spiderweb of fine lines across the glaze, then imagine, later that same week, seeing a photo of a cracked-dry lakebed in a documentary about drought - both images are the same physical argument playing out: a thin skin that shrank faster than the solid stuff underneath it, with nowhere to put the tension except into a network of cracks."
     }
   ]
 }
