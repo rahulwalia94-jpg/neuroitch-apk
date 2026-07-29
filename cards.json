@@ -4218,6 +4218,48 @@
       "opposite": "If this mapping were false, chord progressions would resolve by whatever pairing sounded conventional regardless of total motion, and dispatchers would assign trucks arbitrarily without seeking minimum mileage; instead both fields are governed by the same hard minimality principle, not by convention or chance.",
       "plainly": "Imagine you have four kids and four bikes scattered around a yard, and you want each kid to walk to the nearest unclaimed bike so that, added up, everyone walks the least total distance - a composer nudging chord notes to their nearest new positions, and a delivery company assigning trucks to drop-off points, are both solving that exact same 'least total walking' puzzle.",
       "example": "Picture a jazz pianist gliding from a C major chord to an A minor chord by barely moving two fingers instead of jumping her whole hand across the keyboard, and now picture a regional delivery manager reassigning five trucks to five new addresses after a route falls through, deliberately avoiding any pairing where two trucks would have to drive past each other's destinations - both are quietly refusing to let their assignments cross, because crossing always means someone is paying for unnecessary distance."
+    },
+    {
+      "id": "alimony-fixed-point-of-itself",
+      "fieldA": "Alimony",
+      "fieldB": "alimony",
+      "fields": [
+        "Alimony",
+        "alimony"
+      ],
+      "title": "The alimony order that has to know the alimony order before it exists",
+      "hook": "A judge can't finish computing alimony until the formula already knows the number it's about to produce.",
+      "connection": "Alimony has to reference alimony before it can be finalized. The same guideline formula that sets the payment also caps the recipient's post-award income relative to a total that already includes that very payment, so the number a court is solving for sits inside its own equation - one field, folded back on itself, twice.",
+      "mechanism": "Guideline formulas cap the recipient's total income, including alimony, at a fixed share of the couple's combined gross: <cite index=\"1-5\">the recipient's total income (including alimony) cannot exceed 40% of the total combined income of both spouses</cite>. Popular one-third rules do the same thing more bluntly - <cite index=\"3-9,3-10\">the payee's income is grossed up to one-third of the parties' combined income, so John would pay Mary $33,333 per year</cite> once his own payment is folded back into the total it's measured against. Structurally this is a gross-up: <cite index=\"17-5,17-6\">the formula for a grossed-up payment is the amount divided by one minus the tax rate</cite>, solved algebraically because the target already includes the deduction it's compensating for. In computability theory the same closed loop is proven, not just patched around: <cite index=\"12-9\">it is possible to construct self-referential programs</cite> because, as Lawvere's fixed-point theorem shows, <cite index=\"9-4\">self-referential paradoxes are not bugs in formal systems but an inevitable feature of any system expressive enough to encode its own internal workings</cite>. An alimony order is a family-law clerk hand-solving that same fixed-point equation, g(b) = b, one divorce at a time.",
+      "mentalModel": "Whenever a formula's answer is also one of the formula's own inputs, stop trying to plug numbers in order and look for the point where output equals input - solve it algebraically or iterate until the number stops moving. That fixed point, not your first guess, is the only value the system can actually settle on.",
+      "realWorld": "Family-law calculators explicitly solve this rather than guessing: support software builds an after-tax 'pot' from both parties' incomes and iterates toward the split that holds even after the transfer changes each party's tax bracket, exactly the way a loan's gross-up clause is solved by dividing by one minus the tax rate instead of adding a number and hoping it lands right.",
+      "historical": "The circularity in alimony guidelines is a modern artifact of income-share formulas built up through the 1980s-2000s reform era documented in Ira Mark Ellman's foundational 'Theory of Alimony' and Cynthia Lee Starnes's history of guideline drafting, while the mathematical guarantee that self-referential systems always resolve to a fixed point is far older, formalized by Kleene's recursion theorem in the 1930s decades before any state wrote a numeric alimony cap into statute.",
+      "business": "Executive compensation lawyers hit the identical wall when negotiating a gross-up clause guaranteeing an executive a fixed net bonus regardless of tax changes: the gross payment has to be solved for because it appears on both sides of its own paycheck, the same circular-reference problem a divorce attorney's spreadsheet throws up the moment a support cap includes the support itself.",
+      "personal": "Two co-parents renegotiating support after a job change run into their own miniature fixed-point problem: the 'fair' number depends on each parent's post-payment budget, but that budget depends on the number they're arguing about, so any one-pass mental calculation quietly assumes an answer instead of solving for the one number where both budgets actually agree.",
+      "openQuestion": "It isn't settled whether this is a deep necessity or a removable accident: Kleene's and Lawvere's theorems prove self-referential systems must have a fixed point, but the alimony cap creating the self-reference is a specific policy choice a legislature could delete tomorrow - so is family law brushing up against a real mathematical law, or just accidentally writing a formula that happens to look like one?",
+      "reading": [
+        "The Theory of Alimony - Ira Mark Ellman",
+        "The Marriage Buyout: The Troubled Trajectory of U.S. Alimony Law - Cynthia Lee Starnes",
+        "Gödel, Escher, Bach: An Eternal Golden Braid - Douglas Hofstadter"
+      ],
+      "tags": [
+        "alimony",
+        "family law",
+        "recursion",
+        "fixed point",
+        "self-reference"
+      ],
+      "difficulty": 2,
+      "readMinutes": 4,
+      "lens": "paradox",
+      "lensFamily": "dialectical",
+      "relation": "alimony formula : capped by recipient's total post-alimony income :: self-referential function : solved by finding g(b) = b",
+      "whereItFails": "The alimony cap is a contingent policy choice a legislature could strike from a statute tomorrow, while Kleene's and Lawvere's fixed-point theorems are necessary mathematical truths that hold in any sufficiently expressive system regardless of anyone's preference - one loop is optional, the other cannot be legislated away.",
+      "whereElse": "The same self-referential-payment structure appears in loan-agreement gross-up clauses, executive-compensation tax gross-ups, and iterative tax withholding calculations where the tax owed depends on income that itself includes an already-taxed transfer.",
+      "opposite": "If this were false, alimony guidelines would only use inputs entirely outside their own output - pre-divorce incomes alone, no post-award caps - and every case could be solved with a single plug-in calculation, the way most one-way tax withholding worked before any deduction was allowed to interact with the payment generating it.",
+      "plainly": "Imagine a raise that gets calculated as a percentage of your new salary - but your new salary already includes the raise, so you can't just look up the answer, you have to solve for the one number where both sides finally agree, which is exactly the trap an alimony formula falls into when it caps a payment using a total that already contains that payment.",
+      "example": "Picture a divorce lawyer typing numbers into a spreadsheet and watching it throw a circular-reference warning, because the recipient's income cap already counts the alimony the sheet is supposed to be calculating - the software won't move forward until the formula is rewritten to solve for the one number that satisfies itself, the same fix an accountant uses on a gross-up clause in a loan contract.",
+      "personaExamples": {}
     }
   ]
 }
