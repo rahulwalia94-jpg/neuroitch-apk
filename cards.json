@@ -4344,6 +4344,48 @@
       "opposite": "If this were false, a dollar in a 'holiday fund' would spend exactly like a dollar in 'rent money,' a phoneme would be identifiable from its raw waveform alone with no contrasting sound needed, and a mytheme would carry meaning in total isolation from every other event in the myth - none of which is how any of the three systems actually behaves.",
       "plainly": "Imagine all your money is really just one pile of identical coins, but you've stuck little handwritten labels on some of them - 'rent,' 'fun,' 'guilt-free' - and now you treat those coins as if they're made of different metal; languages and myths do the same trick with sounds and story-beats that are really just points on a continuous scale, chopped up and labeled purely by contrast with their neighbors.",
       "example": "Picture yourself at a checkout, happily spending a $200 birthday-cash gift on a fancy dinner you'd never buy with your regular paycheck, even though both are just numbers in the same bank app - and compare that to a linguist showing you that 'p' and 'b' sound identical on a spectrogram slider until your brain, trained by English, snaps the sound into one category or the other purely because of the contrast, not the sound itself."
+    },
+    {
+      "id": "first-order-decay-soil-capital-knowledge",
+      "fieldA": "Soil Science",
+      "fieldB": "Financial Models",
+      "fields": [
+        "Soil Science",
+        "Financial Models",
+        "Knowledge Work"
+      ],
+      "title": "Soil carbon, capital stock and expertise all run the same leaky-bucket equation",
+      "hook": "A handful of dirt, a factory's balance sheet, and your own job skills are all just a bathtub with the tap running and the drain proportional to how full the tub already is.",
+      "connection": "A patch of soil organic matter, a firm's capital stock, and an employee's expertise all behave as a single quantity that accumulates from new inputs while simultaneously losing a fraction of its current size every period - so whether the substrate is dead leaves, steel, or memory, the same first-order stock-and-flow structure governs whether it grows, plateaus, or quietly drains away.",
+      "mechanism": "All three fit the identical linear system dS/dt = I(t) - kS(t). Soil models treat decomposition so that <cite index=\"1-10\">decay rates are proportional to the SOC stocks of the various pools considered, with rate modifiers to implicitly represent the effects of key factors, namely soil temperature, soil moisture, and clay content on microbial and physical processes</cite>. The perpetual inventory method used to build national capital-stock statistics is <cite index=\"35-18\">the standard solution to a first-order linear difference equation</cite>, where <cite index=\"35-6\">the coefficient β = (1 − δ) is the capital retention rate</cite>. Organizational-forgetting research applies the same logic to expertise: <cite index=\"8-9\">this approach uses maximum likelihood estimations to calculate a knowledge depreciation factor that reduces the knowledge stock of the previous period</cite>.",
+      "mentalModel": "Whenever something seems to be merely 'wearing out' - soil fertility, machinery, a skill set - stop asking only whether it's declining and start asking two separate questions: what is the inflow rate, and what fraction of the current stock disappears every period no matter how much you add. Two stocks that look identically 'stable' can be in completely different health depending on whether that stability comes from high input fighting high leakage, or low input matched to low leakage.",
+      "realWorld": "Carbon-offset markets pay farmers based on modeled first-order SOC accumulation, national statistics offices compute a country's capital stock with the perpetual inventory method rather than counting every machine, and consulting firms now price 'knowledge depreciation' into how fast they must rotate staff onto new technologies to keep billable expertise current.",
+      "historical": "First-order decay kinetics migrated from 19th-century chemical rate laws into ecosystem carbon models like CENTURY in the 1980s; Raymond Goldsmith formalized the perpetual inventory method for national wealth accounting in 1951, decades before organizational-learning researchers in the 1990s borrowed the identical decay-of-a-stock logic to describe workers and firms forgetting what they once knew.",
+      "business": "A company that funds one big training push and then stops, treating expertise as a durable one-time deposit rather than a continuously leaking stock, is making the same modeling error as an accountant who forgets that machinery needs ongoing maintenance capex, not just an initial purchase - both understate the steady replenishment required just to stand still.",
+      "personal": "Your own fluency in a language, a coding framework, or even a friendship's warmth all drain at some background rate whether or not you're paying attention, which is why 'I learned it once' or 'we used to be close' is never enough - like a field that isn't re-fertilized, the stock erodes toward zero unless the inflow keeps pace with the leak.",
+      "openQuestion": "It remains unsettled in all three literatures whether the decay rate k is truly constant and geometric, or itself context-dependent and time-varying - soil scientists debate first-order versus microbial-explicit kinetics, capital accountants argue over geometric versus other survival functions, and strategy researchers now argue the half-life of knowledge itself shifts across industries and eras, meaning the 'same equation' may only be a first approximation everyone reaches for out of convenience.",
+      "reading": [
+        "Generic parameters of first-order kinetics accurately describe soil organic matter decay in bare fallow soils over a wide edaphic and climatic range - Lorenzo Menichetti, Göran I. Ågren, Pierre Barré, Fernando Moyano & Thomas Kätterer",
+        "The half-life of knowledge and strategic human capital - Eirik Sjåholm Knudsen & Lasse B. Lien",
+        "A Perpetual Inventory of National Wealth - Raymond W. Goldsmith"
+      ],
+      "tags": [
+        "soil science",
+        "financial models",
+        "knowledge work",
+        "first-order kinetics",
+        "depreciation"
+      ],
+      "difficulty": 2,
+      "readMinutes": 5,
+      "lens": "isomorphism",
+      "lensFamily": "structural",
+      "relation": "soil carbon pool : decay constant k :: capital stock : depreciation rate δ :: knowledge stock : forgetting rate",
+      "whereItFails": "Soil's decay constant is set by exogenous physics (temperature, moisture, clay content), capital's by engineering wear, but knowledge's 'k' is partly voluntary and motivational - a worker can choose to slow their own forgetting in a way a machine or a microbial pool cannot.",
+      "whereElse": "The same first-order stock-decay structure appears in radioactive half-life, pharmacokinetic drug clearance, waning vaccine immunity in epidemiology, and reservoir/population models with constant per-capita death rates.",
+      "opposite": "If this were false, soil carbon, capital stock, and expertise would each need entirely bespoke, incomparable growth laws with no shared parameter you could even name - instead all three are fit with an inflow term and a single proportional-loss constant, which is precisely what lets a soil scientist's spreadsheet and an HR analyst's retention model share the same underlying formula.",
+      "plainly": "Picture a bathtub with the tap running and a drain that's always a little bit open - the fuller the tub, the faster it drains. Soil nutrients, a company's equipment value, and your own hard-won skills all work exactly like that tub: they only stay full if what's pouring in keeps beating what's constantly leaking out.",
+      "example": "Imagine a farmer, an accountant, and a training manager each staring at a graph that looks the same: a curve that climbs after new inputs then flattens toward a ceiling - the farmer's curve is soil carbon after adding compost, the accountant's is factory value after new machinery purchases, and the training manager's is a team's average skill level after a workshop, and all three flatten for the identical mathematical reason, not three unrelated ones."
     }
   ]
 }
